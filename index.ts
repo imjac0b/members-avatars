@@ -45,6 +45,32 @@ type BerrizCommunityDetailResponse = {
   };
 };
 
+type FansHomeScreenResponse = {
+  data?: {
+    randomizedAllGroups?: Array<{
+      id?: string;
+      name?: string;
+      _member?: {
+        nickname?: string;
+      };
+    }>;
+  };
+};
+
+type FansGroupArtistsResponse = {
+  data?: {
+    group?: {
+      randomizedArtists?: Array<{
+        name?: string;
+        nickname?: string;
+        profileImage?: {
+          thumbnailUrl?: string;
+        };
+      }>;
+    };
+  };
+};
+
 type AvatarDownload = {
   groupName: string;
   memberName: string;
@@ -70,6 +96,7 @@ type GroupCatalog = {
 const WEVERSE_APP_ID = "be4d79eb8fc7bd008ee82c8ec4ff6fd4";
 const WEVERSE_BASE_URL = "https://global.apis.naver.com/weverse/wevweb";
 const BERRIZ_BASE_URL = "https://svc-api.berriz.in/service/v1";
+const FANS_GRAPHQL_URL = "https://api.app.fans/graphql";
 const README_PLACEHOLDER = "<!-- GENERATED_MEMBERS_AVATARS -->";
 const README_TEMPLATE_PATH = "README.template.md";
 const README_OUTPUT_PATH = "README.md";
@@ -366,6 +393,210 @@ const berrizProvider: AvatarProvider = {
   },
 };
 
+const fansFetch = async <T>(
+  operationName: string,
+  query: string,
+  variables: Record<string, unknown>,
+) => {
+  const response = await fetch(FANS_GRAPHQL_URL, {
+    method: "POST",
+    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+    headers: {
+      Accept: "*/*",
+      "Content-Type": "application/json",
+      Origin: "https://www.fans.land",
+      Referer: "https://www.fans.land/",
+      "User-Agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+    },
+    body: JSON.stringify({
+      operationName,
+      query,
+      variables,
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error(
+      `Fans request failed: ${response.status} ${response.statusText}`,
+    );
+  }
+
+  return (await response.json()) as T;
+};
+
+const FANS_HOME_SCREEN_QUERY = `query HomeScreen($bannerFilter: BannerLayoutFilterInput, $bannerPage: PageInput) {
+  randomizedAllGroups {
+    id
+    code
+    name
+    status
+    activateAt
+    mainGridImage {
+      key
+      url
+      thumbnailUrl: thumbnailUrl(mode: THUMBNAIL, width: 800)
+      __typename
+    }
+    mainLogoImage {
+      key
+      thumbnailUrl: thumbnailUrl(mode: THUMBNAIL, width: 800)
+      __typename
+    }
+    _member {
+      id
+      suspensionCategory
+      status
+      slug
+      nickname
+      profileImage {
+        key
+        thumbnailUrl(mode: THUMBNAIL, width: 400)
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+  bannerLayouts(filter: $bannerFilter, page: $bannerPage) {
+    objects {
+      ...BannerCarouselForHomeScreen
+      __typename
+    }
+    __typename
+  }
+}
+
+fragment BannerCarouselForHomeScreen on BannerLayout {
+  id
+  banners {
+    id
+    backgroundColor
+    body
+    bodyTextColor
+    title
+    titleTextColor
+    url
+    image {
+      key
+      width
+      height
+      thumbnailUrl(mode: THUMBNAIL, height: 270)
+      __typename
+    }
+    __typename
+  }
+  __typename
+}`;
+
+const FANS_GROUP_ARTISTS_QUERY = `query RandomizedCommunityArtists($filter: GroupFilterInput) {
+  group(filter: $filter) {
+    randomizedArtists {
+      id
+      name
+      nickname
+      profileImage {
+        key
+        thumbnailUrl(mode: CROP, width: 10000)
+        __typename
+      }
+      code
+      member {
+        slug
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+}`;
+
+const getFansGroups = async () => {
+  console.log("[fans] Fetching groups");
+
+  const response = await fansFetch<FansHomeScreenResponse>(
+    "HomeScreen",
+    FANS_HOME_SCREEN_QUERY,
+    {
+      bannerFilter: {
+        classification_Overlap: ["HOME"],
+        mode_Overlap: ["CAROUSEL"],
+        isActive_Exact: true,
+      },
+      bannerPage: {
+        first: 50,
+      },
+    },
+  );
+
+  const groups = (response.data?.randomizedAllGroups ?? [])
+    .map((group) => ({
+      communityId: Number(group.id),
+      communityName: group.name?.trim() || group._member?.nickname?.trim() || "",
+    }))
+    .filter(
+      (group) =>
+        Number.isFinite(group.communityId) && group.communityName.length > 0,
+    );
+
+  console.log(`[fans] Loaded ${groups.length} groups`);
+  return groups;
+};
+
+const getFansGroupAvatars = async (
+  community: Community,
+): Promise<AvatarDownload[]> => {
+  console.log(`[fans] Fetching members for ${community.communityName}`);
+
+  const response = await fansFetch<FansGroupArtistsResponse>(
+    "RandomizedCommunityArtists",
+    FANS_GROUP_ARTISTS_QUERY,
+    {
+      filter: {
+        id_Overlap: [String(community.communityId)],
+      },
+    },
+  );
+
+  const groupSlug = slugifyGroupName(community.communityName);
+  const artists = response.data?.group?.randomizedArtists ?? [];
+
+  const avatars = artists
+    .map((artist) => {
+      const memberName = artist.nickname?.trim() || artist.name?.trim();
+      const imageUrl = artist.profileImage?.thumbnailUrl?.trim();
+
+      if (!memberName || !imageUrl) {
+        return null;
+      }
+
+      const memberSlug = slugifyMemberName(memberName);
+
+      return {
+        groupName: community.communityName,
+        memberName,
+        imageUrl,
+        outputPath: `avatars/${groupSlug}/${memberSlug}.jpeg`,
+      } satisfies AvatarDownload;
+    })
+    .filter((artist): artist is AvatarDownload => artist !== null);
+
+  console.log(`[fans] Found ${avatars.length} members for ${community.communityName}`);
+  return avatars;
+};
+
+const fansProvider: AvatarProvider = {
+  name: "fans",
+  listAvatars: async () => {
+    const communities = await getFansGroups();
+    const communityResults = await Promise.all(
+      communities.map((community) => getFansGroupAvatars(community)),
+    );
+
+    return communityResults.flat();
+  },
+};
+
 const buildCatalog = (avatars: AvatarDownload[]): GroupCatalog[] => {
   const groups = new Map<string, GroupCatalog>();
 
@@ -528,7 +759,11 @@ const downloadAllMemberAvatars = async (providers: AvatarProvider[]) => {
 };
 
 const main = async () => {
-  const avatars = await downloadAllMemberAvatars([weverseProvider, berrizProvider]);
+  const avatars = await downloadAllMemberAvatars([
+    weverseProvider,
+    berrizProvider,
+    fansProvider,
+  ]);
   const groups = buildCatalog(avatars);
 
   await updateReadme(groups);

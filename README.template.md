@@ -1,6 +1,6 @@
 # Members Avatars
 
-This repo fetches official member profile pictures from Weverse and Berriz and publishes them in a predictable file layout:
+This repo fetches official member profile pictures from Weverse, Berriz, and Fans and publishes them in a predictable file layout:
 
 ```text
 avatars/<group-name>/<member-name>.jpeg
@@ -18,6 +18,7 @@ Current providers:
 
 - `weverse`
 - `berriz`
+- `fans`
 
 The generated catalog appears below.
 
