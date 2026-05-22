@@ -824,11 +824,11 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| 류진 | <img src="https://members-avatar.jacob.com.hk/itzy/류진.jpeg" alt="류진" loading="lazy" width="100"> | `itzy/류진.jpeg` |
-| 리아 | <img src="https://members-avatar.jacob.com.hk/itzy/리아.jpeg" alt="리아" loading="lazy" width="100"> | `itzy/리아.jpeg` |
-| 예지 | <img src="https://members-avatar.jacob.com.hk/itzy/예지.jpeg" alt="예지" loading="lazy" width="100"> | `itzy/예지.jpeg` |
-| 유나 | <img src="https://members-avatar.jacob.com.hk/itzy/유나.jpeg" alt="유나" loading="lazy" width="100"> | `itzy/유나.jpeg` |
-| 채령 | <img src="https://members-avatar.jacob.com.hk/itzy/채령.jpeg" alt="채령" loading="lazy" width="100"> | `itzy/채령.jpeg` |
+| CHAERYEONG | <img src="https://members-avatar.jacob.com.hk/itzy/chaeryeong.jpeg" alt="CHAERYEONG" loading="lazy" width="100"> | `itzy/chaeryeong.jpeg` |
+| LIA | <img src="https://members-avatar.jacob.com.hk/itzy/lia.jpeg" alt="LIA" loading="lazy" width="100"> | `itzy/lia.jpeg` |
+| RYUJIN | <img src="https://members-avatar.jacob.com.hk/itzy/ryujin.jpeg" alt="RYUJIN" loading="lazy" width="100"> | `itzy/ryujin.jpeg` |
+| YEJI | <img src="https://members-avatar.jacob.com.hk/itzy/yeji.jpeg" alt="YEJI" loading="lazy" width="100"> | `itzy/yeji.jpeg` |
+| YUNA | <img src="https://members-avatar.jacob.com.hk/itzy/yuna.jpeg" alt="YUNA" loading="lazy" width="100"> | `itzy/yuna.jpeg` |
 ## IU
 
 | Member | Avatar | Path |
@@ -1322,12 +1322,12 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| 규진 | <img src="https://members-avatar.jacob.com.hk/nmixx/규진.jpeg" alt="규진" loading="lazy" width="100"> | `nmixx/규진.jpeg` |
-| 릴리 | <img src="https://members-avatar.jacob.com.hk/nmixx/릴리.jpeg" alt="릴리" loading="lazy" width="100"> | `nmixx/릴리.jpeg` |
+| HAEWON | <img src="https://members-avatar.jacob.com.hk/nmixx/haewon.jpeg" alt="HAEWON" loading="lazy" width="100"> | `nmixx/haewon.jpeg` |
+| JIWOO | <img src="https://members-avatar.jacob.com.hk/nmixx/jiwoo.jpeg" alt="JIWOO" loading="lazy" width="100"> | `nmixx/jiwoo.jpeg` |
+| KYUJIN | <img src="https://members-avatar.jacob.com.hk/nmixx/kyujin.jpeg" alt="KYUJIN" loading="lazy" width="100"> | `nmixx/kyujin.jpeg` |
+| Lily | <img src="https://members-avatar.jacob.com.hk/nmixx/lily.jpeg" alt="Lily" loading="lazy" width="100"> | `nmixx/lily.jpeg` |
 | 배이 | <img src="https://members-avatar.jacob.com.hk/nmixx/배이.jpeg" alt="배이" loading="lazy" width="100"> | `nmixx/배이.jpeg` |
 | 설윤 | <img src="https://members-avatar.jacob.com.hk/nmixx/설윤.jpeg" alt="설윤" loading="lazy" width="100"> | `nmixx/설윤.jpeg` |
-| 지우 | <img src="https://members-avatar.jacob.com.hk/nmixx/지우.jpeg" alt="지우" loading="lazy" width="100"> | `nmixx/지우.jpeg` |
-| 해원 | <img src="https://members-avatar.jacob.com.hk/nmixx/해원.jpeg" alt="해원" loading="lazy" width="100"> | `nmixx/해원.jpeg` |
 ## NOA
 
 | Member | Avatar | Path |
