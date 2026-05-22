@@ -563,7 +563,7 @@ const getFansGroupAvatars = async (
 
   const avatars = artists
     .map((artist) => {
-      const memberName = artist.nickname?.trim() || artist.name?.trim();
+      const memberName = artist.name?.trim() || artist.nickname?.trim();
       const imageUrl = artist.profileImage?.thumbnailUrl?.trim();
 
       if (!memberName || !imageUrl) {
@@ -656,7 +656,7 @@ const renderReadmeCatalog = (groups: GroupCatalog[]) =>
         const members = group.members
           .map(
             (member) =>
-              `| ${member.memberName} | <img src="${toPublicAvatarUrl(member.outputPath)}" alt="${member.memberName}" width="100"> | \`${member.outputPath}\` |`,
+              `| ${member.memberName} | <img src="${toPublicAvatarUrl(member.outputPath)}" alt="${member.memberName}" loading="lazy" width="100"> | \`${member.outputPath}\` |`,
           )
           .join("\n");
 
@@ -711,6 +711,7 @@ const runAria2Batch = async () => {
     "--continue=true",
     "--summary-interval=3",
     "--download-result=hide",
+    "--console-log-level=warn",
     "--input-file",
     ARIA2_INPUT_PATH,
     "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
