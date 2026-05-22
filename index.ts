@@ -353,6 +353,8 @@ const runAria2Batch = async () => {
     "--timeout=20",
     "--connect-timeout=20",
     "--continue=true",
+    "--summary-interval=3",
+    "--download-result=hide",
     "--input-file",
     ARIA2_INPUT_PATH,
     "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
