@@ -3,7 +3,7 @@
 This repo fetches official member profile pictures from Weverse, Berriz, and Fans and publishes them in a predictable file layout:
 
 ```text
-avatars/<group-name>/<member-name>.jpeg
+https://members-avatar.jacob.com.hk/<group-name>/<member-name>.jpeg
 ```
 
 `README.md` is generated from this template by `index.ts`.

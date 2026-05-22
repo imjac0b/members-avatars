@@ -656,7 +656,7 @@ const renderReadmeCatalog = (groups: GroupCatalog[]) =>
         const members = group.members
           .map(
             (member) =>
-              `| ${member.memberName} | <img src="${toPublicAvatarUrl(member.outputPath)}" alt="${member.memberName}" loading="lazy" width="100"> | \`${member.outputPath}\` |`,
+              `| ${member.memberName} | <img src="${toPublicAvatarUrl(member.outputPath)}" alt="${member.memberName}" loading="lazy" width="100"> | \`${toPublicAvatarPath(member.outputPath)}\` |`,
           )
           .join("\n");
 
