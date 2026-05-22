@@ -28,6 +28,7 @@ type AvatarDownload = {
   groupName: string;
   memberName: string;
   imageUrl: string;
+  outputPath: string;
 };
 
 type AvatarProvider = {
@@ -35,8 +36,26 @@ type AvatarProvider = {
   listAvatars: () => Promise<AvatarDownload[]>;
 };
 
+type GroupCatalog = {
+  groupName: string;
+  groupSlug: string;
+  members: Array<{
+    memberName: string;
+    memberSlug: string;
+    outputPath: string;
+  }>;
+};
+
 const WEVERSE_APP_ID = "be4d79eb8fc7bd008ee82c8ec4ff6fd4";
 const WEVERSE_BASE_URL = "https://global.apis.naver.com/weverse/wevweb";
+const README_PLACEHOLDER = "<!-- GENERATED_MEMBERS_AVATARS -->";
+const README_TEMPLATE_PATH = "README.template.md";
+const README_OUTPUT_PATH = "README.md";
+const ARIA2_INPUT_PATH = "avatars.aria2c.txt";
+const PUBLIC_BASE_URL = (
+  process.env.PUBLIC_BASE_URL ?? "https://members-avatar.jacob.com.hk"
+).replace(/\/+$/, "");
+const REQUEST_TIMEOUT_MS = 20_000;
 const WEVERSE_COMMON_QUERY = {
   appId: WEVERSE_APP_ID,
   language: "en",
@@ -55,10 +74,15 @@ const slugify = (value: string) =>
     .replace(/^-+|-+$/g, "")
     .replace(/-{2,}/g, "-");
 
+const removeWeverseTypeParam = (url: string) => {
+  const parsedUrl = new URL(url);
+  parsedUrl.searchParams.delete("type");
+  return parsedUrl.toString();
+};
+
 const createWeverseHash = async (pathname: string) => {
   const timestamp = Date.now();
-  const salt =
-    pathname.substring(0, Math.min(255, pathname.length)) + timestamp;
+  const salt = pathname.substring(0, Math.min(255, pathname.length)) + timestamp;
   const hmacSalt = new TextEncoder().encode(salt);
 
   const key = await crypto.subtle.importKey(
@@ -99,6 +123,7 @@ const weverseFetch = async <T>(
   query: Record<string, string>,
 ) => {
   const response = await fetch(await createWeverseUrl(pathname, query), {
+    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
     headers: {
       Origin: "https://weverse.io",
       Referer: "https://weverse.io/",
@@ -117,6 +142,8 @@ const weverseFetch = async <T>(
 };
 
 const getWeverseCommunities = async () => {
+  console.log("[weverse] Fetching group communities");
+
   const response = await weverseFetch<WeverseGroupCommunitiesResponse>(
     "/community/v1.0/groupCommunities",
     {
@@ -124,16 +151,20 @@ const getWeverseCommunities = async () => {
       fields:
         "communityId,communityName,urlPath,logoImage,homeHeaderImage,availableActions,artistOfficialNames,lastArtistContentPublishedAt,openDate",
       groupKey: "ALL-ALL",
-      limit: "1",
+      limit: "999999",
     },
   );
 
-  return response.data ?? [];
+  const communities = response.data ?? [];
+  console.log(`[weverse] Loaded ${communities.length} communities`);
+  return communities;
 };
 
 const getWeverseCommunityAvatars = async (
   community: Community,
 ): Promise<AvatarDownload[]> => {
+  console.log(`[weverse] Fetching members for ${community.communityName}`);
+
   const response = await weverseFetch<WeverseHighlightResponse>(
     `/community/v1.0/community-${community.communityId}/HIGHLIGHT/tabContent`,
     {
@@ -148,8 +179,9 @@ const getWeverseCommunityAvatars = async (
   );
 
   const profiles = introCard?.data?.artistProfiles ?? [];
+  const groupSlug = slugify(community.communityName);
 
-  return profiles
+  const avatars = profiles
     .map((profile) => {
       const memberName = profile.artistOfficialProfile?.officialName?.trim();
       const imageUrl = profile.artistOfficialProfile?.officialImageUrl?.trim();
@@ -158,13 +190,22 @@ const getWeverseCommunityAvatars = async (
         return null;
       }
 
+      const memberSlug = slugify(memberName);
+
       return {
         groupName: community.communityName,
         memberName,
-        imageUrl,
+        imageUrl: removeWeverseTypeParam(imageUrl),
+        outputPath: `avatars/${groupSlug}/${memberSlug}.jpeg`,
       } satisfies AvatarDownload;
     })
     .filter((profile): profile is AvatarDownload => profile !== null);
+
+  console.log(
+    `[weverse] Found ${avatars.length} members for ${community.communityName}`,
+  );
+
+  return avatars;
 };
 
 const weverseProvider: AvatarProvider = {
@@ -179,50 +220,153 @@ const weverseProvider: AvatarProvider = {
   },
 };
 
-const downloadAvatar = async ({
-  groupName,
-  memberName,
-  imageUrl,
-}: AvatarDownload) => {
-  const groupSlug = slugify(groupName);
-  const memberSlug = slugify(memberName);
-  const destination = `avatars/${groupSlug}/${memberSlug}.jpeg`;
+const buildCatalog = (avatars: AvatarDownload[]): GroupCatalog[] => {
+  const groups = new Map<string, GroupCatalog>();
 
-  const response = await fetch(imageUrl);
+  for (const avatar of avatars) {
+    const groupSlug = slugify(avatar.groupName);
+    const memberSlug = slugify(avatar.memberName);
+    const existingGroup = groups.get(groupSlug);
 
-  if (!response.ok) {
-    throw new Error(
-      `Avatar download failed: ${response.status} ${response.statusText}`,
-    );
+    if (!existingGroup) {
+      groups.set(groupSlug, {
+        groupName: avatar.groupName,
+        groupSlug,
+        members: [
+          {
+            memberName: avatar.memberName,
+            memberSlug,
+            outputPath: avatar.outputPath,
+          },
+        ],
+      });
+      continue;
+    }
+
+    existingGroup.members.push({
+      memberName: avatar.memberName,
+      memberSlug,
+      outputPath: avatar.outputPath,
+    });
   }
 
-  await Bun.write(destination, response);
+  return [...groups.values()]
+    .map((group) => ({
+      ...group,
+      members: group.members.sort((a, b) =>
+        a.memberName.localeCompare(b.memberName),
+      ),
+    }))
+    .sort((a, b) => a.groupName.localeCompare(b.groupName));
+};
 
-  return destination;
+const toPublicAvatarPath = (outputPath: string) =>
+  outputPath.startsWith("avatars/") ? outputPath.slice("avatars/".length) : outputPath;
+
+const toPublicAvatarUrl = (outputPath: string) =>
+  `${PUBLIC_BASE_URL}/${toPublicAvatarPath(outputPath)}`;
+
+const renderReadmeCatalog = (groups: GroupCatalog[]) =>
+  groups
+    .map((group) => {
+      const members = group.members
+        .map(
+          (member) =>
+            `| ${member.memberName} | ![${member.memberName}](${toPublicAvatarUrl(member.outputPath)}) | \`${member.outputPath}\` |`,
+        )
+        .join("\n");
+
+      return `## ${group.groupName}
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+${members}`;
+    })
+    .join("\n");
+
+const updateReadme = async (groups: GroupCatalog[]) => {
+  console.log("[readme] Updating README.md from template");
+
+  const template = await Bun.file(README_TEMPLATE_PATH).text();
+  const catalog = renderReadmeCatalog(groups);
+  const readme = template.replace(README_PLACEHOLDER, catalog);
+
+  await Bun.write(README_OUTPUT_PATH, readme);
+};
+
+const createAria2Input = async (avatars: AvatarDownload[]) => {
+  const manifest = avatars
+    .map(
+      (avatar) => `${avatar.imageUrl}
+  out=${avatar.outputPath.slice(avatar.outputPath.lastIndexOf("/") + 1)}
+  dir=${avatar.outputPath.slice(0, avatar.outputPath.lastIndexOf("/"))}`,
+    )
+    .join("\n");
+
+  await Bun.write(ARIA2_INPUT_PATH, `${manifest}\n`);
+  console.log(`[download] Wrote aria2 manifest ${ARIA2_INPUT_PATH}`);
+};
+
+const runAria2Batch = async () => {
+  const process = Bun.spawn([
+    "aria2c",
+    "--allow-overwrite=true",
+    "--auto-file-renaming=false",
+    "--max-tries=5",
+    "--retry-wait=2",
+    "--timeout=20",
+    "--connect-timeout=20",
+    "--continue=true",
+    "--input-file",
+    ARIA2_INPUT_PATH,
+    "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+  ]);
+
+  const exitCode = await process.exited;
+
+  if (exitCode !== 0) {
+    const stderr = await new Response(process.stderr).text();
+    throw new Error(`aria2c batch failed: ${stderr.trim()}`);
+  }
 };
 
 const downloadAllMemberAvatars = async (providers: AvatarProvider[]) => {
   const avatarLists = await Promise.all(
-    providers.map((provider) => provider.listAvatars()),
+    providers.map(async (provider) => {
+      console.log(`[provider] Loading avatars from ${provider.name}`);
+      const avatars = await provider.listAvatars();
+      console.log(`[provider] ${provider.name} returned ${avatars.length} avatars`);
+      return avatars;
+    }),
   );
-  const avatars = avatarLists.flat();
+
   const uniqueAvatars = new Map<string, AvatarDownload>();
 
-  for (const avatar of avatars) {
+  for (const avatar of avatarLists.flat()) {
     const key = `${slugify(avatar.groupName)}/${slugify(avatar.memberName)}`;
     uniqueAvatars.set(key, avatar);
   }
 
-  const downloadedFiles = await Promise.all(
-    [...uniqueAvatars.values()].map(downloadAvatar),
-  );
+  const avatars = [...uniqueAvatars.values()];
+  console.log(`[download] Downloading ${avatars.length} unique avatars`);
+  for (const [index, avatar] of avatars.entries()) {
+    console.log(
+      `[download] ${index + 1}/${avatars.length} ${avatar.groupName} / ${avatar.memberName} -> ${avatar.outputPath}`,
+    );
+  }
+  await createAria2Input(avatars);
+  await runAria2Batch();
 
-  return downloadedFiles;
+  return avatars;
 };
 
 const main = async () => {
-  const downloadedFiles = await downloadAllMemberAvatars([weverseProvider]);
-  console.log(`Downloaded ${downloadedFiles.length} avatars.`);
+  const avatars = await downloadAllMemberAvatars([weverseProvider]);
+  const groups = buildCatalog(avatars);
+
+  await updateReadme(groups);
+
+  console.log(`[done] Downloaded ${avatars.length} avatars across ${groups.length} groups`);
 };
 
 await main();
