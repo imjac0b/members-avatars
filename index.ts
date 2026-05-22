@@ -24,6 +24,27 @@ type WeverseHighlightResponse = {
   };
 };
 
+type BerrizDiscoverResponse = {
+  data?: {
+    contents?: Array<{
+      type?: string;
+      id?: string;
+      name?: string;
+    }>;
+  };
+};
+
+type BerrizCommunityDetailResponse = {
+  data?: {
+    communityId?: number;
+    name?: string;
+    artists?: Array<{
+      name?: string;
+      imageUrl?: string;
+    }>;
+  };
+};
+
 type AvatarDownload = {
   groupName: string;
   memberName: string;
@@ -48,6 +69,7 @@ type GroupCatalog = {
 
 const WEVERSE_APP_ID = "be4d79eb8fc7bd008ee82c8ec4ff6fd4";
 const WEVERSE_BASE_URL = "https://global.apis.naver.com/weverse/wevweb";
+const BERRIZ_BASE_URL = "https://svc-api.berriz.in/service/v1";
 const README_PLACEHOLDER = "<!-- GENERATED_MEMBERS_AVATARS -->";
 const README_TEMPLATE_PATH = "README.template.md";
 const README_OUTPUT_PATH = "README.md";
@@ -56,6 +78,7 @@ const PUBLIC_BASE_URL = (
   process.env.PUBLIC_BASE_URL ?? "https://members-avatar.jacob.com.hk"
 ).replace(/\/+$/, "");
 const REQUEST_TIMEOUT_MS = 20_000;
+const BERRIZ_LANGUAGE_CODE = "en";
 const WEVERSE_COMMON_QUERY = {
   appId: WEVERSE_APP_ID,
   language: "en",
@@ -241,6 +264,108 @@ const weverseProvider: AvatarProvider = {
   },
 };
 
+const berrizFetch = async <T>(pathname: string, query: Record<string, string>) => {
+  const url = new URL(`${BERRIZ_BASE_URL}${pathname}`);
+
+  for (const [key, value] of Object.entries(query)) {
+    url.searchParams.set(key, value);
+  }
+
+  const response = await fetch(url, {
+    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+    headers: {
+      Accept: "application/json",
+      Referer: "https://berriz.in/",
+      "User-Agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(
+      `Berriz request failed: ${response.status} ${response.statusText}`,
+    );
+  }
+
+  return (await response.json()) as T;
+};
+
+const getBerrizCommunities = async () => {
+  console.log("[berriz] Fetching communities");
+
+  const response = await berrizFetch<BerrizDiscoverResponse>("/home/discover", {
+    cursor: "0",
+    size: "999999",
+    languageCode: BERRIZ_LANGUAGE_CODE,
+  });
+
+  const communities = (response.data?.contents ?? [])
+    .filter((entry) => entry.type === "COMMUNITY" && entry.id && entry.name)
+    .map((entry) => ({
+      communityId: Number(entry.id),
+      communityName: entry.name!.trim(),
+    }))
+    .filter(
+      (community) =>
+        Number.isFinite(community.communityId) && community.communityName.length > 0,
+    );
+
+  console.log(`[berriz] Loaded ${communities.length} communities`);
+  return communities;
+};
+
+const getBerrizCommunityAvatars = async (
+  community: Community,
+): Promise<AvatarDownload[]> => {
+  console.log(`[berriz] Fetching members for ${community.communityName}`);
+
+  const response = await berrizFetch<BerrizCommunityDetailResponse>(
+    `/community/main/${community.communityId}`,
+    {
+      languageCode: BERRIZ_LANGUAGE_CODE,
+    },
+  );
+
+  const groupName = response.data?.name?.trim() || community.communityName;
+  const groupSlug = slugifyGroupName(groupName);
+  const artists = response.data?.artists ?? [];
+
+  const avatars = artists
+    .map((artist) => {
+      const memberName = artist.name?.trim();
+      const imageUrl = artist.imageUrl?.trim();
+
+      if (!memberName || !imageUrl) {
+        return null;
+      }
+
+      const memberSlug = slugifyMemberName(memberName);
+
+      return {
+        groupName,
+        memberName,
+        imageUrl,
+        outputPath: `avatars/${groupSlug}/${memberSlug}.jpeg`,
+      } satisfies AvatarDownload;
+    })
+    .filter((artist): artist is AvatarDownload => artist !== null);
+
+  console.log(`[berriz] Found ${avatars.length} members for ${groupName}`);
+  return avatars;
+};
+
+const berrizProvider: AvatarProvider = {
+  name: "berriz",
+  listAvatars: async () => {
+    const communities = await getBerrizCommunities();
+    const communityResults = await Promise.all(
+      communities.map((community) => getBerrizCommunityAvatars(community)),
+    );
+
+    return communityResults.flat();
+  },
+};
+
 const buildCatalog = (avatars: AvatarDownload[]): GroupCatalog[] => {
   const groups = new Map<string, GroupCatalog>();
 
@@ -403,7 +528,7 @@ const downloadAllMemberAvatars = async (providers: AvatarProvider[]) => {
 };
 
 const main = async () => {
-  const avatars = await downloadAllMemberAvatars([weverseProvider]);
+  const avatars = await downloadAllMemberAvatars([weverseProvider, berrizProvider]);
   const groups = buildCatalog(avatars);
 
   await updateReadme(groups);
