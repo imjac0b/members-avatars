@@ -288,22 +288,35 @@ const toPublicAvatarUrl = (outputPath: string) =>
   `${PUBLIC_BASE_URL}/${toPublicAvatarPath(outputPath)}`;
 
 const renderReadmeCatalog = (groups: GroupCatalog[]) =>
-  groups
-    .map((group) => {
-      const members = group.members
-        .map(
-          (member) =>
-            `| ${member.memberName} | <img src="${toPublicAvatarUrl(member.outputPath)}" alt="${member.memberName}" width="100"> | \`${member.outputPath}\` |`,
-        )
-        .join("\n");
+  {
+    const totalGroups = groups.length;
+    const totalMembers = groups.reduce(
+      (count, group) => count + group.members.length,
+      0,
+    );
 
-      return `## ${group.groupName}
+    const sections = groups
+      .map((group) => {
+        const members = group.members
+          .map(
+            (member) =>
+              `| ${member.memberName} | <img src="${toPublicAvatarUrl(member.outputPath)}" alt="${member.memberName}" width="100"> | \`${member.outputPath}\` |`,
+          )
+          .join("\n");
+
+        return `## ${group.groupName}
 
 | Member | Avatar | Path |
 | --- | --- | --- |
 ${members}`;
-    })
-    .join("\n");
+      })
+      .join("\n");
+
+    return `- Total groups: ${totalGroups}
+- Total members: ${totalMembers}
+
+${sections}`;
+  };
 
 const updateReadme = async (groups: GroupCatalog[]) => {
   console.log("[readme] Updating README.md from template");
@@ -329,6 +342,8 @@ const createAria2Input = async (avatars: AvatarDownload[]) => {
 };
 
 const runAria2Batch = async () => {
+  console.log("[download] Starting aria2c batch");
+
   const process = Bun.spawn([
     "aria2c",
     "--allow-overwrite=true",
@@ -341,14 +356,18 @@ const runAria2Batch = async () => {
     "--input-file",
     ARIA2_INPUT_PATH,
     "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
-  ]);
+  ], {
+    stdout: "inherit",
+    stderr: "inherit",
+  });
 
   const exitCode = await process.exited;
 
   if (exitCode !== 0) {
-    const stderr = await new Response(process.stderr).text();
-    throw new Error(`aria2c batch failed: ${stderr.trim()}`);
+    throw new Error(`aria2c batch failed with exit code ${exitCode}`);
   }
+
+  console.log("[download] aria2c batch finished");
 };
 
 const downloadAllMemberAvatars = async (providers: AvatarProvider[]) => {
