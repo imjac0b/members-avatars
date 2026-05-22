@@ -145,6 +145,16 @@ const slugifyGroupName = (value: string) => {
   return slug || "unnamed-group";
 };
 
+const isMostlyAscii = (value: string) => /^[\x00-\x7F]+$/.test(value);
+
+const pickEnglishLikeName = (...values: Array<string | undefined>) => {
+  const normalized = values
+    .map((value) => value?.trim())
+    .filter((value): value is string => Boolean(value));
+
+  return normalized.find(isMostlyAscii) ?? normalized[0];
+};
+
 const removeWeverseTypeParam = (url: string) => {
   const parsedUrl = new URL(url);
   parsedUrl.searchParams.delete("type");
@@ -563,7 +573,7 @@ const getFansGroupAvatars = async (
 
   const avatars = artists
     .map((artist) => {
-      const memberName = artist.name?.trim() || artist.nickname?.trim();
+      const memberName = pickEnglishLikeName(artist.name, artist.nickname);
       const imageUrl = artist.profileImage?.thumbnailUrl?.trim();
 
       if (!memberName || !imageUrl) {
