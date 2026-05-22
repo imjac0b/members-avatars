@@ -599,8 +599,16 @@ const fansProvider: AvatarProvider = {
 
 const buildCatalog = (avatars: AvatarDownload[]): GroupCatalog[] => {
   const groups = new Map<string, GroupCatalog>();
+  const sortedAvatars = [...avatars].sort((a, b) => {
+    const groupComparison = a.groupName.localeCompare(b.groupName);
+    if (groupComparison !== 0) {
+      return groupComparison;
+    }
 
-  for (const avatar of avatars) {
+    return a.memberName.localeCompare(b.memberName);
+  });
+
+  for (const avatar of sortedAvatars) {
     const groupSlug = slugifyGroupName(avatar.groupName);
     const memberSlug = slugifyMemberName(avatar.memberName);
     const existingGroup = groups.get(groupSlug);
