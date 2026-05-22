@@ -52,9 +52,9 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| jangwooyoung | <img src="https://members-avatar.jacob.com.hk/2pm/jangwooyoung.jpeg" alt="jangwooyoung" loading="lazy" width="100"> | `2pm/jangwooyoung.jpeg` |
-| jun-k | <img src="https://members-avatar.jacob.com.hk/2pm/jun-k.jpeg" alt="jun-k" loading="lazy" width="100"> | `2pm/jun-k.jpeg` |
-| nichkhun | <img src="https://members-avatar.jacob.com.hk/2pm/nichkhun.jpeg" alt="nichkhun" loading="lazy" width="100"> | `2pm/nichkhun.jpeg` |
+| Jang Wooyoung | <img src="https://members-avatar.jacob.com.hk/2pm/jang-wooyoung.jpeg" alt="Jang Wooyoung" loading="lazy" width="100"> | `2pm/jang-wooyoung.jpeg` |
+| JUN. K | <img src="https://members-avatar.jacob.com.hk/2pm/jun-k.jpeg" alt="JUN. K" loading="lazy" width="100"> | `2pm/jun-k.jpeg` |
+| NICHKHUN | <img src="https://members-avatar.jacob.com.hk/2pm/nichkhun.jpeg" alt="NICHKHUN" loading="lazy" width="100"> | `2pm/nichkhun.jpeg` |
 ## 3YE
 
 | Member | Avatar | Path |
@@ -511,10 +511,10 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| dowoon | <img src="https://members-avatar.jacob.com.hk/day6/dowoon.jpeg" alt="dowoon" loading="lazy" width="100"> | `day6/dowoon.jpeg` |
-| sungjin | <img src="https://members-avatar.jacob.com.hk/day6/sungjin.jpeg" alt="sungjin" loading="lazy" width="100"> | `day6/sungjin.jpeg` |
-| wonpil | <img src="https://members-avatar.jacob.com.hk/day6/wonpil.jpeg" alt="wonpil" loading="lazy" width="100"> | `day6/wonpil.jpeg` |
-| youngk | <img src="https://members-avatar.jacob.com.hk/day6/youngk.jpeg" alt="youngk" loading="lazy" width="100"> | `day6/youngk.jpeg` |
+| DOWOON | <img src="https://members-avatar.jacob.com.hk/day6/dowoon.jpeg" alt="DOWOON" loading="lazy" width="100"> | `day6/dowoon.jpeg` |
+| SUNGJIN | <img src="https://members-avatar.jacob.com.hk/day6/sungjin.jpeg" alt="SUNGJIN" loading="lazy" width="100"> | `day6/sungjin.jpeg` |
+| WONPIL | <img src="https://members-avatar.jacob.com.hk/day6/wonpil.jpeg" alt="WONPIL" loading="lazy" width="100"> | `day6/wonpil.jpeg` |
+| Young K | <img src="https://members-avatar.jacob.com.hk/day6/young-k.jpeg" alt="Young K" loading="lazy" width="100"> | `day6/young-k.jpeg` |
 ## DAZBEE
 
 | Member | Avatar | Path |
@@ -544,8 +544,8 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| Leesonghyun | <img src="https://members-avatar.jacob.com.hk/dodree/leesonghyun.jpeg" alt="Leesonghyun" loading="lazy" width="100"> | `dodree/leesonghyun.jpeg` |
-| Nayeongjoo | <img src="https://members-avatar.jacob.com.hk/dodree/nayeongjoo.jpeg" alt="Nayeongjoo" loading="lazy" width="100"> | `dodree/nayeongjoo.jpeg` |
+| Lee Songhyun | <img src="https://members-avatar.jacob.com.hk/dodree/lee-songhyun.jpeg" alt="Lee Songhyun" loading="lazy" width="100"> | `dodree/lee-songhyun.jpeg` |
+| Na Yeongjoo | <img src="https://members-avatar.jacob.com.hk/dodree/na-yeongjoo.jpeg" alt="Na Yeongjoo" loading="lazy" width="100"> | `dodree/na-yeongjoo.jpeg` |
 ## Dragon Pony
 
 | Member | Avatar | Path |
@@ -848,7 +848,7 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| jypark | <img src="https://members-avatar.jacob.com.hk/j-y-park/jypark.jpeg" alt="jypark" loading="lazy" width="100"> | `j-y-park/jypark.jpeg` |
+| J.Y. Park | <img src="https://members-avatar.jacob.com.hk/j-y-park/j-y-park.jpeg" alt="J.Y. Park" loading="lazy" width="100"> | `j-y-park/j-y-park.jpeg` |
 ## JANG KI YONG
 
 | Member | Avatar | Path |
@@ -858,7 +858,7 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| jangwooyoung_1 | <img src="https://members-avatar.jacob.com.hk/jang-wooyoung/jangwooyoung-1.jpeg" alt="jangwooyoung_1" loading="lazy" width="100"> | `jang-wooyoung/jangwooyoung-1.jpeg` |
+| Jang Wooyoung | <img src="https://members-avatar.jacob.com.hk/jang-wooyoung/jang-wooyoung.jpeg" alt="Jang Wooyoung" loading="lazy" width="100"> | `jang-wooyoung/jang-wooyoung.jpeg` |
 ## JD1
 
 | Member | Avatar | Path |
@@ -888,7 +888,7 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| jun_k_1 | <img src="https://members-avatar.jacob.com.hk/jun-k/jun-k-1.jpeg" alt="jun_k_1" loading="lazy" width="100"> | `jun-k/jun-k-1.jpeg` |
+| JUN. K | <img src="https://members-avatar.jacob.com.hk/jun-k/jun-k.jpeg" alt="JUN. K" loading="lazy" width="100"> | `jun-k/jun-k.jpeg` |
 ## Jung Seung Hwan
 
 | Member | Avatar | Path |
@@ -1286,18 +1286,18 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| haru | <img src="https://members-avatar.jacob.com.hk/nexz/haru.jpeg" alt="haru" loading="lazy" width="100"> | `nexz/haru.jpeg` |
-| hyui | <img src="https://members-avatar.jacob.com.hk/nexz/hyui.jpeg" alt="hyui" loading="lazy" width="100"> | `nexz/hyui.jpeg` |
-| seita | <img src="https://members-avatar.jacob.com.hk/nexz/seita.jpeg" alt="seita" loading="lazy" width="100"> | `nexz/seita.jpeg` |
-| so_geon | <img src="https://members-avatar.jacob.com.hk/nexz/so-geon.jpeg" alt="so_geon" loading="lazy" width="100"> | `nexz/so-geon.jpeg` |
-| tomoya | <img src="https://members-avatar.jacob.com.hk/nexz/tomoya.jpeg" alt="tomoya" loading="lazy" width="100"> | `nexz/tomoya.jpeg` |
-| yu | <img src="https://members-avatar.jacob.com.hk/nexz/yu.jpeg" alt="yu" loading="lazy" width="100"> | `nexz/yu.jpeg` |
-| yuki | <img src="https://members-avatar.jacob.com.hk/nexz/yuki.jpeg" alt="yuki" loading="lazy" width="100"> | `nexz/yuki.jpeg` |
+| HARU | <img src="https://members-avatar.jacob.com.hk/nexz/haru.jpeg" alt="HARU" loading="lazy" width="100"> | `nexz/haru.jpeg` |
+| HYUI | <img src="https://members-avatar.jacob.com.hk/nexz/hyui.jpeg" alt="HYUI" loading="lazy" width="100"> | `nexz/hyui.jpeg` |
+| SEITA | <img src="https://members-avatar.jacob.com.hk/nexz/seita.jpeg" alt="SEITA" loading="lazy" width="100"> | `nexz/seita.jpeg` |
+| SO GEON | <img src="https://members-avatar.jacob.com.hk/nexz/so-geon.jpeg" alt="SO GEON" loading="lazy" width="100"> | `nexz/so-geon.jpeg` |
+| TOMOYA | <img src="https://members-avatar.jacob.com.hk/nexz/tomoya.jpeg" alt="TOMOYA" loading="lazy" width="100"> | `nexz/tomoya.jpeg` |
+| YU | <img src="https://members-avatar.jacob.com.hk/nexz/yu.jpeg" alt="YU" loading="lazy" width="100"> | `nexz/yu.jpeg` |
+| YUKI | <img src="https://members-avatar.jacob.com.hk/nexz/yuki.jpeg" alt="YUKI" loading="lazy" width="100"> | `nexz/yuki.jpeg` |
 ## NICHKHUN
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| nichkhun_1 | <img src="https://members-avatar.jacob.com.hk/nichkhun/nichkhun-1.jpeg" alt="nichkhun_1" loading="lazy" width="100"> | `nichkhun/nichkhun-1.jpeg` |
+| NICHKHUN | <img src="https://members-avatar.jacob.com.hk/nichkhun/nichkhun.jpeg" alt="NICHKHUN" loading="lazy" width="100"> | `nichkhun/nichkhun.jpeg` |
 ## nightly
 
 | Member | Avatar | Path |
@@ -1309,25 +1309,25 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| ayaka | <img src="https://members-avatar.jacob.com.hk/niziu/ayaka.jpeg" alt="ayaka" loading="lazy" width="100"> | `niziu/ayaka.jpeg` |
-| mako | <img src="https://members-avatar.jacob.com.hk/niziu/mako.jpeg" alt="mako" loading="lazy" width="100"> | `niziu/mako.jpeg` |
-| maya | <img src="https://members-avatar.jacob.com.hk/niziu/maya.jpeg" alt="maya" loading="lazy" width="100"> | `niziu/maya.jpeg` |
-| mayuka | <img src="https://members-avatar.jacob.com.hk/niziu/mayuka.jpeg" alt="mayuka" loading="lazy" width="100"> | `niziu/mayuka.jpeg` |
-| miihi | <img src="https://members-avatar.jacob.com.hk/niziu/miihi.jpeg" alt="miihi" loading="lazy" width="100"> | `niziu/miihi.jpeg` |
-| nina | <img src="https://members-avatar.jacob.com.hk/niziu/nina.jpeg" alt="nina" loading="lazy" width="100"> | `niziu/nina.jpeg` |
-| riku | <img src="https://members-avatar.jacob.com.hk/niziu/riku.jpeg" alt="riku" loading="lazy" width="100"> | `niziu/riku.jpeg` |
-| rima | <img src="https://members-avatar.jacob.com.hk/niziu/rima.jpeg" alt="rima" loading="lazy" width="100"> | `niziu/rima.jpeg` |
-| rio | <img src="https://members-avatar.jacob.com.hk/niziu/rio.jpeg" alt="rio" loading="lazy" width="100"> | `niziu/rio.jpeg` |
+| AYAKA | <img src="https://members-avatar.jacob.com.hk/niziu/ayaka.jpeg" alt="AYAKA" loading="lazy" width="100"> | `niziu/ayaka.jpeg` |
+| MAKO | <img src="https://members-avatar.jacob.com.hk/niziu/mako.jpeg" alt="MAKO" loading="lazy" width="100"> | `niziu/mako.jpeg` |
+| MAYA | <img src="https://members-avatar.jacob.com.hk/niziu/maya.jpeg" alt="MAYA" loading="lazy" width="100"> | `niziu/maya.jpeg` |
+| MAYUKA | <img src="https://members-avatar.jacob.com.hk/niziu/mayuka.jpeg" alt="MAYUKA" loading="lazy" width="100"> | `niziu/mayuka.jpeg` |
+| MIIHI | <img src="https://members-avatar.jacob.com.hk/niziu/miihi.jpeg" alt="MIIHI" loading="lazy" width="100"> | `niziu/miihi.jpeg` |
+| NINA | <img src="https://members-avatar.jacob.com.hk/niziu/nina.jpeg" alt="NINA" loading="lazy" width="100"> | `niziu/nina.jpeg` |
+| RIKU | <img src="https://members-avatar.jacob.com.hk/niziu/riku.jpeg" alt="RIKU" loading="lazy" width="100"> | `niziu/riku.jpeg` |
+| RIMA | <img src="https://members-avatar.jacob.com.hk/niziu/rima.jpeg" alt="RIMA" loading="lazy" width="100"> | `niziu/rima.jpeg` |
+| RIO | <img src="https://members-avatar.jacob.com.hk/niziu/rio.jpeg" alt="RIO" loading="lazy" width="100"> | `niziu/rio.jpeg` |
 ## NMIXX
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| bae | <img src="https://members-avatar.jacob.com.hk/nmixx/bae.jpeg" alt="bae" loading="lazy" width="100"> | `nmixx/bae.jpeg` |
-| haewon | <img src="https://members-avatar.jacob.com.hk/nmixx/haewon.jpeg" alt="haewon" loading="lazy" width="100"> | `nmixx/haewon.jpeg` |
-| jiwoo | <img src="https://members-avatar.jacob.com.hk/nmixx/jiwoo.jpeg" alt="jiwoo" loading="lazy" width="100"> | `nmixx/jiwoo.jpeg` |
-| kyujin | <img src="https://members-avatar.jacob.com.hk/nmixx/kyujin.jpeg" alt="kyujin" loading="lazy" width="100"> | `nmixx/kyujin.jpeg` |
-| lily | <img src="https://members-avatar.jacob.com.hk/nmixx/lily.jpeg" alt="lily" loading="lazy" width="100"> | `nmixx/lily.jpeg` |
-| sullyoon | <img src="https://members-avatar.jacob.com.hk/nmixx/sullyoon.jpeg" alt="sullyoon" loading="lazy" width="100"> | `nmixx/sullyoon.jpeg` |
+| HAEWON | <img src="https://members-avatar.jacob.com.hk/nmixx/haewon.jpeg" alt="HAEWON" loading="lazy" width="100"> | `nmixx/haewon.jpeg` |
+| JIWOO | <img src="https://members-avatar.jacob.com.hk/nmixx/jiwoo.jpeg" alt="JIWOO" loading="lazy" width="100"> | `nmixx/jiwoo.jpeg` |
+| KYUJIN | <img src="https://members-avatar.jacob.com.hk/nmixx/kyujin.jpeg" alt="KYUJIN" loading="lazy" width="100"> | `nmixx/kyujin.jpeg` |
+| Lily | <img src="https://members-avatar.jacob.com.hk/nmixx/lily.jpeg" alt="Lily" loading="lazy" width="100"> | `nmixx/lily.jpeg` |
+| 배이 | <img src="https://members-avatar.jacob.com.hk/nmixx/배이.jpeg" alt="배이" loading="lazy" width="100"> | `nmixx/배이.jpeg` |
+| 설윤 | <img src="https://members-avatar.jacob.com.hk/nmixx/설윤.jpeg" alt="설윤" loading="lazy" width="100"> | `nmixx/설윤.jpeg` |
 ## NOA
 
 | Member | Avatar | Path |
@@ -1427,7 +1427,7 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| parkyoonho | <img src="https://members-avatar.jacob.com.hk/park-yoonho/parkyoonho.jpeg" alt="parkyoonho" loading="lazy" width="100"> | `park-yoonho/parkyoonho.jpeg` |
+| PARK YOONHO | <img src="https://members-avatar.jacob.com.hk/park-yoonho/park-yoonho.jpeg" alt="PARK YOONHO" loading="lazy" width="100"> | `park-yoonho/park-yoonho.jpeg` |
 ## PEAK SPOT
 
 | Member | Avatar | Path |
@@ -1674,13 +1674,13 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| BangChan | <img src="https://members-avatar.jacob.com.hk/stray-kids/bangchan.jpeg" alt="BangChan" loading="lazy" width="100"> | `stray-kids/bangchan.jpeg` |
-| Changbin | <img src="https://members-avatar.jacob.com.hk/stray-kids/changbin.jpeg" alt="Changbin" loading="lazy" width="100"> | `stray-kids/changbin.jpeg` |
-| Felix | <img src="https://members-avatar.jacob.com.hk/stray-kids/felix.jpeg" alt="Felix" loading="lazy" width="100"> | `stray-kids/felix.jpeg` |
+| BANG CHAN | <img src="https://members-avatar.jacob.com.hk/stray-kids/bang-chan.jpeg" alt="BANG CHAN" loading="lazy" width="100"> | `stray-kids/bang-chan.jpeg` |
+| CHANGBIN | <img src="https://members-avatar.jacob.com.hk/stray-kids/changbin.jpeg" alt="CHANGBIN" loading="lazy" width="100"> | `stray-kids/changbin.jpeg` |
+| FELIX | <img src="https://members-avatar.jacob.com.hk/stray-kids/felix.jpeg" alt="FELIX" loading="lazy" width="100"> | `stray-kids/felix.jpeg` |
 | HAN | <img src="https://members-avatar.jacob.com.hk/stray-kids/han.jpeg" alt="HAN" loading="lazy" width="100"> | `stray-kids/han.jpeg` |
-| Hyunjin | <img src="https://members-avatar.jacob.com.hk/stray-kids/hyunjin.jpeg" alt="Hyunjin" loading="lazy" width="100"> | `stray-kids/hyunjin.jpeg` |
-| I_N | <img src="https://members-avatar.jacob.com.hk/stray-kids/i-n.jpeg" alt="I_N" loading="lazy" width="100"> | `stray-kids/i-n.jpeg` |
-| LeeKnow | <img src="https://members-avatar.jacob.com.hk/stray-kids/leeknow.jpeg" alt="LeeKnow" loading="lazy" width="100"> | `stray-kids/leeknow.jpeg` |
+| HYUNJIN | <img src="https://members-avatar.jacob.com.hk/stray-kids/hyunjin.jpeg" alt="HYUNJIN" loading="lazy" width="100"> | `stray-kids/hyunjin.jpeg` |
+| I.N | <img src="https://members-avatar.jacob.com.hk/stray-kids/i-n.jpeg" alt="I.N" loading="lazy" width="100"> | `stray-kids/i-n.jpeg` |
+| LEE KNOW | <img src="https://members-avatar.jacob.com.hk/stray-kids/lee-know.jpeg" alt="LEE KNOW" loading="lazy" width="100"> | `stray-kids/lee-know.jpeg` |
 ## SUNMI
 
 | Member | Avatar | Path |
@@ -1822,15 +1822,15 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| chaeyoung | <img src="https://members-avatar.jacob.com.hk/twice/chaeyoung.jpeg" alt="chaeyoung" loading="lazy" width="100"> | `twice/chaeyoung.jpeg` |
-| dahyun | <img src="https://members-avatar.jacob.com.hk/twice/dahyun.jpeg" alt="dahyun" loading="lazy" width="100"> | `twice/dahyun.jpeg` |
-| jeongyeon | <img src="https://members-avatar.jacob.com.hk/twice/jeongyeon.jpeg" alt="jeongyeon" loading="lazy" width="100"> | `twice/jeongyeon.jpeg` |
-| jihyo | <img src="https://members-avatar.jacob.com.hk/twice/jihyo.jpeg" alt="jihyo" loading="lazy" width="100"> | `twice/jihyo.jpeg` |
-| mina | <img src="https://members-avatar.jacob.com.hk/twice/mina.jpeg" alt="mina" loading="lazy" width="100"> | `twice/mina.jpeg` |
-| momo | <img src="https://members-avatar.jacob.com.hk/twice/momo.jpeg" alt="momo" loading="lazy" width="100"> | `twice/momo.jpeg` |
-| nayeon | <img src="https://members-avatar.jacob.com.hk/twice/nayeon.jpeg" alt="nayeon" loading="lazy" width="100"> | `twice/nayeon.jpeg` |
-| sana | <img src="https://members-avatar.jacob.com.hk/twice/sana.jpeg" alt="sana" loading="lazy" width="100"> | `twice/sana.jpeg` |
-| tzuyu | <img src="https://members-avatar.jacob.com.hk/twice/tzuyu.jpeg" alt="tzuyu" loading="lazy" width="100"> | `twice/tzuyu.jpeg` |
+| CHAEYOUNG | <img src="https://members-avatar.jacob.com.hk/twice/chaeyoung.jpeg" alt="CHAEYOUNG" loading="lazy" width="100"> | `twice/chaeyoung.jpeg` |
+| DAHYUN | <img src="https://members-avatar.jacob.com.hk/twice/dahyun.jpeg" alt="DAHYUN" loading="lazy" width="100"> | `twice/dahyun.jpeg` |
+| JEONGYEON | <img src="https://members-avatar.jacob.com.hk/twice/jeongyeon.jpeg" alt="JEONGYEON" loading="lazy" width="100"> | `twice/jeongyeon.jpeg` |
+| JIHYO | <img src="https://members-avatar.jacob.com.hk/twice/jihyo.jpeg" alt="JIHYO" loading="lazy" width="100"> | `twice/jihyo.jpeg` |
+| MINA | <img src="https://members-avatar.jacob.com.hk/twice/mina.jpeg" alt="MINA" loading="lazy" width="100"> | `twice/mina.jpeg` |
+| MOMO | <img src="https://members-avatar.jacob.com.hk/twice/momo.jpeg" alt="MOMO" loading="lazy" width="100"> | `twice/momo.jpeg` |
+| NAYEON | <img src="https://members-avatar.jacob.com.hk/twice/nayeon.jpeg" alt="NAYEON" loading="lazy" width="100"> | `twice/nayeon.jpeg` |
+| SANA | <img src="https://members-avatar.jacob.com.hk/twice/sana.jpeg" alt="SANA" loading="lazy" width="100"> | `twice/sana.jpeg` |
+| TZUYU | <img src="https://members-avatar.jacob.com.hk/twice/tzuyu.jpeg" alt="TZUYU" loading="lazy" width="100"> | `twice/tzuyu.jpeg` |
 ## TWS
 
 | Member | Avatar | Path |
@@ -2020,12 +2020,12 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| gaon | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/gaon.jpeg" alt="gaon" loading="lazy" width="100"> | `xdinary-heroes/gaon.jpeg` |
-| gunil | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/gunil.jpeg" alt="gunil" loading="lazy" width="100"> | `xdinary-heroes/gunil.jpeg` |
-| jooyeon | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/jooyeon.jpeg" alt="jooyeon" loading="lazy" width="100"> | `xdinary-heroes/jooyeon.jpeg` |
-| jungsu | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/jungsu.jpeg" alt="jungsu" loading="lazy" width="100"> | `xdinary-heroes/jungsu.jpeg` |
-| junhan | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/junhan.jpeg" alt="junhan" loading="lazy" width="100"> | `xdinary-heroes/junhan.jpeg` |
-| ode | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/ode.jpeg" alt="ode" loading="lazy" width="100"> | `xdinary-heroes/ode.jpeg` |
+| Jun Han | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/jun-han.jpeg" alt="Jun Han" loading="lazy" width="100"> | `xdinary-heroes/jun-han.jpeg` |
+| O.de | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/o-de.jpeg" alt="O.de" loading="lazy" width="100"> | `xdinary-heroes/o-de.jpeg` |
+| 가온 | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/가온.jpeg" alt="가온" loading="lazy" width="100"> | `xdinary-heroes/가온.jpeg` |
+| 건일 | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/건일.jpeg" alt="건일" loading="lazy" width="100"> | `xdinary-heroes/건일.jpeg` |
+| 정수 | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/정수.jpeg" alt="정수" loading="lazy" width="100"> | `xdinary-heroes/정수.jpeg` |
+| 주연 | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/주연.jpeg" alt="주연" loading="lazy" width="100"> | `xdinary-heroes/주연.jpeg` |
 ## XIUMIN
 
 | Member | Avatar | Path |
