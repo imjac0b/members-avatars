@@ -64,15 +64,36 @@ const WEVERSE_COMMON_QUERY = {
   wpf: "pc",
 };
 
-const slugify = (value: string) =>
-  value
+const slugifyMemberName = (value: string) => {
+  const slug = value
+    .normalize("NFKC")
+    .toLowerCase()
+    .trim()
+    .replace(/['"]/g, "")
+    .replace(/[./\\]+/g, "-")
+    .replace(/\s+/g, "-")
+    .replace(/[^\p{L}\p{N}-]+/gu, "-")
+    .replace(/-{2,}/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+  return slug || "unnamed";
+};
+
+const slugifyGroupName = (value: string) => {
+  const slug = value
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .trim()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .replace(/-{2,}/g, "-");
+    .replace(/['"]/g, "")
+    .replace(/[./\\]+/g, "-")
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9-]+/g, "-")
+    .replace(/-{2,}/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+  return slug || "unnamed-group";
+};
 
 const removeWeverseTypeParam = (url: string) => {
   const parsedUrl = new URL(url);
@@ -179,7 +200,7 @@ const getWeverseCommunityAvatars = async (
   );
 
   const profiles = introCard?.data?.artistProfiles ?? [];
-  const groupSlug = slugify(community.communityName);
+  const groupSlug = slugifyGroupName(community.communityName);
 
   const avatars = profiles
     .map((profile) => {
@@ -190,7 +211,7 @@ const getWeverseCommunityAvatars = async (
         return null;
       }
 
-      const memberSlug = slugify(memberName);
+      const memberSlug = slugifyMemberName(memberName);
 
       return {
         groupName: community.communityName,
@@ -224,8 +245,8 @@ const buildCatalog = (avatars: AvatarDownload[]): GroupCatalog[] => {
   const groups = new Map<string, GroupCatalog>();
 
   for (const avatar of avatars) {
-    const groupSlug = slugify(avatar.groupName);
-    const memberSlug = slugify(avatar.memberName);
+    const groupSlug = slugifyGroupName(avatar.groupName);
+    const memberSlug = slugifyMemberName(avatar.memberName);
     const existingGroup = groups.get(groupSlug);
 
     if (!existingGroup) {
@@ -343,7 +364,7 @@ const downloadAllMemberAvatars = async (providers: AvatarProvider[]) => {
   const uniqueAvatars = new Map<string, AvatarDownload>();
 
   for (const avatar of avatarLists.flat()) {
-    const key = `${slugify(avatar.groupName)}/${slugify(avatar.memberName)}`;
+    const key = `${slugifyGroupName(avatar.groupName)}/${slugifyMemberName(avatar.memberName)}`;
     uniqueAvatars.set(key, avatar);
   }
 
