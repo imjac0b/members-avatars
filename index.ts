@@ -101,7 +101,7 @@ const FANS_GRAPHQL_URL = "https://api.app.fans/graphql";
 const README_PLACEHOLDER = "<!-- GENERATED_MEMBERS_AVATARS -->";
 const README_TEMPLATE_PATH = "README.template.md";
 const README_OUTPUT_PATH = "README.md";
-const GROUPS_JSON_PATH = "groups.json";
+const GROUPS_JSON_PATH = "avatars/groups.json";
 const ARIA2_INPUT_PATH = "avatars.aria2c.txt";
 const PUBLIC_BASE_URL = (
   process.env.PUBLIC_BASE_URL ?? "https://members-avatar.jacob.com.hk"
