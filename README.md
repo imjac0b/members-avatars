@@ -1322,12 +1322,12 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
+| bae | <img src="https://members-avatar.jacob.com.hk/nmixx/bae.jpeg" alt="bae" loading="lazy" width="100"> | `nmixx/bae.jpeg` |
 | HAEWON | <img src="https://members-avatar.jacob.com.hk/nmixx/haewon.jpeg" alt="HAEWON" loading="lazy" width="100"> | `nmixx/haewon.jpeg` |
 | JIWOO | <img src="https://members-avatar.jacob.com.hk/nmixx/jiwoo.jpeg" alt="JIWOO" loading="lazy" width="100"> | `nmixx/jiwoo.jpeg` |
 | KYUJIN | <img src="https://members-avatar.jacob.com.hk/nmixx/kyujin.jpeg" alt="KYUJIN" loading="lazy" width="100"> | `nmixx/kyujin.jpeg` |
 | Lily | <img src="https://members-avatar.jacob.com.hk/nmixx/lily.jpeg" alt="Lily" loading="lazy" width="100"> | `nmixx/lily.jpeg` |
-| 배이 | <img src="https://members-avatar.jacob.com.hk/nmixx/배이.jpeg" alt="배이" loading="lazy" width="100"> | `nmixx/배이.jpeg` |
-| 설윤 | <img src="https://members-avatar.jacob.com.hk/nmixx/설윤.jpeg" alt="설윤" loading="lazy" width="100"> | `nmixx/설윤.jpeg` |
+| sullyoon | <img src="https://members-avatar.jacob.com.hk/nmixx/sullyoon.jpeg" alt="sullyoon" loading="lazy" width="100"> | `nmixx/sullyoon.jpeg` |
 ## NOA
 
 | Member | Avatar | Path |
@@ -2020,12 +2020,12 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
+| gaon | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/gaon.jpeg" alt="gaon" loading="lazy" width="100"> | `xdinary-heroes/gaon.jpeg` |
+| gunil | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/gunil.jpeg" alt="gunil" loading="lazy" width="100"> | `xdinary-heroes/gunil.jpeg` |
+| jooyeon | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/jooyeon.jpeg" alt="jooyeon" loading="lazy" width="100"> | `xdinary-heroes/jooyeon.jpeg` |
 | Jun Han | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/jun-han.jpeg" alt="Jun Han" loading="lazy" width="100"> | `xdinary-heroes/jun-han.jpeg` |
+| jungsu | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/jungsu.jpeg" alt="jungsu" loading="lazy" width="100"> | `xdinary-heroes/jungsu.jpeg` |
 | O.de | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/o-de.jpeg" alt="O.de" loading="lazy" width="100"> | `xdinary-heroes/o-de.jpeg` |
-| 가온 | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/가온.jpeg" alt="가온" loading="lazy" width="100"> | `xdinary-heroes/가온.jpeg` |
-| 건일 | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/건일.jpeg" alt="건일" loading="lazy" width="100"> | `xdinary-heroes/건일.jpeg` |
-| 정수 | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/정수.jpeg" alt="정수" loading="lazy" width="100"> | `xdinary-heroes/정수.jpeg` |
-| 주연 | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/주연.jpeg" alt="주연" loading="lazy" width="100"> | `xdinary-heroes/주연.jpeg` |
 ## XIUMIN
 
 | Member | Avatar | Path |
