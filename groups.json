@@ -1,0 +1,1026 @@
+[
+  {
+    "id": "team",
+    "name": "&TEAM"
+  },
+  {
+    "id": "10cm",
+    "name": "10CM"
+  },
+  {
+    "id": "2hollis",
+    "name": "2hollis"
+  },
+  {
+    "id": "2pm",
+    "name": "2PM"
+  },
+  {
+    "id": "3ye",
+    "name": "3YE"
+  },
+  {
+    "id": "82major",
+    "name": "82MAJOR"
+  },
+  {
+    "id": "8turn",
+    "name": "8TURN"
+  },
+  {
+    "id": "aespa",
+    "name": "aespa"
+  },
+  {
+    "id": "ahn-bo-hyun",
+    "name": "AHN BO HYUN"
+  },
+  {
+    "id": "ahn-hyo-seop",
+    "name": "AHN HYO SEOP"
+  },
+  {
+    "id": "ahof",
+    "name": "AHOF"
+  },
+  {
+    "id": "akb48",
+    "name": "AKB48"
+  },
+  {
+    "id": "akmu",
+    "name": "AKMU"
+  },
+  {
+    "id": "alexander-23",
+    "name": "Alexander 23"
+  },
+  {
+    "id": "ampers-one",
+    "name": "AMPERS&ONE"
+  },
+  {
+    "id": "and2ble",
+    "name": "AND2BLE"
+  },
+  {
+    "id": "aoen",
+    "name": "aoen"
+  },
+  {
+    "id": "apink",
+    "name": "Apink"
+  },
+  {
+    "id": "ariana-grande",
+    "name": "Ariana Grande"
+  },
+  {
+    "id": "arin",
+    "name": "ARIN"
+  },
+  {
+    "id": "arrc",
+    "name": "ARrC"
+  },
+  {
+    "id": "atbo",
+    "name": "ATBO"
+  },
+  {
+    "id": "b-dawn",
+    "name": "B:DAWN"
+  },
+  {
+    "id": "b-i-g",
+    "name": "B.I.G"
+  },
+  {
+    "id": "b1a4",
+    "name": "B1A4"
+  },
+  {
+    "id": "baby-dont-cry",
+    "name": "Baby DONT Cry"
+  },
+  {
+    "id": "babymonster",
+    "name": "BABYMONSTER"
+  },
+  {
+    "id": "baekho-kang-dong-ho",
+    "name": "BAEKHO(KANG DONG HO)"
+  },
+  {
+    "id": "baekhyun",
+    "name": "BAEKHYUN"
+  },
+  {
+    "id": "bambam",
+    "name": "BamBam"
+  },
+  {
+    "id": "bang-yedam",
+    "name": "BANG YEDAM"
+  },
+  {
+    "id": "bibi",
+    "name": "BIBI"
+  },
+  {
+    "id": "billlie",
+    "name": "Billlie"
+  },
+  {
+    "id": "bini",
+    "name": "BINI"
+  },
+  {
+    "id": "blackpink",
+    "name": "BLACKPINK"
+  },
+  {
+    "id": "blitzers",
+    "name": "BLITZERS"
+  },
+  {
+    "id": "boynextdoor",
+    "name": "BOYNEXTDOOR"
+  },
+  {
+    "id": "btob",
+    "name": "BTOB"
+  },
+  {
+    "id": "bts",
+    "name": "BTS"
+  },
+  {
+    "id": "bullet-train",
+    "name": "BULLET TRAIN"
+  },
+  {
+    "id": "byeon-woo-seok",
+    "name": "BYEON WOO SEOK"
+  },
+  {
+    "id": "chanmina",
+    "name": "CHANMINA"
+  },
+  {
+    "id": "chen",
+    "name": "CHEN"
+  },
+  {
+    "id": "choi-soo-ho",
+    "name": "CHOI SOO HO"
+  },
+  {
+    "id": "choi-yu-ree",
+    "name": "Choi Yu Ree"
+  },
+  {
+    "id": "christopher",
+    "name": "Christopher"
+  },
+  {
+    "id": "chuu",
+    "name": "CHUU"
+  },
+  {
+    "id": "class-y",
+    "name": "CLASS:y"
+  },
+  {
+    "id": "close-your-eyes",
+    "name": "CLOSE YOUR EYES"
+  },
+  {
+    "id": "cnblue",
+    "name": "CNBLUE"
+  },
+  {
+    "id": "conan-gray",
+    "name": "Conan Gray"
+  },
+  {
+    "id": "cortis",
+    "name": "CORTIS"
+  },
+  {
+    "id": "cravity",
+    "name": "CRAVITY"
+  },
+  {
+    "id": "crystal-kay",
+    "name": "Crystal Kay"
+  },
+  {
+    "id": "daily-direction",
+    "name": "DAILY:DIRECTION"
+  },
+  {
+    "id": "day6",
+    "name": "DAY6"
+  },
+  {
+    "id": "dazbee",
+    "name": "DAZBEE"
+  },
+  {
+    "id": "dearalice",
+    "name": "dearALICE"
+  },
+  {
+    "id": "destino",
+    "name": "Destino"
+  },
+  {
+    "id": "dodree",
+    "name": "dodree (도드리)"
+  },
+  {
+    "id": "dragon-pony",
+    "name": "Dragon Pony"
+  },
+  {
+    "id": "dreamcatcher",
+    "name": "Dreamcatcher"
+  },
+  {
+    "id": "drippin",
+    "name": "DRIPPIN"
+  },
+  {
+    "id": "dua-lipa",
+    "name": "Dua Lipa"
+  },
+  {
+    "id": "dxmon",
+    "name": "DXMON"
+  },
+  {
+    "id": "elast",
+    "name": "E'LAST"
+  },
+  {
+    "id": "eill",
+    "name": "eill"
+  },
+  {
+    "id": "enhypen",
+    "name": "ENHYPEN"
+  },
+  {
+    "id": "evan",
+    "name": "EVAN"
+  },
+  {
+    "id": "everglow",
+    "name": "EVERGLOW"
+  },
+  {
+    "id": "exo",
+    "name": "EXO"
+  },
+  {
+    "id": "fifth-harmony",
+    "name": "Fifth Harmony"
+  },
+  {
+    "id": "fifty-fifty",
+    "name": "FIFTY FIFTY"
+  },
+  {
+    "id": "fromis-9",
+    "name": "fromis_9"
+  },
+  {
+    "id": "ftisland",
+    "name": "FTISLAND"
+  },
+  {
+    "id": "gfriend",
+    "name": "GFRIEND"
+  },
+  {
+    "id": "girls-on-fire",
+    "name": "GIRLS ON FIRE"
+  },
+  {
+    "id": "girls-generation",
+    "name": "Girls' Generation"
+  },
+  {
+    "id": "girlset",
+    "name": "GIRLSET"
+  },
+  {
+    "id": "golden-child",
+    "name": "Golden Child"
+  },
+  {
+    "id": "gracie-abrams",
+    "name": "Gracie Abrams"
+  },
+  {
+    "id": "hearts2hearts",
+    "name": "Hearts2Hearts"
+  },
+  {
+    "id": "hebi",
+    "name": "Hebi."
+  },
+  {
+    "id": "henry",
+    "name": "HENRY"
+  },
+  {
+    "id": "hi-fi-un-corn",
+    "name": "Hi-Fi Un!corn"
+  },
+  {
+    "id": "hong-seok",
+    "name": "HONG SEOK"
+  },
+  {
+    "id": "hui",
+    "name": "HUI"
+  },
+  {
+    "id": "hwang-min-hyun",
+    "name": "HWANG MIN HYUN"
+  },
+  {
+    "id": "hyde",
+    "name": "HYDE"
+  },
+  {
+    "id": "hyeri",
+    "name": "HYERI"
+  },
+  {
+    "id": "hyolyn",
+    "name": "HYOLYN"
+  },
+  {
+    "id": "i-dle",
+    "name": "i-dle"
+  },
+  {
+    "id": "idid",
+    "name": "IDID"
+  },
+  {
+    "id": "illit",
+    "name": "ILLIT"
+  },
+  {
+    "id": "imase",
+    "name": "imase"
+  },
+  {
+    "id": "irise",
+    "name": "IRISÉ"
+  },
+  {
+    "id": "itzy",
+    "name": "ITZY"
+  },
+  {
+    "id": "iu",
+    "name": "IU"
+  },
+  {
+    "id": "ive",
+    "name": "IVE"
+  },
+  {
+    "id": "j-y-park",
+    "name": "J.Y. Park"
+  },
+  {
+    "id": "jang-ki-yong",
+    "name": "JANG KI YONG"
+  },
+  {
+    "id": "jang-wooyoung",
+    "name": "JANG WOOYOUNG"
+  },
+  {
+    "id": "jd1",
+    "name": "JD1"
+  },
+  {
+    "id": "jennie",
+    "name": "JENNIE"
+  },
+  {
+    "id": "jeong-sun-ah",
+    "name": "JEONG SUN AH"
+  },
+  {
+    "id": "jeremy-zucker",
+    "name": "Jeremy Zucker"
+  },
+  {
+    "id": "jinjin",
+    "name": "JINJIN"
+  },
+  {
+    "id": "jun-k",
+    "name": "JUN. K"
+  },
+  {
+    "id": "jung-seung-hwan",
+    "name": "Jung Seung Hwan"
+  },
+  {
+    "id": "justb",
+    "name": "JUSTB"
+  },
+  {
+    "id": "jvke",
+    "name": "JVKE"
+  },
+  {
+    "id": "kangta",
+    "name": "KANGTA"
+  },
+  {
+    "id": "katseye",
+    "name": "KATSEYE"
+  },
+  {
+    "id": "kawaii-lab",
+    "name": "KAWAII LAB."
+  },
+  {
+    "id": "kep1er",
+    "name": "Kep1er"
+  },
+  {
+    "id": "kickflip",
+    "name": "KickFlip"
+  },
+  {
+    "id": "kiiikiii",
+    "name": "KiiiKiii"
+  },
+  {
+    "id": "kim-jae-joong",
+    "name": "KIM JAE JOONG"
+  },
+  {
+    "id": "kim-jun-su",
+    "name": "KIM JUN SU"
+  },
+  {
+    "id": "kim-min-ju",
+    "name": "KIM MIN JU"
+  },
+  {
+    "id": "kim-myungsoo-l",
+    "name": "KIM MYUNGSOO(L)"
+  },
+  {
+    "id": "kim-sejeong",
+    "name": "KIM SEJEONG"
+  },
+  {
+    "id": "kim-seol-hyun",
+    "name": "KIM SEOL HYUN"
+  },
+  {
+    "id": "kim-woo-bin",
+    "name": "KIM WOO BIN"
+  },
+  {
+    "id": "kim-woojin",
+    "name": "KIM WOOJIN"
+  },
+  {
+    "id": "kino",
+    "name": "KINO"
+  },
+  {
+    "id": "kwon-eun-bi",
+    "name": "KWON EUN BI"
+  },
+  {
+    "id": "kyuhyun",
+    "name": "KYUHYUN"
+  },
+  {
+    "id": "latency",
+    "name": "LATENCY"
+  },
+  {
+    "id": "lauv",
+    "name": "Lauv"
+  },
+  {
+    "id": "le-sserafim",
+    "name": "LE SSERAFIM"
+  },
+  {
+    "id": "lee-chae-min",
+    "name": "LEE CHAE MIN"
+  },
+  {
+    "id": "lee-jin-hyuk",
+    "name": "LEE JIN HYUK"
+  },
+  {
+    "id": "lee-junho",
+    "name": "LEE JUNHO"
+  },
+  {
+    "id": "lee-soo-hyuk",
+    "name": "LEE SOO HYUK"
+  },
+  {
+    "id": "lee-sung-kyoung",
+    "name": "LEE SUNG KYOUNG"
+  },
+  {
+    "id": "letteamor",
+    "name": "Letteamor"
+  },
+  {
+    "id": "lienel",
+    "name": "Lienel"
+  },
+  {
+    "id": "lightsum",
+    "name": "LIGHTSUM"
+  },
+  {
+    "id": "lilas",
+    "name": "Lilas"
+  },
+  {
+    "id": "lngshot",
+    "name": "LNGSHOT"
+  },
+  {
+    "id": "low-clika",
+    "name": "Low Clika"
+  },
+  {
+    "id": "lun8",
+    "name": "LUN8"
+  },
+  {
+    "id": "max",
+    "name": "MAX"
+  },
+  {
+    "id": "megan-thee-stallion",
+    "name": "Megan Thee Stallion"
+  },
+  {
+    "id": "mga",
+    "name": "MGA"
+  },
+  {
+    "id": "min-jiwoon",
+    "name": "Min Jiwoon"
+  },
+  {
+    "id": "min-kyoung-ah",
+    "name": "MIN KYOUNG AH"
+  },
+  {
+    "id": "minzy",
+    "name": "MINZY"
+  },
+  {
+    "id": "mj",
+    "name": "MJ"
+  },
+  {
+    "id": "monsta-x",
+    "name": "MONSTA X"
+  },
+  {
+    "id": "mun-ka-young",
+    "name": "MUN KA YOUNG"
+  },
+  {
+    "id": "musza",
+    "name": "Musza"
+  },
+  {
+    "id": "n-ssign",
+    "name": "n.SSign"
+  },
+  {
+    "id": "nct-127",
+    "name": "NCT 127"
+  },
+  {
+    "id": "nct-dream",
+    "name": "NCT DREAM"
+  },
+  {
+    "id": "nct-wish",
+    "name": "NCT WISH"
+  },
+  {
+    "id": "new-hope-club",
+    "name": "New Hope Club"
+  },
+  {
+    "id": "newjeans",
+    "name": "NewJeans"
+  },
+  {
+    "id": "nexz",
+    "name": "NEXZ"
+  },
+  {
+    "id": "nichkhun",
+    "name": "NICHKHUN"
+  },
+  {
+    "id": "nightly",
+    "name": "nightly"
+  },
+  {
+    "id": "niziu",
+    "name": "NiziU"
+  },
+  {
+    "id": "nmixx",
+    "name": "NMIXX"
+  },
+  {
+    "id": "noa",
+    "name": "NOA"
+  },
+  {
+    "id": "nowz",
+    "name": "NOWZ"
+  },
+  {
+    "id": "nuest",
+    "name": "NU'EST"
+  },
+  {
+    "id": "oh-my-girl",
+    "name": "OH MY GIRL"
+  },
+  {
+    "id": "one-n-only",
+    "name": "ONE N' ONLY"
+  },
+  {
+    "id": "oneus",
+    "name": "ONEUS"
+  },
+  {
+    "id": "onf",
+    "name": "ONF"
+  },
+  {
+    "id": "owis",
+    "name": "OWIS"
+  },
+  {
+    "id": "p1harmony",
+    "name": "P1Harmony"
+  },
+  {
+    "id": "park-bo-young",
+    "name": "PARK BO YOUNG"
+  },
+  {
+    "id": "park-seo-ham",
+    "name": "PARK SEO HAM"
+  },
+  {
+    "id": "park-so-dam",
+    "name": "PARK SO DAM"
+  },
+  {
+    "id": "park-yoonho",
+    "name": "PARK YOONHO"
+  },
+  {
+    "id": "peak-spot",
+    "name": "PEAK SPOT"
+  },
+  {
+    "id": "peder-elias",
+    "name": "Peder Elias"
+  },
+  {
+    "id": "pentagon",
+    "name": "PENTAGON"
+  },
+  {
+    "id": "perfect-crown",
+    "name": "Perfect Crown"
+  },
+  {
+    "id": "pinggyego",
+    "name": "Pinggyego"
+  },
+  {
+    "id": "plave",
+    "name": "PLAVE"
+  },
+  {
+    "id": "prettymuch",
+    "name": "PRETTYMUCH"
+  },
+  {
+    "id": "purple-kiss",
+    "name": "PURPLE KISS"
+  },
+  {
+    "id": "qwer",
+    "name": "QWER"
+  },
+  {
+    "id": "ravi",
+    "name": "RAVI"
+  },
+  {
+    "id": "red-velvet",
+    "name": "Red Velvet"
+  },
+  {
+    "id": "riize",
+    "name": "RIIZE"
+  },
+  {
+    "id": "ro-woon",
+    "name": "RO WOON"
+  },
+  {
+    "id": "rocket-punch",
+    "name": "Rocket Punch"
+  },
+  {
+    "id": "saint-satine",
+    "name": "SAINT SATINE"
+  },
+  {
+    "id": "santos-bravos",
+    "name": "SANTOS BRAVOS"
+  },
+  {
+    "id": "say-my-name",
+    "name": "SAY MY NAME"
+  },
+  {
+    "id": "sb19",
+    "name": "SB19"
+  },
+  {
+    "id": "secret-number",
+    "name": "SECRET NUMBER"
+  },
+  {
+    "id": "seventeen",
+    "name": "SEVENTEEN"
+  },
+  {
+    "id": "shin-sae-kyeong",
+    "name": "SHIN SAE KYEONG"
+  },
+  {
+    "id": "shin-ye-eun",
+    "name": "SHIN YE EUN"
+  },
+  {
+    "id": "shinee",
+    "name": "SHINee"
+  },
+  {
+    "id": "shingo-katori",
+    "name": "SHINGO KATORI"
+  },
+  {
+    "id": "sm-all-voice",
+    "name": "SM:ALL Voice"
+  },
+  {
+    "id": "son-dong-pyo",
+    "name": "SON DONG PYO"
+  },
+  {
+    "id": "son-na-eun",
+    "name": "SON NA EUN"
+  },
+  {
+    "id": "stayc",
+    "name": "STAYC"
+  },
+  {
+    "id": "stray-kids",
+    "name": "Stray Kids"
+  },
+  {
+    "id": "sunmi",
+    "name": "SUNMI"
+  },
+  {
+    "id": "super-junior",
+    "name": "SUPER JUNIOR"
+  },
+  {
+    "id": "super-dragon",
+    "name": "SUPER★DRAGON"
+  },
+  {
+    "id": "syudou",
+    "name": "syudou"
+  },
+  {
+    "id": "tempest",
+    "name": "TEMPEST"
+  },
+  {
+    "id": "the-boyz",
+    "name": "THE BOYZ"
+  },
+  {
+    "id": "the-kid-laroi",
+    "name": "The Kid LAROI"
+  },
+  {
+    "id": "the-kingdom",
+    "name": "The KingDom"
+  },
+  {
+    "id": "thuy",
+    "name": "thuy"
+  },
+  {
+    "id": "tiot",
+    "name": "TIOT"
+  },
+  {
+    "id": "tnx",
+    "name": "TNX"
+  },
+  {
+    "id": "tomorrow-x-together",
+    "name": "TOMORROW X TOGETHER"
+  },
+  {
+    "id": "treasure",
+    "name": "TREASURE"
+  },
+  {
+    "id": "tri-be",
+    "name": "TRI.BE"
+  },
+  {
+    "id": "tvxq",
+    "name": "TVXQ!"
+  },
+  {
+    "id": "twice",
+    "name": "TWICE"
+  },
+  {
+    "id": "tws",
+    "name": "TWS"
+  },
+  {
+    "id": "umi",
+    "name": "UMI"
+  },
+  {
+    "id": "unchild",
+    "name": "UNCHILD"
+  },
+  {
+    "id": "unis",
+    "name": "UNIS"
+  },
+  {
+    "id": "up10tion",
+    "name": "UP10TION"
+  },
+  {
+    "id": "verivery",
+    "name": "VERIVERY"
+  },
+  {
+    "id": "victon",
+    "name": "VICTON"
+  },
+  {
+    "id": "vixx",
+    "name": "VIXX"
+  },
+  {
+    "id": "vvup",
+    "name": "VVUP"
+  },
+  {
+    "id": "wayv",
+    "name": "WayV"
+  },
+  {
+    "id": "weeekly",
+    "name": "Weeekly"
+  },
+  {
+    "id": "weverse-zone",
+    "name": "Weverse zone"
+  },
+  {
+    "id": "whee-in",
+    "name": "Whee In"
+  },
+  {
+    "id": "whib",
+    "name": "WHIB"
+  },
+  {
+    "id": "winner",
+    "name": "WINNER"
+  },
+  {
+    "id": "wjsn",
+    "name": "WJSN"
+  },
+  {
+    "id": "wolflo",
+    "name": "Wolf'Lo"
+  },
+  {
+    "id": "wonho",
+    "name": "WONHO"
+  },
+  {
+    "id": "wooah",
+    "name": "WOOAH"
+  },
+  {
+    "id": "woodz",
+    "name": "WOODZ"
+  },
+  {
+    "id": "wooseok",
+    "name": "WOOSEOK"
+  },
+  {
+    "id": "xdinary-heroes",
+    "name": "Xdinary Heroes"
+  },
+  {
+    "id": "xiumin",
+    "name": "XIUMIN"
+  },
+  {
+    "id": "xnghan-xoul",
+    "name": "XngHan&Xoul"
+  },
+  {
+    "id": "yoasobi",
+    "name": "YOASOBI"
+  },
+  {
+    "id": "yoon-jisung",
+    "name": "YOON JISUNG"
+  },
+  {
+    "id": "yoon-san-ha",
+    "name": "YOON SAN-HA"
+  },
+  {
+    "id": "youngtak",
+    "name": "YOUNGTAK"
+  },
+  {
+    "id": "younite",
+    "name": "YOUNITE"
+  },
+  {
+    "id": "yuhz",
+    "name": "YUHZ"
+  },
+  {
+    "id": "yuju",
+    "name": "YUJU"
+  },
+  {
+    "id": "yuto-adachi",
+    "name": "YUTO ADACHI"
+  },
+  {
+    "id": "zico",
+    "name": "ZICO"
+  },
+  {
+    "id": "unnamed-group",
+    "name": "응답하라 하이스쿨"
+  }
+]

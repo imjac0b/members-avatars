@@ -101,6 +101,7 @@ const FANS_GRAPHQL_URL = "https://api.app.fans/graphql";
 const README_PLACEHOLDER = "<!-- GENERATED_MEMBERS_AVATARS -->";
 const README_TEMPLATE_PATH = "README.template.md";
 const README_OUTPUT_PATH = "README.md";
+const GROUPS_JSON_PATH = "groups.json";
 const ARIA2_INPUT_PATH = "avatars.aria2c.txt";
 const PUBLIC_BASE_URL = (
   process.env.PUBLIC_BASE_URL ?? "https://members-avatar.jacob.com.hk"
@@ -704,6 +705,27 @@ const updateReadme = async (groups: GroupCatalog[]) => {
   await Bun.write(README_OUTPUT_PATH, readme);
 };
 
+const updateJsonCatalogs = async (groups: GroupCatalog[]) => {
+  console.log("[catalog] Updating groups.json and per-group members.json");
+
+  const groupCatalog = groups.map((group) => ({
+    id: group.groupSlug,
+    name: group.groupName,
+  }));
+
+  await Bun.write(GROUPS_JSON_PATH, `${JSON.stringify(groupCatalog, null, 2)}\n`);
+
+  for (const group of groups) {
+    const membersPath = `avatars/${group.groupSlug}/members.json`;
+    const membersCatalog = group.members.map((member) => ({
+      id: member.memberSlug,
+      name: member.memberName,
+    }));
+
+    await Bun.write(membersPath, `${JSON.stringify(membersCatalog, null, 2)}\n`);
+  }
+};
+
 const createAria2Input = async (avatars: AvatarDownload[]) => {
   const manifest = avatars
     .map(
@@ -788,6 +810,7 @@ const main = async () => {
   const groups = buildCatalog(avatars);
 
   await updateReadme(groups);
+  await updateJsonCatalogs(groups);
 
   console.log(`[done] Downloaded ${avatars.length} avatars across ${groups.length} groups`);
 };
