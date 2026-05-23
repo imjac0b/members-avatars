@@ -153,7 +153,7 @@ const pickEnglishLikeName = (...values: Array<string | undefined>) => {
     .map((value) => value?.trim())
     .filter((value): value is string => Boolean(value));
 
-  return normalized.find(isMostlyAscii) ?? normalized[0];
+  return normalized.find(isMostlyAscii);
 };
 
 const removeWeverseTypeParam = (url: string) => {
