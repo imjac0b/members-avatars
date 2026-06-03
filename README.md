@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 258
-- Total members: 1056
+- Total members: 1061
 
 ## &TEAM
 
@@ -940,6 +940,7 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
+| CANDY TUNE | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/candy-tune.jpeg" alt="CANDY TUNE" loading="lazy" width="100"> | `kawaii-lab/candy-tune.jpeg` |
 | CS Aika Sano | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/cs-aika-sano.jpeg" alt="CS Aika Sano" loading="lazy" width="100"> | `kawaii-lab/cs-aika-sano.jpeg` |
 | CS Ayano Masuda | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/cs-ayano-masuda.jpeg" alt="CS Ayano Masuda" loading="lazy" width="100"> | `kawaii-lab/cs-ayano-masuda.jpeg` |
 | CS Emiru Kawamoto | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/cs-emiru-kawamoto.jpeg" alt="CS Emiru Kawamoto" loading="lazy" width="100"> | `kawaii-lab/cs-emiru-kawamoto.jpeg` |
@@ -955,6 +956,8 @@ The generated catalog appears below.
 | CT Natsu Minami | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ct-natsu-minami.jpeg" alt="CT Natsu Minami" loading="lazy" width="100"> | `kawaii-lab/ct-natsu-minami.jpeg` |
 | CT Rino Fukuyama | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ct-rino-fukuyama.jpeg" alt="CT Rino Fukuyama" loading="lazy" width="100"> | `kawaii-lab/ct-rino-fukuyama.jpeg` |
 | CT Shizuka Miyano | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ct-shizuka-miyano.jpeg" alt="CT Shizuka Miyano" loading="lazy" width="100"> | `kawaii-lab/ct-shizuka-miyano.jpeg` |
+| CUTIE STREET | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/cutie-street.jpeg" alt="CUTIE STREET" loading="lazy" width="100"> | `kawaii-lab/cutie-street.jpeg` |
+| FRUITS ZIPPER | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/fruits-zipper.jpeg" alt="FRUITS ZIPPER" loading="lazy" width="100"> | `kawaii-lab/fruits-zipper.jpeg` |
 | FZ Amane Tsukiashi | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/fz-amane-tsukiashi.jpeg" alt="FZ Amane Tsukiashi" loading="lazy" width="100"> | `kawaii-lab/fz-amane-tsukiashi.jpeg` |
 | FZ Karen Matsumoto | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/fz-karen-matsumoto.jpeg" alt="FZ Karen Matsumoto" loading="lazy" width="100"> | `kawaii-lab/fz-karen-matsumoto.jpeg` |
 | FZ Luna Nakagawa | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/fz-luna-nakagawa.jpeg" alt="FZ Luna Nakagawa" loading="lazy" width="100"> | `kawaii-lab/fz-luna-nakagawa.jpeg` |
@@ -962,6 +965,7 @@ The generated catalog appears below.
 | FZ Noel Hayase | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/fz-noel-hayase.jpeg" alt="FZ Noel Hayase" loading="lazy" width="100"> | `kawaii-lab/fz-noel-hayase.jpeg` |
 | FZ Suzuka Chinzei | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/fz-suzuka-chinzei.jpeg" alt="FZ Suzuka Chinzei" loading="lazy" width="100"> | `kawaii-lab/fz-suzuka-chinzei.jpeg` |
 | FZ Yui Sakurai | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/fz-yui-sakurai.jpeg" alt="FZ Yui Sakurai" loading="lazy" width="100"> | `kawaii-lab/fz-yui-sakurai.jpeg` |
+| MORE STAR | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/more-star.jpeg" alt="MORE STAR" loading="lazy" width="100"> | `kawaii-lab/more-star.jpeg` |
 | MS Ami Morita | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ms-ami-morita.jpeg" alt="MS Ami Morita" loading="lazy" width="100"> | `kawaii-lab/ms-ami-morita.jpeg` |
 | MS Cocona Arai | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ms-cocona-arai.jpeg" alt="MS Cocona Arai" loading="lazy" width="100"> | `kawaii-lab/ms-cocona-arai.jpeg` |
 | MS Karin Suzuki | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ms-karin-suzuki.jpeg" alt="MS Karin Suzuki" loading="lazy" width="100"> | `kawaii-lab/ms-karin-suzuki.jpeg` |
@@ -978,6 +982,7 @@ The generated catalog appears below.
 | SS Rise Shiokawa | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ss-rise-shiokawa.jpeg" alt="SS Rise Shiokawa" loading="lazy" width="100"> | `kawaii-lab/ss-rise-shiokawa.jpeg` |
 | SS Sakina Yamauchi | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ss-sakina-yamauchi.jpeg" alt="SS Sakina Yamauchi" loading="lazy" width="100"> | `kawaii-lab/ss-sakina-yamauchi.jpeg` |
 | SS Yui Otoi | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ss-yui-otoi.jpeg" alt="SS Yui Otoi" loading="lazy" width="100"> | `kawaii-lab/ss-yui-otoi.jpeg` |
+| SWEET STEADY | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/sweet-steady.jpeg" alt="SWEET STEADY" loading="lazy" width="100"> | `kawaii-lab/sweet-steady.jpeg` |
 ## Kep1er
 
 | Member | Avatar | Path |
