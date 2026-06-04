@@ -238,11 +238,6 @@ The generated catalog appears below.
 | JIBEEN | <img src="https://members-avatar.jacob.com.hk/arrc/jibeen.jpeg" alt="JIBEEN" loading="lazy" width="100"> | `arrc/jibeen.jpeg` |
 | KIEN | <img src="https://members-avatar.jacob.com.hk/arrc/kien.jpeg" alt="KIEN" loading="lazy" width="100"> | `arrc/kien.jpeg` |
 | RIOTO | <img src="https://members-avatar.jacob.com.hk/arrc/rioto.jpeg" alt="RIOTO" loading="lazy" width="100"> | `arrc/rioto.jpeg` |
-## ASH ISLAND
-
-| Member | Avatar | Path |
-| --- | --- | --- |
-| ASH ISLAND | <img src="https://members-avatar.jacob.com.hk/ash-island/ash-island.jpeg" alt="ASH ISLAND" loading="lazy" width="100"> | `ash-island/ash-island.jpeg` |
 ## ATBO
 
 | Member | Avatar | Path |
@@ -2052,6 +2047,11 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | XngHan | <img src="https://members-avatar.jacob.com.hk/xnghan-xoul/xnghan.jpeg" alt="XngHan" loading="lazy" width="100"> | `xnghan-xoul/xnghan.jpeg` |
+## YENA
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| YENA | <img src="https://members-avatar.jacob.com.hk/yena/yena.jpeg" alt="YENA" loading="lazy" width="100"> | `yena/yena.jpeg` |
 ## YOASOBI
 
 | Member | Avatar | Path |
