@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 258
-- Total members: 1060
+- Total groups: 259
+- Total members: 1065
 
 ## &TEAM
 
@@ -1189,6 +1189,15 @@ The generated catalog appears below.
 | Hiloto Wakai | <img src="https://members-avatar.jacob.com.hk/mga/hiloto-wakai.jpeg" alt="Hiloto Wakai" loading="lazy" width="100"> | `mga/hiloto-wakai.jpeg` |
 | Motoki Ohmori | <img src="https://members-avatar.jacob.com.hk/mga/motoki-ohmori.jpeg" alt="Motoki Ohmori" loading="lazy" width="100"> | `mga/motoki-ohmori.jpeg` |
 | Ryoka Fujisawa | <img src="https://members-avatar.jacob.com.hk/mga/ryoka-fujisawa.jpeg" alt="Ryoka Fujisawa" loading="lazy" width="100"> | `mga/ryoka-fujisawa.jpeg` |
+## MiiWAN (미완소년)
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| AN SEOKWOO | <img src="https://members-avatar.jacob.com.hk/miiwan/an-seokwoo.jpeg" alt="AN SEOKWOO" loading="lazy" width="100"> | `miiwan/an-seokwoo.jpeg` |
+| IM ON | <img src="https://members-avatar.jacob.com.hk/miiwan/im-on.jpeg" alt="IM ON" loading="lazy" width="100"> | `miiwan/im-on.jpeg` |
+| MA HAJIN | <img src="https://members-avatar.jacob.com.hk/miiwan/ma-hajin.jpeg" alt="MA HAJIN" loading="lazy" width="100"> | `miiwan/ma-hajin.jpeg` |
+| NA ETHAN | <img src="https://members-avatar.jacob.com.hk/miiwan/na-ethan.jpeg" alt="NA ETHAN" loading="lazy" width="100"> | `miiwan/na-ethan.jpeg` |
+| WON JUYUL | <img src="https://members-avatar.jacob.com.hk/miiwan/won-juyul.jpeg" alt="WON JUYUL" loading="lazy" width="100"> | `miiwan/won-juyul.jpeg` |
 ## Min Jiwoon
 
 | Member | Avatar | Path |
