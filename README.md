@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 260
-- Total members: 1066
+- Total members: 1067
 
 ## &TEAM
 
@@ -914,6 +914,12 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | JVKE | <img src="https://members-avatar.jacob.com.hk/jvke/jvke.jpeg" alt="JVKE" loading="lazy" width="100"> | `jvke/jvke.jpeg` |
+## K-Pop Square with Berriz
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| Berriz | <img src="https://members-avatar.jacob.com.hk/k-pop-square-with-berriz/berriz.jpeg" alt="Berriz" loading="lazy" width="100"> | `k-pop-square-with-berriz/berriz.jpeg` |
+| Melon | <img src="https://members-avatar.jacob.com.hk/k-pop-square-with-berriz/melon.jpeg" alt="Melon" loading="lazy" width="100"> | `k-pop-square-with-berriz/melon.jpeg` |
 ## KANGTA
 
 | Member | Avatar | Path |
@@ -1447,11 +1453,6 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | PARK YOONHO | <img src="https://members-avatar.jacob.com.hk/park-yoonho/park-yoonho.jpeg" alt="PARK YOONHO" loading="lazy" width="100"> | `park-yoonho/park-yoonho.jpeg` |
-## PARKWOOJIN
-
-| Member | Avatar | Path |
-| --- | --- | --- |
-| PARKWOOJIN | <img src="https://members-avatar.jacob.com.hk/parkwoojin/parkwoojin.jpeg" alt="PARKWOOJIN" loading="lazy" width="100"> | `parkwoojin/parkwoojin.jpeg` |
 ## PEAK SPOT
 
 | Member | Avatar | Path |
