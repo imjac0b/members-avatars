@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 260
-- Total members: 1067
+- Total groups: 261
+- Total members: 1074
 
 ## &TEAM
 
@@ -84,6 +84,17 @@ The generated catalog appears below.
 | SEUNGHEON | <img src="https://members-avatar.jacob.com.hk/8turn/seungheon.jpeg" alt="SEUNGHEON" loading="lazy" width="100"> | `8turn/seungheon.jpeg` |
 | YOONSUNG | <img src="https://members-avatar.jacob.com.hk/8turn/yoonsung.jpeg" alt="YOONSUNG" loading="lazy" width="100"> | `8turn/yoonsung.jpeg` |
 | YUNGYU | <img src="https://members-avatar.jacob.com.hk/8turn/yungyu.jpeg" alt="YUNGYU" loading="lazy" width="100"> | `8turn/yungyu.jpeg` |
+## AEN
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| BOMIN | <img src="https://members-avatar.jacob.com.hk/aen/bomin.jpeg" alt="BOMIN" loading="lazy" width="100"> | `aen/bomin.jpeg` |
+| HARU | <img src="https://members-avatar.jacob.com.hk/aen/haru.jpeg" alt="HARU" loading="lazy" width="100"> | `aen/haru.jpeg` |
+| HARUTO | <img src="https://members-avatar.jacob.com.hk/aen/haruto.jpeg" alt="HARUTO" loading="lazy" width="100"> | `aen/haruto.jpeg` |
+| JIYONG | <img src="https://members-avatar.jacob.com.hk/aen/jiyong.jpeg" alt="JIYONG" loading="lazy" width="100"> | `aen/jiyong.jpeg` |
+| JUNSEO | <img src="https://members-avatar.jacob.com.hk/aen/junseo.jpeg" alt="JUNSEO" loading="lazy" width="100"> | `aen/junseo.jpeg` |
+| KAIRA | <img src="https://members-avatar.jacob.com.hk/aen/kaira.jpeg" alt="KAIRA" loading="lazy" width="100"> | `aen/kaira.jpeg` |
+| KYUHYUN | <img src="https://members-avatar.jacob.com.hk/aen/kyuhyun.jpeg" alt="KYUHYUN" loading="lazy" width="100"> | `aen/kyuhyun.jpeg` |
 ## aespa
 
 | Member | Avatar | Path |
