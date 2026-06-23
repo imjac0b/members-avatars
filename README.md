@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 260
-- Total members: 1067
+- Total members: 1066
 
 ## &TEAM
 
@@ -126,7 +126,6 @@ The generated catalog appears below.
 | Ayane Takahashi | <img src="https://members-avatar.jacob.com.hk/akb48/ayane-takahashi.jpeg" alt="Ayane Takahashi" loading="lazy" width="100"> | `akb48/ayane-takahashi.jpeg` |
 | Erii Chiba | <img src="https://members-avatar.jacob.com.hk/akb48/erii-chiba.jpeg" alt="Erii Chiba" loading="lazy" width="100"> | `akb48/erii-chiba.jpeg` |
 | Gyoten Yurina | <img src="https://members-avatar.jacob.com.hk/akb48/gyoten-yurina.jpeg" alt="Gyoten Yurina" loading="lazy" width="100"> | `akb48/gyoten-yurina.jpeg` |
-| Hanada Mei | <img src="https://members-avatar.jacob.com.hk/akb48/hanada-mei.jpeg" alt="Hanada Mei" loading="lazy" width="100"> | `akb48/hanada-mei.jpeg` |
 | Hashimoto Eriko | <img src="https://members-avatar.jacob.com.hk/akb48/hashimoto-eriko.jpeg" alt="Hashimoto Eriko" loading="lazy" width="100"> | `akb48/hashimoto-eriko.jpeg` |
 | Hashimoto Haruna | <img src="https://members-avatar.jacob.com.hk/akb48/hashimoto-haruna.jpeg" alt="Hashimoto Haruna" loading="lazy" width="100"> | `akb48/hashimoto-haruna.jpeg` |
 | Hatakeyama Nozomi | <img src="https://members-avatar.jacob.com.hk/akb48/hatakeyama-nozomi.jpeg" alt="Hatakeyama Nozomi" loading="lazy" width="100"> | `akb48/hatakeyama-nozomi.jpeg` |
@@ -1353,11 +1352,11 @@ The generated catalog appears below.
 | KYUJIN | <img src="https://members-avatar.jacob.com.hk/nmixx/kyujin.jpeg" alt="KYUJIN" loading="lazy" width="100"> | `nmixx/kyujin.jpeg` |
 | Lily | <img src="https://members-avatar.jacob.com.hk/nmixx/lily.jpeg" alt="Lily" loading="lazy" width="100"> | `nmixx/lily.jpeg` |
 | sullyoon | <img src="https://members-avatar.jacob.com.hk/nmixx/sullyoon.jpeg" alt="sullyoon" loading="lazy" width="100"> | `nmixx/sullyoon.jpeg` |
-## noa
+## NOA
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| noa | <img src="https://members-avatar.jacob.com.hk/noa/noa.jpeg" alt="noa" loading="lazy" width="100"> | `noa/noa.jpeg` |
+| NOA | <img src="https://members-avatar.jacob.com.hk/noa/noa.jpeg" alt="NOA" loading="lazy" width="100"> | `noa/noa.jpeg` |
 ## NOWZ
 
 | Member | Avatar | Path |
