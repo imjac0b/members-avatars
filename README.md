@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 261
-- Total members: 1067
+- Total groups: 260
+- Total members: 1063
 
 ## &TEAM
 
@@ -1494,14 +1494,6 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | SHINWON | <img src="https://members-avatar.jacob.com.hk/pentagon/shinwon.jpeg" alt="SHINWON" loading="lazy" width="100"> | `pentagon/shinwon.jpeg` |
-## Perfect Crown
-
-| Member | Avatar | Path |
-| --- | --- | --- |
-| Grand Prince I-An | <img src="https://members-avatar.jacob.com.hk/perfect-crown/grand-prince-i-an.jpeg" alt="Grand Prince I-An" loading="lazy" width="100"> | `perfect-crown/grand-prince-i-an.jpeg` |
-| Min Jeong Woo | <img src="https://members-avatar.jacob.com.hk/perfect-crown/min-jeong-woo.jpeg" alt="Min Jeong Woo" loading="lazy" width="100"> | `perfect-crown/min-jeong-woo.jpeg` |
-| Seong Hui Ju | <img src="https://members-avatar.jacob.com.hk/perfect-crown/seong-hui-ju.jpeg" alt="Seong Hui Ju" loading="lazy" width="100"> | `perfect-crown/seong-hui-ju.jpeg` |
-| Yoon Yi Rang | <img src="https://members-avatar.jacob.com.hk/perfect-crown/yoon-yi-rang.jpeg" alt="Yoon Yi Rang" loading="lazy" width="100"> | `perfect-crown/yoon-yi-rang.jpeg` |
 ## Pinggyego
 
 | Member | Avatar | Path |
