@@ -22,7 +22,7 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 260
+- Total groups: 261
 - Total members: 1063
 
 ## &TEAM
@@ -425,6 +425,11 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | CHOI SOO HO | <img src="https://members-avatar.jacob.com.hk/choi-soo-ho/choi-soo-ho.jpeg" alt="CHOI SOO HO" loading="lazy" width="100"> | `choi-soo-ho/choi-soo-ho.jpeg` |
+## CHOI YOOJUNG
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| CHOI YOOJUNG | <img src="https://members-avatar.jacob.com.hk/choi-yoojung/choi-yoojung.jpeg" alt="CHOI YOOJUNG" loading="lazy" width="100"> | `choi-yoojung/choi-yoojung.jpeg` |
 ## Choi Yu Ree
 
 | Member | Avatar | Path |
@@ -2090,7 +2095,6 @@ The generated catalog appears below.
 | --- | --- | --- |
 | DEY | <img src="https://members-avatar.jacob.com.hk/younite/dey.jpeg" alt="DEY" loading="lazy" width="100"> | `younite/dey.jpeg` |
 | EUNHO | <img src="https://members-avatar.jacob.com.hk/younite/eunho.jpeg" alt="EUNHO" loading="lazy" width="100"> | `younite/eunho.jpeg` |
-| EUNSANG | <img src="https://members-avatar.jacob.com.hk/younite/eunsang.jpeg" alt="EUNSANG" loading="lazy" width="100"> | `younite/eunsang.jpeg` |
 | HYUNGSEOK | <img src="https://members-avatar.jacob.com.hk/younite/hyungseok.jpeg" alt="HYUNGSEOK" loading="lazy" width="100"> | `younite/hyungseok.jpeg` |
 | KYUNGMUN | <img src="https://members-avatar.jacob.com.hk/younite/kyungmun.jpeg" alt="KYUNGMUN" loading="lazy" width="100"> | `younite/kyungmun.jpeg` |
 | SION | <img src="https://members-avatar.jacob.com.hk/younite/sion.jpeg" alt="SION" loading="lazy" width="100"> | `younite/sion.jpeg` |
