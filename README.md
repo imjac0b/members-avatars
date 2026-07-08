@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 261
-- Total members: 1072
+- Total groups: 262
+- Total members: 1073
 
 ## &TEAM
 
@@ -1187,6 +1187,11 @@ The generated catalog appears below.
 | JunWoo | <img src="https://members-avatar.jacob.com.hk/lun8/junwoo.jpeg" alt="JunWoo" loading="lazy" width="100"> | `lun8/junwoo.jpeg` |
 | Takuma | <img src="https://members-avatar.jacob.com.hk/lun8/takuma.jpeg" alt="Takuma" loading="lazy" width="100"> | `lun8/takuma.jpeg` |
 | Yuma | <img src="https://members-avatar.jacob.com.hk/lun8/yuma.jpeg" alt="Yuma" loading="lazy" width="100"> | `lun8/yuma.jpeg` |
+## Mark Lee
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| Mark Lee | <img src="https://members-avatar.jacob.com.hk/mark-lee/mark-lee.jpeg" alt="Mark Lee" loading="lazy" width="100"> | `mark-lee/mark-lee.jpeg` |
 ## MAX
 
 | Member | Avatar | Path |
