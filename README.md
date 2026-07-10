@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 262
-- Total members: 1073
+- Total members: 1072
 
 ## &TEAM
 
@@ -1961,7 +1961,6 @@ The generated catalog appears below.
 | HENDERY | <img src="https://members-avatar.jacob.com.hk/wayv/hendery.jpeg" alt="HENDERY" loading="lazy" width="100"> | `wayv/hendery.jpeg` |
 | KUN | <img src="https://members-avatar.jacob.com.hk/wayv/kun.jpeg" alt="KUN" loading="lazy" width="100"> | `wayv/kun.jpeg` |
 | TEN | <img src="https://members-avatar.jacob.com.hk/wayv/ten.jpeg" alt="TEN" loading="lazy" width="100"> | `wayv/ten.jpeg` |
-| WINWIN | <img src="https://members-avatar.jacob.com.hk/wayv/winwin.jpeg" alt="WINWIN" loading="lazy" width="100"> | `wayv/winwin.jpeg` |
 | XIAOJUN | <img src="https://members-avatar.jacob.com.hk/wayv/xiaojun.jpeg" alt="XIAOJUN" loading="lazy" width="100"> | `wayv/xiaojun.jpeg` |
 | YANGYANG | <img src="https://members-avatar.jacob.com.hk/wayv/yangyang.jpeg" alt="YANGYANG" loading="lazy" width="100"> | `wayv/yangyang.jpeg` |
 ## Weeekly
