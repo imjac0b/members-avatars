@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 263
-- Total members: 1075
+- Total members: 1074
 
 ## &TEAM
 
@@ -1599,7 +1599,6 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | EMILY | <img src="https://members-avatar.jacob.com.hk/saint-satine/emily.jpeg" alt="EMILY" loading="lazy" width="100"> | `saint-satine/emily.jpeg` |
-| LEXIE | <img src="https://members-avatar.jacob.com.hk/saint-satine/lexie.jpeg" alt="LEXIE" loading="lazy" width="100"> | `saint-satine/lexie.jpeg` |
 | SAKURA | <img src="https://members-avatar.jacob.com.hk/saint-satine/sakura.jpeg" alt="SAKURA" loading="lazy" width="100"> | `saint-satine/sakura.jpeg` |
 | SAMARA | <img src="https://members-avatar.jacob.com.hk/saint-satine/samara.jpeg" alt="SAMARA" loading="lazy" width="100"> | `saint-satine/samara.jpeg` |
 ## SANTOS BRAVOS
