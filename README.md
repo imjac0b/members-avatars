@@ -1367,11 +1367,11 @@ The generated catalog appears below.
 | KYUJIN | <img src="https://members-avatar.jacob.com.hk/nmixx/kyujin.jpeg" alt="KYUJIN" loading="lazy" width="100"> | `nmixx/kyujin.jpeg` |
 | Lily | <img src="https://members-avatar.jacob.com.hk/nmixx/lily.jpeg" alt="Lily" loading="lazy" width="100"> | `nmixx/lily.jpeg` |
 | sullyoon | <img src="https://members-avatar.jacob.com.hk/nmixx/sullyoon.jpeg" alt="sullyoon" loading="lazy" width="100"> | `nmixx/sullyoon.jpeg` |
-## NOA
+## noa
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| NOA | <img src="https://members-avatar.jacob.com.hk/noa/noa.jpeg" alt="NOA" loading="lazy" width="100"> | `noa/noa.jpeg` |
+| noa | <img src="https://members-avatar.jacob.com.hk/noa/noa.jpeg" alt="noa" loading="lazy" width="100"> | `noa/noa.jpeg` |
 ## NOWZ
 
 | Member | Avatar | Path |
