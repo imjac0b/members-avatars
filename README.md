@@ -1436,9 +1436,9 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| CHERYSHA | <img src="https://members-avatar.jacob.com.hk/ourbirthday/cherysha.jpeg" alt="CHERYSHA" loading="lazy" width="100"> | `ourbirthday/cherysha.jpeg` |
-| GROOVLU | <img src="https://members-avatar.jacob.com.hk/ourbirthday/groovlu.jpeg" alt="GROOVLU" loading="lazy" width="100"> | `ourbirthday/groovlu.jpeg` |
-| I-YAT | <img src="https://members-avatar.jacob.com.hk/ourbirthday/i-yat.jpeg" alt="I-YAT" loading="lazy" width="100"> | `ourbirthday/i-yat.jpeg` |
+| ACHIRAYA | <img src="https://members-avatar.jacob.com.hk/ourbirthday/achiraya.jpeg" alt="ACHIRAYA" loading="lazy" width="100"> | `ourbirthday/achiraya.jpeg` |
+| BABY | <img src="https://members-avatar.jacob.com.hk/ourbirthday/baby.jpeg" alt="BABY" loading="lazy" width="100"> | `ourbirthday/baby.jpeg` |
+| CHO HYEJIN | <img src="https://members-avatar.jacob.com.hk/ourbirthday/cho-hyejin.jpeg" alt="CHO HYEJIN" loading="lazy" width="100"> | `ourbirthday/cho-hyejin.jpeg` |
 ## OWIS
 
 | Member | Avatar | Path |
