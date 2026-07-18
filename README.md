@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 263
-- Total members: 1074
+- Total members: 1075
 
 ## &TEAM
 
@@ -739,6 +739,7 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | Gracie Abrams | <img src="https://members-avatar.jacob.com.hk/gracie-abrams/gracie-abrams.jpeg" alt="Gracie Abrams" loading="lazy" width="100"> | `gracie-abrams/gracie-abrams.jpeg` |
+| GracieAbramsHQ | <img src="https://members-avatar.jacob.com.hk/gracie-abrams/gracieabramshq.jpeg" alt="GracieAbramsHQ" loading="lazy" width="100"> | `gracie-abrams/gracieabramshq.jpeg` |
 ## Hearts2Hearts
 
 | Member | Avatar | Path |
