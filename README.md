@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 264
-- Total members: 1082
+- Total groups: 265
+- Total members: 1080
 
 ## &TEAM
 
@@ -930,6 +930,12 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | JVKE | <img src="https://members-avatar.jacob.com.hk/jvke/jvke.jpeg" alt="JVKE" loading="lazy" width="100"> | `jvke/jvke.jpeg` |
+## K-Pop Square with Berriz
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| Berriz | <img src="https://members-avatar.jacob.com.hk/k-pop-square-with-berriz/berriz.jpeg" alt="Berriz" loading="lazy" width="100"> | `k-pop-square-with-berriz/berriz.jpeg` |
+| Melon | <img src="https://members-avatar.jacob.com.hk/k-pop-square-with-berriz/melon.jpeg" alt="Melon" loading="lazy" width="100"> | `k-pop-square-with-berriz/melon.jpeg` |
 ## KANGTA
 
 | Member | Avatar | Path |
@@ -1415,13 +1421,9 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | HWAN WOONG | <img src="https://members-avatar.jacob.com.hk/oneus/hwan-woong.jpeg" alt="HWAN WOONG" loading="lazy" width="100"> | `oneus/hwan-woong.jpeg` |
-| HWANWOONG | <img src="https://members-avatar.jacob.com.hk/oneus/hwanwoong.jpeg" alt="HWANWOONG" loading="lazy" width="100"> | `oneus/hwanwoong.jpeg` |
 | KEON HEE | <img src="https://members-avatar.jacob.com.hk/oneus/keon-hee.jpeg" alt="KEON HEE" loading="lazy" width="100"> | `oneus/keon-hee.jpeg` |
-| KEONHEE | <img src="https://members-avatar.jacob.com.hk/oneus/keonhee.jpeg" alt="KEONHEE" loading="lazy" width="100"> | `oneus/keonhee.jpeg` |
 | LEE DO | <img src="https://members-avatar.jacob.com.hk/oneus/lee-do.jpeg" alt="LEE DO" loading="lazy" width="100"> | `oneus/lee-do.jpeg` |
-| LEEDO | <img src="https://members-avatar.jacob.com.hk/oneus/leedo.jpeg" alt="LEEDO" loading="lazy" width="100"> | `oneus/leedo.jpeg` |
 | SEO HO | <img src="https://members-avatar.jacob.com.hk/oneus/seo-ho.jpeg" alt="SEO HO" loading="lazy" width="100"> | `oneus/seo-ho.jpeg` |
-| SEOHO | <img src="https://members-avatar.jacob.com.hk/oneus/seoho.jpeg" alt="SEOHO" loading="lazy" width="100"> | `oneus/seoho.jpeg` |
 | XION | <img src="https://members-avatar.jacob.com.hk/oneus/xion.jpeg" alt="XION" loading="lazy" width="100"> | `oneus/xion.jpeg` |
 ## ONF
 
