@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 263
-- Total members: 1075
+- Total groups: 264
+- Total members: 1082
 
 ## &TEAM
 
@@ -1368,11 +1368,11 @@ The generated catalog appears below.
 | KYUJIN | <img src="https://members-avatar.jacob.com.hk/nmixx/kyujin.jpeg" alt="KYUJIN" loading="lazy" width="100"> | `nmixx/kyujin.jpeg` |
 | Lily | <img src="https://members-avatar.jacob.com.hk/nmixx/lily.jpeg" alt="Lily" loading="lazy" width="100"> | `nmixx/lily.jpeg` |
 | sullyoon | <img src="https://members-avatar.jacob.com.hk/nmixx/sullyoon.jpeg" alt="sullyoon" loading="lazy" width="100"> | `nmixx/sullyoon.jpeg` |
-## noa
+## NOA
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| noa | <img src="https://members-avatar.jacob.com.hk/noa/noa.jpeg" alt="noa" loading="lazy" width="100"> | `noa/noa.jpeg` |
+| NOA | <img src="https://members-avatar.jacob.com.hk/noa/noa.jpeg" alt="NOA" loading="lazy" width="100"> | `noa/noa.jpeg` |
 ## NOWZ
 
 | Member | Avatar | Path |
@@ -1859,6 +1859,17 @@ The generated catalog appears below.
 | MiRe | <img src="https://members-avatar.jacob.com.hk/tri-be/mire.jpeg" alt="MiRe" loading="lazy" width="100"> | `tri-be/mire.jpeg` |
 | SoEun | <img src="https://members-avatar.jacob.com.hk/tri-be/soeun.jpeg" alt="SoEun" loading="lazy" width="100"> | `tri-be/soeun.jpeg` |
 | SongSun | <img src="https://members-avatar.jacob.com.hk/tri-be/songsun.jpeg" alt="SongSun" loading="lazy" width="100"> | `tri-be/songsun.jpeg` |
+## TUIDE
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| ELENA | <img src="https://members-avatar.jacob.com.hk/tuide/elena.jpeg" alt="ELENA" loading="lazy" width="100"> | `tuide/elena.jpeg` |
+| JIA | <img src="https://members-avatar.jacob.com.hk/tuide/jia.jpeg" alt="JIA" loading="lazy" width="100"> | `tuide/jia.jpeg` |
+| SAKI | <img src="https://members-avatar.jacob.com.hk/tuide/saki.jpeg" alt="SAKI" loading="lazy" width="100"> | `tuide/saki.jpeg` |
+| SEAH | <img src="https://members-avatar.jacob.com.hk/tuide/seah.jpeg" alt="SEAH" loading="lazy" width="100"> | `tuide/seah.jpeg` |
+| SEOHEE | <img src="https://members-avatar.jacob.com.hk/tuide/seohee.jpeg" alt="SEOHEE" loading="lazy" width="100"> | `tuide/seohee.jpeg` |
+| SEOYEON | <img src="https://members-avatar.jacob.com.hk/tuide/seoyeon.jpeg" alt="SEOYEON" loading="lazy" width="100"> | `tuide/seoyeon.jpeg` |
+| YI HANI | <img src="https://members-avatar.jacob.com.hk/tuide/yi-hani.jpeg" alt="YI HANI" loading="lazy" width="100"> | `tuide/yi-hani.jpeg` |
 ## TVXQ!
 
 | Member | Avatar | Path |
