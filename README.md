@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 265
-- Total members: 1080
+- Total members: 1084
 
 ## &TEAM
 
@@ -1441,7 +1441,11 @@ The generated catalog appears below.
 | --- | --- | --- |
 | ACHIRAYA | <img src="https://members-avatar.jacob.com.hk/ourbirthday/achiraya.jpeg" alt="ACHIRAYA" loading="lazy" width="100"> | `ourbirthday/achiraya.jpeg` |
 | BABY | <img src="https://members-avatar.jacob.com.hk/ourbirthday/baby.jpeg" alt="BABY" loading="lazy" width="100"> | `ourbirthday/baby.jpeg` |
+| CAPPUSIA | <img src="https://members-avatar.jacob.com.hk/ourbirthday/cappusia.jpeg" alt="CAPPUSIA" loading="lazy" width="100"> | `ourbirthday/cappusia.jpeg` |
 | CHO HYEJIN | <img src="https://members-avatar.jacob.com.hk/ourbirthday/cho-hyejin.jpeg" alt="CHO HYEJIN" loading="lazy" width="100"> | `ourbirthday/cho-hyejin.jpeg` |
+| HAPUMI | <img src="https://members-avatar.jacob.com.hk/ourbirthday/hapumi.jpeg" alt="HAPUMI" loading="lazy" width="100"> | `ourbirthday/hapumi.jpeg` |
+| KIRACLE | <img src="https://members-avatar.jacob.com.hk/ourbirthday/kiracle.jpeg" alt="KIRACLE" loading="lazy" width="100"> | `ourbirthday/kiracle.jpeg` |
+| TIRUMICO | <img src="https://members-avatar.jacob.com.hk/ourbirthday/tirumico.jpeg" alt="TIRUMICO" loading="lazy" width="100"> | `ourbirthday/tirumico.jpeg` |
 ## OWIS
 
 | Member | Avatar | Path |
