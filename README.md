@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 265
-- Total members: 1088
+- Total groups: 266
+- Total members: 1095
 
 ## &TEAM
 
@@ -1446,10 +1446,10 @@ The generated catalog appears below.
 | ACHIRAYA | <img src="https://members-avatar.jacob.com.hk/ourbirthday/achiraya.jpeg" alt="ACHIRAYA" loading="lazy" width="100"> | `ourbirthday/achiraya.jpeg` |
 | BABY | <img src="https://members-avatar.jacob.com.hk/ourbirthday/baby.jpeg" alt="BABY" loading="lazy" width="100"> | `ourbirthday/baby.jpeg` |
 | CHO HYEJIN | <img src="https://members-avatar.jacob.com.hk/ourbirthday/cho-hyejin.jpeg" alt="CHO HYEJIN" loading="lazy" width="100"> | `ourbirthday/cho-hyejin.jpeg` |
-| KIRACLE | <img src="https://members-avatar.jacob.com.hk/ourbirthday/kiracle.jpeg" alt="KIRACLE" loading="lazy" width="100"> | `ourbirthday/kiracle.jpeg` |
+| KILALA | <img src="https://members-avatar.jacob.com.hk/ourbirthday/kilala.jpeg" alt="KILALA" loading="lazy" width="100"> | `ourbirthday/kilala.jpeg` |
 | KUK CHOROK | <img src="https://members-avatar.jacob.com.hk/ourbirthday/kuk-chorok.jpeg" alt="KUK CHOROK" loading="lazy" width="100"> | `ourbirthday/kuk-chorok.jpeg` |
 | SHIN HYEWON | <img src="https://members-avatar.jacob.com.hk/ourbirthday/shin-hyewon.jpeg" alt="SHIN HYEWON" loading="lazy" width="100"> | `ourbirthday/shin-hyewon.jpeg` |
-| TIRUMICO | <img src="https://members-avatar.jacob.com.hk/ourbirthday/tirumico.jpeg" alt="TIRUMICO" loading="lazy" width="100"> | `ourbirthday/tirumico.jpeg` |
+| U | <img src="https://members-avatar.jacob.com.hk/ourbirthday/u.jpeg" alt="U" loading="lazy" width="100"> | `ourbirthday/u.jpeg` |
 ## OWIS
 
 | Member | Avatar | Path |
@@ -1667,6 +1667,17 @@ The generated catalog appears below.
 | VERNON | <img src="https://members-avatar.jacob.com.hk/seventeen/vernon.jpeg" alt="VERNON" loading="lazy" width="100"> | `seventeen/vernon.jpeg` |
 | WONWOO | <img src="https://members-avatar.jacob.com.hk/seventeen/wonwoo.jpeg" alt="WONWOO" loading="lazy" width="100"> | `seventeen/wonwoo.jpeg` |
 | WOOZI | <img src="https://members-avatar.jacob.com.hk/seventeen/woozi.jpeg" alt="WOOZI" loading="lazy" width="100"> | `seventeen/woozi.jpeg` |
+## SF9
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| CHA NI | <img src="https://members-avatar.jacob.com.hk/sf9/cha-ni.jpeg" alt="CHA NI" loading="lazy" width="100"> | `sf9/cha-ni.jpeg` |
+| DA WON | <img src="https://members-avatar.jacob.com.hk/sf9/da-won.jpeg" alt="DA WON" loading="lazy" width="100"> | `sf9/da-won.jpeg` |
+| HWI YOUNG | <img src="https://members-avatar.jacob.com.hk/sf9/hwi-young.jpeg" alt="HWI YOUNG" loading="lazy" width="100"> | `sf9/hwi-young.jpeg` |
+| IN SEONG | <img src="https://members-avatar.jacob.com.hk/sf9/in-seong.jpeg" alt="IN SEONG" loading="lazy" width="100"> | `sf9/in-seong.jpeg` |
+| JAE YOON | <img src="https://members-avatar.jacob.com.hk/sf9/jae-yoon.jpeg" alt="JAE YOON" loading="lazy" width="100"> | `sf9/jae-yoon.jpeg` |
+| YOO TAE YANG | <img src="https://members-avatar.jacob.com.hk/sf9/yoo-tae-yang.jpeg" alt="YOO TAE YANG" loading="lazy" width="100"> | `sf9/yoo-tae-yang.jpeg` |
+| YOUNG BIN | <img src="https://members-avatar.jacob.com.hk/sf9/young-bin.jpeg" alt="YOUNG BIN" loading="lazy" width="100"> | `sf9/young-bin.jpeg` |
 ## SHIN SAE KYEONG
 
 | Member | Avatar | Path |
