@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 267
-- Total members: 1098
+- Total members: 1097
 
 ## &TEAM
 
@@ -553,7 +553,6 @@ The generated catalog appears below.
 | --- | --- | --- |
 | Blaise | <img src="https://members-avatar.jacob.com.hk/dearalice/blaise.jpeg" alt="Blaise" loading="lazy" width="100"> | `dearalice/blaise.jpeg` |
 | Dexter | <img src="https://members-avatar.jacob.com.hk/dearalice/dexter.jpeg" alt="Dexter" loading="lazy" width="100"> | `dearalice/dexter.jpeg` |
-| James | <img src="https://members-avatar.jacob.com.hk/dearalice/james.jpeg" alt="James" loading="lazy" width="100"> | `dearalice/james.jpeg` |
 | Olly | <img src="https://members-avatar.jacob.com.hk/dearalice/olly.jpeg" alt="Olly" loading="lazy" width="100"> | `dearalice/olly.jpeg` |
 | Reese | <img src="https://members-avatar.jacob.com.hk/dearalice/reese.jpeg" alt="Reese" loading="lazy" width="100"> | `dearalice/reese.jpeg` |
 ## Destino
