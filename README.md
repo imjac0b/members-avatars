@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 267
-- Total members: 1097
+- Total members: 1095
 
 ## &TEAM
 
@@ -84,13 +84,6 @@ The generated catalog appears below.
 | SEUNGHEON | <img src="https://members-avatar.jacob.com.hk/8turn/seungheon.jpeg" alt="SEUNGHEON" loading="lazy" width="100"> | `8turn/seungheon.jpeg` |
 | YOONSUNG | <img src="https://members-avatar.jacob.com.hk/8turn/yoonsung.jpeg" alt="YOONSUNG" loading="lazy" width="100"> | `8turn/yoonsung.jpeg` |
 | YUNGYU | <img src="https://members-avatar.jacob.com.hk/8turn/yungyu.jpeg" alt="YUNGYU" loading="lazy" width="100"> | `8turn/yungyu.jpeg` |
-## A Bona fide Killer
-
-| Member | Avatar | Path |
-| --- | --- | --- |
-| Kwon Tae-seong | <img src="https://members-avatar.jacob.com.hk/a-bona-fide-killer/kwon-tae-seong.jpeg" alt="Kwon Tae-seong" loading="lazy" width="100"> | `a-bona-fide-killer/kwon-tae-seong.jpeg` |
-| Lee Dong-jin | <img src="https://members-avatar.jacob.com.hk/a-bona-fide-killer/lee-dong-jin.jpeg" alt="Lee Dong-jin" loading="lazy" width="100"> | `a-bona-fide-killer/lee-dong-jin.jpeg` |
-| Yu Bona | <img src="https://members-avatar.jacob.com.hk/a-bona-fide-killer/yu-bona.jpeg" alt="Yu Bona" loading="lazy" width="100"> | `a-bona-fide-killer/yu-bona.jpeg` |
 ## AEN
 
 | Member | Avatar | Path |
@@ -782,6 +775,11 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | HONG SEOK | <img src="https://members-avatar.jacob.com.hk/hong-seok/hong-seok.jpeg" alt="HONG SEOK" loading="lazy" width="100"> | `hong-seok/hong-seok.jpeg` |
+## HUHJIWON
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| HUHJIWON | <img src="https://members-avatar.jacob.com.hk/huhjiwon/huhjiwon.jpeg" alt="HUHJIWON" loading="lazy" width="100"> | `huhjiwon/huhjiwon.jpeg` |
 ## HUI
 
 | Member | Avatar | Path |
