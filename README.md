@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 266
-- Total members: 1093
+- Total groups: 267
+- Total members: 1099
 
 ## &TEAM
 
@@ -707,6 +707,15 @@ The generated catalog appears below.
 | UMJI | <img src="https://members-avatar.jacob.com.hk/gfriend/umji.jpeg" alt="UMJI" loading="lazy" width="100"> | `gfriend/umji.jpeg` |
 | YERIN | <img src="https://members-avatar.jacob.com.hk/gfriend/yerin.jpeg" alt="YERIN" loading="lazy" width="100"> | `gfriend/yerin.jpeg` |
 | YUJU | <img src="https://members-avatar.jacob.com.hk/gfriend/yuju.jpeg" alt="YUJU" loading="lazy" width="100"> | `gfriend/yuju.jpeg` |
+## Girls Archives.
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| ENA | <img src="https://members-avatar.jacob.com.hk/girls-archives/ena.jpeg" alt="ENA" loading="lazy" width="100"> | `girls-archives/ena.jpeg` |
+| HINARI | <img src="https://members-avatar.jacob.com.hk/girls-archives/hinari.jpeg" alt="HINARI" loading="lazy" width="100"> | `girls-archives/hinari.jpeg` |
+| SEOYEON | <img src="https://members-avatar.jacob.com.hk/girls-archives/seoyeon.jpeg" alt="SEOYEON" loading="lazy" width="100"> | `girls-archives/seoyeon.jpeg` |
+| SOJEONG | <img src="https://members-avatar.jacob.com.hk/girls-archives/sojeong.jpeg" alt="SOJEONG" loading="lazy" width="100"> | `girls-archives/sojeong.jpeg` |
+| YUISA | <img src="https://members-avatar.jacob.com.hk/girls-archives/yuisa.jpeg" alt="YUISA" loading="lazy" width="100"> | `girls-archives/yuisa.jpeg` |
 ## GIRLS ON FIRE
 
 | Member | Avatar | Path |
@@ -1747,6 +1756,7 @@ The generated catalog appears below.
 | HYUNJIN | <img src="https://members-avatar.jacob.com.hk/stray-kids/hyunjin.jpeg" alt="HYUNJIN" loading="lazy" width="100"> | `stray-kids/hyunjin.jpeg` |
 | I.N | <img src="https://members-avatar.jacob.com.hk/stray-kids/i-n.jpeg" alt="I.N" loading="lazy" width="100"> | `stray-kids/i-n.jpeg` |
 | LEE KNOW | <img src="https://members-avatar.jacob.com.hk/stray-kids/lee-know.jpeg" alt="LEE KNOW" loading="lazy" width="100"> | `stray-kids/lee-know.jpeg` |
+| SEUNGMIN | <img src="https://members-avatar.jacob.com.hk/stray-kids/seungmin.jpeg" alt="SEUNGMIN" loading="lazy" width="100"> | `stray-kids/seungmin.jpeg` |
 ## SUNMI
 
 | Member | Avatar | Path |
