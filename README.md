@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 268
-- Total members: 1102
+- Total members: 1101
 
 ## &TEAM
 
@@ -467,13 +467,13 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| BOEUN | <img src="https://members-avatar.jacob.com.hk/classy/boeun.jpeg" alt="BOEUN" loading="lazy" width="100"> | `classy/boeun.jpeg` |
-| CHAEWON | <img src="https://members-avatar.jacob.com.hk/classy/chaewon.jpeg" alt="CHAEWON" loading="lazy" width="100"> | `classy/chaewon.jpeg` |
-| HYEJU | <img src="https://members-avatar.jacob.com.hk/classy/hyeju.jpeg" alt="HYEJU" loading="lazy" width="100"> | `classy/hyeju.jpeg` |
-| HYUNGSEO | <img src="https://members-avatar.jacob.com.hk/classy/hyungseo.jpeg" alt="HYUNGSEO" loading="lazy" width="100"> | `classy/hyungseo.jpeg` |
-| JIMIN | <img src="https://members-avatar.jacob.com.hk/classy/jimin.jpeg" alt="JIMIN" loading="lazy" width="100"> | `classy/jimin.jpeg` |
-| RIWON | <img src="https://members-avatar.jacob.com.hk/classy/riwon.jpeg" alt="RIWON" loading="lazy" width="100"> | `classy/riwon.jpeg` |
-| SEONYOU | <img src="https://members-avatar.jacob.com.hk/classy/seonyou.jpeg" alt="SEONYOU" loading="lazy" width="100"> | `classy/seonyou.jpeg` |
+| HONGHYEJU | <img src="https://members-avatar.jacob.com.hk/classy/honghyeju.jpeg" alt="HONGHYEJU" loading="lazy" width="100"> | `classy/honghyeju.jpeg` |
+| KIMRIWON | <img src="https://members-avatar.jacob.com.hk/classy/kimriwon.jpeg" alt="KIMRIWON" loading="lazy" width="100"> | `classy/kimriwon.jpeg` |
+| KIMSEONYOU | <img src="https://members-avatar.jacob.com.hk/classy/kimseonyou.jpeg" alt="KIMSEONYOU" loading="lazy" width="100"> | `classy/kimseonyou.jpeg` |
+| MYUNGHYUNGSEO | <img src="https://members-avatar.jacob.com.hk/classy/myunghyungseo.jpeg" alt="MYUNGHYUNGSEO" loading="lazy" width="100"> | `classy/myunghyungseo.jpeg` |
+| PARKBOEUN | <img src="https://members-avatar.jacob.com.hk/classy/parkboeun.jpeg" alt="PARKBOEUN" loading="lazy" width="100"> | `classy/parkboeun.jpeg` |
+| WONJIMIN | <img src="https://members-avatar.jacob.com.hk/classy/wonjimin.jpeg" alt="WONJIMIN" loading="lazy" width="100"> | `classy/wonjimin.jpeg` |
+| YOONCHAEWON | <img src="https://members-avatar.jacob.com.hk/classy/yoonchaewon.jpeg" alt="YOONCHAEWON" loading="lazy" width="100"> | `classy/yoonchaewon.jpeg` |
 ## CLOSE YOUR EYES
 
 | Member | Avatar | Path |
@@ -2114,7 +2114,6 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | gaon | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/gaon.jpeg" alt="gaon" loading="lazy" width="100"> | `xdinary-heroes/gaon.jpeg` |
-| gunil | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/gunil.jpeg" alt="gunil" loading="lazy" width="100"> | `xdinary-heroes/gunil.jpeg` |
 | jooyeon | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/jooyeon.jpeg" alt="jooyeon" loading="lazy" width="100"> | `xdinary-heroes/jooyeon.jpeg` |
 | Jun Han | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/jun-han.jpeg" alt="Jun Han" loading="lazy" width="100"> | `xdinary-heroes/jun-han.jpeg` |
 | jungsu | <img src="https://members-avatar.jacob.com.hk/xdinary-heroes/jungsu.jpeg" alt="jungsu" loading="lazy" width="100"> | `xdinary-heroes/jungsu.jpeg` |
