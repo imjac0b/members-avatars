@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 268
-- Total members: 1101
+- Total members: 1098
 
 ## &TEAM
 
@@ -1102,10 +1102,7 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| HAEUN | <img src="https://members-avatar.jacob.com.hk/latency/haeun.jpeg" alt="HAEUN" loading="lazy" width="100"> | `latency/haeun.jpeg` |
 | HEEYEON | <img src="https://members-avatar.jacob.com.hk/latency/heeyeon.jpeg" alt="HEEYEON" loading="lazy" width="100"> | `latency/heeyeon.jpeg` |
-| JEEWON | <img src="https://members-avatar.jacob.com.hk/latency/jeewon.jpeg" alt="JEEWON" loading="lazy" width="100"> | `latency/jeewon.jpeg` |
-| SEMI | <img src="https://members-avatar.jacob.com.hk/latency/semi.jpeg" alt="SEMI" loading="lazy" width="100"> | `latency/semi.jpeg` |
 ## Lauv
 
 | Member | Avatar | Path |
