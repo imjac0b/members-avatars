@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 268
-- Total members: 1098
+- Total groups: 269
+- Total members: 1101
 
 ## &TEAM
 
@@ -55,6 +55,13 @@ The generated catalog appears below.
 | Jang Wooyoung | <img src="https://members-avatar.jacob.com.hk/2pm/jang-wooyoung.jpeg" alt="Jang Wooyoung" loading="lazy" width="100"> | `2pm/jang-wooyoung.jpeg` |
 | JUN. K | <img src="https://members-avatar.jacob.com.hk/2pm/jun-k.jpeg" alt="JUN. K" loading="lazy" width="100"> | `2pm/jun-k.jpeg` |
 | NICHKHUN | <img src="https://members-avatar.jacob.com.hk/2pm/nichkhun.jpeg" alt="NICHKHUN" loading="lazy" width="100"> | `2pm/nichkhun.jpeg` |
+## 3SKM
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| Kaisei | <img src="https://members-avatar.jacob.com.hk/3skm/kaisei.jpeg" alt="Kaisei" loading="lazy" width="100"> | `3skm/kaisei.jpeg` |
+| Kitami Yusei | <img src="https://members-avatar.jacob.com.hk/3skm/kitami-yusei.jpeg" alt="Kitami Yusei" loading="lazy" width="100"> | `3skm/kitami-yusei.jpeg` |
+| Sakaki Ness | <img src="https://members-avatar.jacob.com.hk/3skm/sakaki-ness.jpeg" alt="Sakaki Ness" loading="lazy" width="100"> | `3skm/sakaki-ness.jpeg` |
 ## 3YE
 
 | Member | Avatar | Path |
