@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 269
-- Total members: 1101
+- Total groups: 270
+- Total members: 1106
 
 ## &TEAM
 
@@ -2059,6 +2059,15 @@ The generated catalog appears below.
 | LEEJEONG | <img src="https://members-avatar.jacob.com.hk/whib/leejeong.jpeg" alt="LEEJEONG" loading="lazy" width="100"> | `whib/leejeong.jpeg` |
 | UGEON | <img src="https://members-avatar.jacob.com.hk/whib/ugeon.jpeg" alt="UGEON" loading="lazy" width="100"> | `whib/ugeon.jpeg` |
 | WONJUN | <img src="https://members-avatar.jacob.com.hk/whib/wonjun.jpeg" alt="WONJUN" loading="lazy" width="100"> | `whib/wonjun.jpeg` |
+## WhOLLiN
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| DO-EON | <img src="https://members-avatar.jacob.com.hk/whollin/do-eon.jpeg" alt="DO-EON" loading="lazy" width="100"> | `whollin/do-eon.jpeg` |
+| IISO | <img src="https://members-avatar.jacob.com.hk/whollin/iiso.jpeg" alt="IISO" loading="lazy" width="100"> | `whollin/iiso.jpeg` |
+| KANGWOO | <img src="https://members-avatar.jacob.com.hk/whollin/kangwoo.jpeg" alt="KANGWOO" loading="lazy" width="100"> | `whollin/kangwoo.jpeg` |
+| SiO | <img src="https://members-avatar.jacob.com.hk/whollin/sio.jpeg" alt="SiO" loading="lazy" width="100"> | `whollin/sio.jpeg` |
+| TAEI | <img src="https://members-avatar.jacob.com.hk/whollin/taei.jpeg" alt="TAEI" loading="lazy" width="100"> | `whollin/taei.jpeg` |
 ## WINNER
 
 | Member | Avatar | Path |
