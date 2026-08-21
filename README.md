@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 270
-- Total members: 1106
+- Total groups: 271
+- Total members: 1107
 
 ## &TEAM
 
@@ -1814,6 +1814,11 @@ The generated catalog appears below.
 | HYUK | <img src="https://members-avatar.jacob.com.hk/tempest/hyuk.jpeg" alt="HYUK" loading="lazy" width="100"> | `tempest/hyuk.jpeg` |
 | LEW | <img src="https://members-avatar.jacob.com.hk/tempest/lew.jpeg" alt="LEW" loading="lazy" width="100"> | `tempest/lew.jpeg` |
 | TAERAE | <img src="https://members-avatar.jacob.com.hk/tempest/taerae.jpeg" alt="TAERAE" loading="lazy" width="100"> | `tempest/taerae.jpeg` |
+## TEN
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| TEN | <img src="https://members-avatar.jacob.com.hk/ten/ten.jpeg" alt="TEN" loading="lazy" width="100"> | `ten/ten.jpeg` |
 ## THE BOYZ
 
 | Member | Avatar | Path |
