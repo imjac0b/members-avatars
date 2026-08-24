@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 271
-- Total members: 1107
+- Total groups: 272
+- Total members: 1113
 
 ## &TEAM
 
@@ -1623,6 +1623,16 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | SuYun | <img src="https://members-avatar.jacob.com.hk/rocket-punch/suyun.jpeg" alt="SuYun" loading="lazy" width="100"> | `rocket-punch/suyun.jpeg` |
+## RUNIDRE
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| Daisuke | <img src="https://members-avatar.jacob.com.hk/runidre/daisuke.jpeg" alt="Daisuke" loading="lazy" width="100"> | `runidre/daisuke.jpeg` |
+| RUNIDRE STAFF | <img src="https://members-avatar.jacob.com.hk/runidre/runidre-staff.jpeg" alt="RUNIDRE STAFF" loading="lazy" width="100"> | `runidre/runidre-staff.jpeg` |
+| Sakutaro | <img src="https://members-avatar.jacob.com.hk/runidre/sakutaro.jpeg" alt="Sakutaro" loading="lazy" width="100"> | `runidre/sakutaro.jpeg` |
+| Yamato | <img src="https://members-avatar.jacob.com.hk/runidre/yamato.jpeg" alt="Yamato" loading="lazy" width="100"> | `runidre/yamato.jpeg` |
+| Yua | <img src="https://members-avatar.jacob.com.hk/runidre/yua.jpeg" alt="Yua" loading="lazy" width="100"> | `runidre/yua.jpeg` |
+| Yuta | <img src="https://members-avatar.jacob.com.hk/runidre/yuta.jpeg" alt="Yuta" loading="lazy" width="100"> | `runidre/yuta.jpeg` |
 ## SAINT SATINE
 
 | Member | Avatar | Path |
