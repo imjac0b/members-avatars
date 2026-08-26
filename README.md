@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 272
-- Total members: 1113
+- Total members: 1112
 
 ## &TEAM
 
@@ -586,7 +586,6 @@ The generated catalog appears below.
 | An Tae Gyu | <img src="https://members-avatar.jacob.com.hk/dragon-pony/an-tae-gyu.jpeg" alt="An Tae Gyu" loading="lazy" width="100"> | `dragon-pony/an-tae-gyu.jpeg` |
 | Ko Gang Hun | <img src="https://members-avatar.jacob.com.hk/dragon-pony/ko-gang-hun.jpeg" alt="Ko Gang Hun" loading="lazy" width="100"> | `dragon-pony/ko-gang-hun.jpeg` |
 | Kwon Se Hyuk | <img src="https://members-avatar.jacob.com.hk/dragon-pony/kwon-se-hyuk.jpeg" alt="Kwon Se Hyuk" loading="lazy" width="100"> | `dragon-pony/kwon-se-hyuk.jpeg` |
-| Pyun Sung Hyun | <img src="https://members-avatar.jacob.com.hk/dragon-pony/pyun-sung-hyun.jpeg" alt="Pyun Sung Hyun" loading="lazy" width="100"> | `dragon-pony/pyun-sung-hyun.jpeg` |
 ## Dreamcatcher
 
 | Member | Avatar | Path |
