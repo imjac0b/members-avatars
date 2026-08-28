@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 272
-- Total members: 1113
+- Total groups: 273
+- Total members: 1114
 
 ## &TEAM
 
@@ -1397,11 +1397,11 @@ The generated catalog appears below.
 | KYUJIN | <img src="https://members-avatar.jacob.com.hk/nmixx/kyujin.jpeg" alt="KYUJIN" loading="lazy" width="100"> | `nmixx/kyujin.jpeg` |
 | Lily | <img src="https://members-avatar.jacob.com.hk/nmixx/lily.jpeg" alt="Lily" loading="lazy" width="100"> | `nmixx/lily.jpeg` |
 | sullyoon | <img src="https://members-avatar.jacob.com.hk/nmixx/sullyoon.jpeg" alt="sullyoon" loading="lazy" width="100"> | `nmixx/sullyoon.jpeg` |
-## NOA
+## noa
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| NOA | <img src="https://members-avatar.jacob.com.hk/noa/noa.jpeg" alt="NOA" loading="lazy" width="100"> | `noa/noa.jpeg` |
+| noa | <img src="https://members-avatar.jacob.com.hk/noa/noa.jpeg" alt="noa" loading="lazy" width="100"> | `noa/noa.jpeg` |
 ## NOWZ
 
 | Member | Avatar | Path |
@@ -2221,6 +2221,11 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | YUTO ADACHI | <img src="https://members-avatar.jacob.com.hk/yuto-adachi/yuto-adachi.jpeg" alt="YUTO ADACHI" loading="lazy" width="100"> | `yuto-adachi/yuto-adachi.jpeg` |
+## ZICO
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| ZICO | <img src="https://members-avatar.jacob.com.hk/zico/zico.jpeg" alt="ZICO" loading="lazy" width="100"> | `zico/zico.jpeg` |
 ## 응답하라 하이스쿨
 
 | Member | Avatar | Path |
