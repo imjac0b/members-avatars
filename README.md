@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 273
-- Total members: 1114
+- Total groups: 272
+- Total members: 1113
 
 ## &TEAM
 
@@ -1100,11 +1100,11 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | KINO | <img src="https://members-avatar.jacob.com.hk/kino/kino.jpeg" alt="KINO" loading="lazy" width="100"> | `kino/kino.jpeg` |
-## KWON EUN BI
+## KWON EUNBI
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| KWON EUN BI | <img src="https://members-avatar.jacob.com.hk/kwon-eun-bi/kwon-eun-bi.jpeg" alt="KWON EUN BI" loading="lazy" width="100"> | `kwon-eun-bi/kwon-eun-bi.jpeg` |
+| KWON EUNBI | <img src="https://members-avatar.jacob.com.hk/kwon-eunbi/kwon-eunbi.jpeg" alt="KWON EUNBI" loading="lazy" width="100"> | `kwon-eunbi/kwon-eunbi.jpeg` |
 ## KYUHYUN
 
 | Member | Avatar | Path |
@@ -2221,11 +2221,6 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | YUTO ADACHI | <img src="https://members-avatar.jacob.com.hk/yuto-adachi/yuto-adachi.jpeg" alt="YUTO ADACHI" loading="lazy" width="100"> | `yuto-adachi/yuto-adachi.jpeg` |
-## ZICO
-
-| Member | Avatar | Path |
-| --- | --- | --- |
-| ZICO | <img src="https://members-avatar.jacob.com.hk/zico/zico.jpeg" alt="ZICO" loading="lazy" width="100"> | `zico/zico.jpeg` |
 ## 응답하라 하이스쿨
 
 | Member | Avatar | Path |
