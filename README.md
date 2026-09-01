@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 273
-- Total members: 1114
+- Total groups: 271
+- Total members: 1100
 
 ## &TEAM
 
@@ -562,17 +562,6 @@ The generated catalog appears below.
 | Dexter | <img src="https://members-avatar.jacob.com.hk/dearalice/dexter.jpeg" alt="Dexter" loading="lazy" width="100"> | `dearalice/dexter.jpeg` |
 | Olly | <img src="https://members-avatar.jacob.com.hk/dearalice/olly.jpeg" alt="Olly" loading="lazy" width="100"> | `dearalice/olly.jpeg` |
 | Reese | <img src="https://members-avatar.jacob.com.hk/dearalice/reese.jpeg" alt="Reese" loading="lazy" width="100"> | `dearalice/reese.jpeg` |
-## Destino
-
-| Member | Avatar | Path |
-| --- | --- | --- |
-| Alan Leal | <img src="https://members-avatar.jacob.com.hk/destino/alan-leal.jpeg" alt="Alan Leal" loading="lazy" width="100"> | `destino/alan-leal.jpeg` |
-| Destino | <img src="https://members-avatar.jacob.com.hk/destino/destino.jpeg" alt="Destino" loading="lazy" width="100"> | `destino/destino.jpeg` |
-| Felipe Rubio | <img src="https://members-avatar.jacob.com.hk/destino/felipe-rubio.jpeg" alt="Felipe Rubio" loading="lazy" width="100"> | `destino/felipe-rubio.jpeg` |
-| José Zuñiga | <img src="https://members-avatar.jacob.com.hk/destino/josé-zuñiga.jpeg" alt="José Zuñiga" loading="lazy" width="100"> | `destino/josé-zuñiga.jpeg` |
-| Juan Beltrán | <img src="https://members-avatar.jacob.com.hk/destino/juan-beltrán.jpeg" alt="Juan Beltrán" loading="lazy" width="100"> | `destino/juan-beltrán.jpeg` |
-| Luis Partida | <img src="https://members-avatar.jacob.com.hk/destino/luis-partida.jpeg" alt="Luis Partida" loading="lazy" width="100"> | `destino/luis-partida.jpeg` |
-| Martin Abasta | <img src="https://members-avatar.jacob.com.hk/destino/martin-abasta.jpeg" alt="Martin Abasta" loading="lazy" width="100"> | `destino/martin-abasta.jpeg` |
 ## dodree (도드리)
 
 | Member | Avatar | Path |
@@ -741,7 +730,6 @@ The generated catalog appears below.
 | HYOYEON | <img src="https://members-avatar.jacob.com.hk/girls-generation/hyoyeon.jpeg" alt="HYOYEON" loading="lazy" width="100"> | `girls-generation/hyoyeon.jpeg` |
 | TAEYEON | <img src="https://members-avatar.jacob.com.hk/girls-generation/taeyeon.jpeg" alt="TAEYEON" loading="lazy" width="100"> | `girls-generation/taeyeon.jpeg` |
 | YOONA | <img src="https://members-avatar.jacob.com.hk/girls-generation/yoona.jpeg" alt="YOONA" loading="lazy" width="100"> | `girls-generation/yoona.jpeg` |
-| YURI | <img src="https://members-avatar.jacob.com.hk/girls-generation/yuri.jpeg" alt="YURI" loading="lazy" width="100"> | `girls-generation/yuri.jpeg` |
 ## GIRLSET
 
 | Member | Avatar | Path |
@@ -1283,16 +1271,6 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | MUN KA YOUNG | <img src="https://members-avatar.jacob.com.hk/mun-ka-young/mun-ka-young.jpeg" alt="MUN KA YOUNG" loading="lazy" width="100"> | `mun-ka-young/mun-ka-young.jpeg` |
-## Musza
-
-| Member | Avatar | Path |
-| --- | --- | --- |
-| Cynthia Ochoa | <img src="https://members-avatar.jacob.com.hk/musza/cynthia-ochoa.jpeg" alt="Cynthia Ochoa" loading="lazy" width="100"> | `musza/cynthia-ochoa.jpeg` |
-| Jerry Antoni | <img src="https://members-avatar.jacob.com.hk/musza/jerry-antoni.jpeg" alt="Jerry Antoni" loading="lazy" width="100"> | `musza/jerry-antoni.jpeg` |
-| Jordi Blanco | <img src="https://members-avatar.jacob.com.hk/musza/jordi-blanco.jpeg" alt="Jordi Blanco" loading="lazy" width="100"> | `musza/jordi-blanco.jpeg` |
-| Oscar Campos | <img src="https://members-avatar.jacob.com.hk/musza/oscar-campos.jpeg" alt="Oscar Campos" loading="lazy" width="100"> | `musza/oscar-campos.jpeg` |
-| Ramiro Zúñiga | <img src="https://members-avatar.jacob.com.hk/musza/ramiro-zúñiga.jpeg" alt="Ramiro Zúñiga" loading="lazy" width="100"> | `musza/ramiro-zúñiga.jpeg` |
-| Rodo Blackmore | <img src="https://members-avatar.jacob.com.hk/musza/rodo-blackmore.jpeg" alt="Rodo Blackmore" loading="lazy" width="100"> | `musza/rodo-blackmore.jpeg` |
 ## n.SSign
 
 | Member | Avatar | Path |
