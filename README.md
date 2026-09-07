@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 271
-- Total members: 1100
+- Total members: 1101
 
 ## &TEAM
 
@@ -849,6 +849,13 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | imase | <img src="https://members-avatar.jacob.com.hk/imase/imase.jpeg" alt="imase" loading="lazy" width="100"> | `imase/imase.jpeg` |
+## In A Minute
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| HYUNYEOP | <img src="https://members-avatar.jacob.com.hk/in-a-minute/hyunyeop.jpeg" alt="HYUNYEOP" loading="lazy" width="100"> | `in-a-minute/hyunyeop.jpeg` |
+| JAEJUN | <img src="https://members-avatar.jacob.com.hk/in-a-minute/jaejun.jpeg" alt="JAEJUN" loading="lazy" width="100"> | `in-a-minute/jaejun.jpeg` |
+| JUNTAE | <img src="https://members-avatar.jacob.com.hk/in-a-minute/juntae.jpeg" alt="JUNTAE" loading="lazy" width="100"> | `in-a-minute/juntae.jpeg` |
 ## IRISÉ
 
 | Member | Avatar | Path |
@@ -944,12 +951,6 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | JVKE | <img src="https://members-avatar.jacob.com.hk/jvke/jvke.jpeg" alt="JVKE" loading="lazy" width="100"> | `jvke/jvke.jpeg` |
-## K-Pop Square with Berriz
-
-| Member | Avatar | Path |
-| --- | --- | --- |
-| Berriz | <img src="https://members-avatar.jacob.com.hk/k-pop-square-with-berriz/berriz.jpeg" alt="Berriz" loading="lazy" width="100"> | `k-pop-square-with-berriz/berriz.jpeg` |
-| Melon | <img src="https://members-avatar.jacob.com.hk/k-pop-square-with-berriz/melon.jpeg" alt="Melon" loading="lazy" width="100"> | `k-pop-square-with-berriz/melon.jpeg` |
 ## KANGTA
 
 | Member | Avatar | Path |
