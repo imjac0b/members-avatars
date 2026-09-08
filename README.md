@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 271
-- Total members: 1101
+- Total groups: 272
+- Total members: 1105
 
 ## &TEAM
 
@@ -1089,6 +1089,14 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | KINO | <img src="https://members-avatar.jacob.com.hk/kino/kino.jpeg" alt="KINO" loading="lazy" width="100"> | `kino/kino.jpeg` |
+## KISS OF LIFE
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| BELLE | <img src="https://members-avatar.jacob.com.hk/kiss-of-life/belle.jpeg" alt="BELLE" loading="lazy" width="100"> | `kiss-of-life/belle.jpeg` |
+| HANEUL | <img src="https://members-avatar.jacob.com.hk/kiss-of-life/haneul.jpeg" alt="HANEUL" loading="lazy" width="100"> | `kiss-of-life/haneul.jpeg` |
+| JULIE | <img src="https://members-avatar.jacob.com.hk/kiss-of-life/julie.jpeg" alt="JULIE" loading="lazy" width="100"> | `kiss-of-life/julie.jpeg` |
+| NATTY | <img src="https://members-avatar.jacob.com.hk/kiss-of-life/natty.jpeg" alt="NATTY" loading="lazy" width="100"> | `kiss-of-life/natty.jpeg` |
 ## KWON EUNBI
 
 | Member | Avatar | Path |
