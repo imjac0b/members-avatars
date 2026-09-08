@@ -102,6 +102,7 @@ const README_PLACEHOLDER = "<!-- GENERATED_MEMBERS_AVATARS -->";
 const README_TEMPLATE_PATH = "README.template.md";
 const README_OUTPUT_PATH = "README.md";
 const GROUPS_JSON_PATH = "avatars/groups.json";
+const MEMBERS_JSON_PATH = "avatars/members.json";
 const ARIA2_INPUT_PATH = "avatars.aria2c.txt";
 const PUBLIC_BASE_URL = (
   process.env.PUBLIC_BASE_URL ?? "https://members-avatar.jacob.com.hk"
@@ -714,6 +715,21 @@ const updateJsonCatalogs = async (groups: GroupCatalog[]) => {
   }));
 
   await Bun.write(GROUPS_JSON_PATH, `${JSON.stringify(groupCatalog, null, 2)}\n`);
+
+  const allMembersCatalog = groups.flatMap((group) =>
+    group.members.map((member) => ({
+      id: member.memberSlug,
+      name: member.memberName,
+      groupId: group.groupSlug,
+      groupName: group.groupName,
+      avatarPath: toPublicAvatarPath(member.outputPath),
+    })),
+  );
+
+  await Bun.write(
+    MEMBERS_JSON_PATH,
+    `${JSON.stringify(allMembersCatalog, null, 2)}\n`,
+  );
 
   for (const group of groups) {
     const membersPath = `avatars/${group.groupSlug}/members.json`;
