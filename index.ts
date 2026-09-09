@@ -1,10 +1,15 @@
 type Community = {
   communityId: number;
   communityName: string;
+  iconImageUrl?: string;
 };
 
 type WeverseGroupCommunitiesResponse = {
-  data?: Community[];
+  data?: Array<{
+    communityId?: number;
+    communityName?: string;
+    logoImage?: string;
+  }>;
 };
 
 type WeverseHighlightResponse = {
@@ -30,6 +35,7 @@ type BerrizDiscoverResponse = {
       type?: string;
       id?: string;
       name?: string;
+      imageUrl?: string;
     }>;
   };
 };
@@ -50,6 +56,9 @@ type FansHomeScreenResponse = {
     randomizedAllGroups?: Array<{
       id?: string;
       name?: string;
+      mainLogoImage?: {
+        thumbnailUrl?: string;
+      };
       _member?: {
         nickname?: string;
       };
@@ -79,14 +88,26 @@ type AvatarDownload = {
   outputPath: string;
 };
 
+type GroupIconDownload = {
+  groupName: string;
+  imageUrl: string;
+  outputPath: string;
+};
+
+type ProviderResult = {
+  avatars: AvatarDownload[];
+  icons: GroupIconDownload[];
+};
+
 type AvatarProvider = {
   name: string;
-  listAvatars: () => Promise<AvatarDownload[]>;
+  listAvatars: () => Promise<ProviderResult>;
 };
 
 type GroupCatalog = {
   groupName: string;
   groupSlug: string;
+  iconOutputPath?: string;
   members: Array<{
     memberName: string;
     memberSlug: string;
@@ -146,6 +167,27 @@ const slugifyGroupName = (value: string) => {
     .replace(/^-+|-+$/g, "");
 
   return slug || "unnamed-group";
+};
+
+const groupIconOutputPath = (groupSlug: string) => `avatars/${groupSlug}/icon.jpeg`;
+
+const buildGroupIcon = (
+  groupName: string,
+  iconImageUrl: string | undefined,
+): GroupIconDownload | null => {
+  const imageUrl = iconImageUrl?.trim();
+
+  if (!imageUrl) {
+    return null;
+  }
+
+  const groupSlug = slugifyGroupName(groupName);
+
+  return {
+    groupName,
+    imageUrl,
+    outputPath: groupIconOutputPath(groupSlug),
+  };
 };
 
 const isMostlyAscii = (value: string) => /^[\x00-\x7F]+$/.test(value);
@@ -239,14 +281,29 @@ const getWeverseCommunities = async () => {
     },
   );
 
-  const communities = response.data ?? [];
+  const communities: Community[] = [];
+
+  for (const entry of response.data ?? []) {
+    const communityName = entry.communityName?.trim();
+
+    if (typeof entry.communityId !== "number" || !communityName) {
+      continue;
+    }
+
+    communities.push({
+      communityId: entry.communityId,
+      communityName,
+      iconImageUrl: entry.logoImage?.trim(),
+    });
+  }
+
   console.log(`[weverse] Loaded ${communities.length} communities`);
   return communities;
 };
 
 const getWeverseCommunityAvatars = async (
   community: Community,
-): Promise<AvatarDownload[]> => {
+): Promise<ProviderResult> => {
   console.log(`[weverse] Fetching members for ${community.communityName}`);
 
   const response = await weverseFetch<WeverseHighlightResponse>(
@@ -289,7 +346,9 @@ const getWeverseCommunityAvatars = async (
     `[weverse] Found ${avatars.length} members for ${community.communityName}`,
   );
 
-  return avatars;
+  const icon = buildGroupIcon(community.communityName, community.iconImageUrl);
+
+  return { avatars, icons: icon ? [icon] : [] };
 };
 
 const weverseProvider: AvatarProvider = {
@@ -300,7 +359,10 @@ const weverseProvider: AvatarProvider = {
       communities.map((community) => getWeverseCommunityAvatars(community)),
     );
 
-    return communityResults.flat();
+    return {
+      avatars: communityResults.flatMap((result) => result.avatars),
+      icons: communityResults.flatMap((result) => result.icons),
+    };
   },
 };
 
@@ -344,6 +406,7 @@ const getBerrizCommunities = async () => {
     .map((entry) => ({
       communityId: Number(entry.id),
       communityName: entry.name!.trim(),
+      iconImageUrl: entry.imageUrl?.trim(),
     }))
     .filter(
       (community) =>
@@ -356,7 +419,7 @@ const getBerrizCommunities = async () => {
 
 const getBerrizCommunityAvatars = async (
   community: Community,
-): Promise<AvatarDownload[]> => {
+): Promise<ProviderResult> => {
   console.log(`[berriz] Fetching members for ${community.communityName}`);
 
   const response = await berrizFetch<BerrizCommunityDetailResponse>(
@@ -391,7 +454,10 @@ const getBerrizCommunityAvatars = async (
     .filter((artist): artist is AvatarDownload => artist !== null);
 
   console.log(`[berriz] Found ${avatars.length} members for ${groupName}`);
-  return avatars;
+
+  const icon = buildGroupIcon(groupName, community.iconImageUrl);
+
+  return { avatars, icons: icon ? [icon] : [] };
 };
 
 const berrizProvider: AvatarProvider = {
@@ -402,7 +468,10 @@ const berrizProvider: AvatarProvider = {
       communities.map((community) => getBerrizCommunityAvatars(community)),
     );
 
-    return communityResults.flat();
+    return {
+      avatars: communityResults.flatMap((result) => result.avatars),
+      icons: communityResults.flatMap((result) => result.icons),
+    };
   },
 };
 
@@ -546,6 +615,7 @@ const getFansGroups = async () => {
     .map((group) => ({
       communityId: Number(group.id),
       communityName: group.name?.trim() || group._member?.nickname?.trim() || "",
+      iconImageUrl: group.mainLogoImage?.thumbnailUrl?.trim(),
     }))
     .filter(
       (group) =>
@@ -558,7 +628,7 @@ const getFansGroups = async () => {
 
 const getFansGroupAvatars = async (
   community: Community,
-): Promise<AvatarDownload[]> => {
+): Promise<ProviderResult> => {
   console.log(`[fans] Fetching members for ${community.communityName}`);
 
   const response = await fansFetch<FansGroupArtistsResponse>(
@@ -596,7 +666,10 @@ const getFansGroupAvatars = async (
     .filter((artist): artist is AvatarDownload => artist !== null);
 
   console.log(`[fans] Found ${avatars.length} members for ${community.communityName}`);
-  return avatars;
+
+  const icon = buildGroupIcon(community.communityName, community.iconImageUrl);
+
+  return { avatars, icons: icon ? [icon] : [] };
 };
 
 const fansProvider: AvatarProvider = {
@@ -607,11 +680,17 @@ const fansProvider: AvatarProvider = {
       communities.map((community) => getFansGroupAvatars(community)),
     );
 
-    return communityResults.flat();
+    return {
+      avatars: communityResults.flatMap((result) => result.avatars),
+      icons: communityResults.flatMap((result) => result.icons),
+    };
   },
 };
 
-const buildCatalog = (avatars: AvatarDownload[]): GroupCatalog[] => {
+const buildCatalog = (
+  avatars: AvatarDownload[],
+  icons: GroupIconDownload[],
+): GroupCatalog[] => {
   const groups = new Map<string, GroupCatalog>();
   const sortedAvatars = [...avatars].sort((a, b) => {
     const groupComparison = a.groupName.localeCompare(b.groupName);
@@ -649,6 +728,25 @@ const buildCatalog = (avatars: AvatarDownload[]): GroupCatalog[] => {
     });
   }
 
+  for (const icon of icons) {
+    const groupSlug = slugifyGroupName(icon.groupName);
+    const existingGroup = groups.get(groupSlug);
+
+    if (!existingGroup) {
+      groups.set(groupSlug, {
+        groupName: icon.groupName,
+        groupSlug,
+        iconOutputPath: icon.outputPath,
+        members: [],
+      });
+      continue;
+    }
+
+    if (!existingGroup.iconOutputPath) {
+      existingGroup.iconOutputPath = icon.outputPath;
+    }
+  }
+
   return [...groups.values()]
     .map((group) => ({
       ...group,
@@ -682,7 +780,11 @@ const renderReadmeCatalog = (groups: GroupCatalog[]) =>
           )
           .join("\n");
 
-        return `## ${group.groupName}
+        const groupIcon = group.iconOutputPath
+          ? `<img src="${toPublicAvatarUrl(group.iconOutputPath)}" alt="${group.groupName}" loading="lazy" width="60"> `
+          : "";
+
+        return `## ${groupIcon}${group.groupName}
 
 | Member | Avatar | Path |
 | --- | --- | --- |
@@ -712,6 +814,9 @@ const updateJsonCatalogs = async (groups: GroupCatalog[]) => {
   const groupCatalog = groups.map((group) => ({
     id: group.groupSlug,
     name: group.groupName,
+    iconPath: group.iconOutputPath
+      ? toPublicAvatarPath(group.iconOutputPath)
+      : undefined,
   }));
 
   await Bun.write(GROUPS_JSON_PATH, `${JSON.stringify(groupCatalog, null, 2)}\n`);
@@ -742,12 +847,14 @@ const updateJsonCatalogs = async (groups: GroupCatalog[]) => {
   }
 };
 
-const createAria2Input = async (avatars: AvatarDownload[]) => {
-  const manifest = avatars
+const createAria2Input = async (
+  downloads: Array<{ imageUrl: string; outputPath: string }>,
+) => {
+  const manifest = downloads
     .map(
-      (avatar) => `${avatar.imageUrl}
-  out=${avatar.outputPath.slice(avatar.outputPath.lastIndexOf("/") + 1)}
-  dir=${avatar.outputPath.slice(0, avatar.outputPath.lastIndexOf("/"))}`,
+      (download) => `${download.imageUrl}
+  out=${download.outputPath.slice(download.outputPath.lastIndexOf("/") + 1)}
+  dir=${download.outputPath.slice(0, download.outputPath.lastIndexOf("/"))}`,
     )
     .join("\n");
 
@@ -787,43 +894,58 @@ const runAria2Batch = async () => {
   console.log("[download] aria2c batch finished");
 };
 
-const downloadAllMemberAvatars = async (providers: AvatarProvider[]) => {
-  const avatarLists = await Promise.all(
+const downloadAllMemberAvatars = async (
+  providers: AvatarProvider[],
+): Promise<ProviderResult> => {
+  const providerResults = await Promise.all(
     providers.map(async (provider) => {
       console.log(`[provider] Loading avatars from ${provider.name}`);
-      const avatars = await provider.listAvatars();
-      console.log(`[provider] ${provider.name} returned ${avatars.length} avatars`);
-      return avatars;
+      const result = await provider.listAvatars();
+      console.log(
+        `[provider] ${provider.name} returned ${result.avatars.length} avatars and ${result.icons.length} group icons`,
+      );
+      return result;
     }),
   );
 
   const uniqueAvatars = new Map<string, AvatarDownload>();
 
-  for (const avatar of avatarLists.flat()) {
+  for (const avatar of providerResults.flatMap((result) => result.avatars)) {
     const key = `${slugifyGroupName(avatar.groupName)}/${slugifyMemberName(avatar.memberName)}`;
     uniqueAvatars.set(key, avatar);
   }
 
+  const uniqueIcons = new Map<string, GroupIconDownload>();
+
+  for (const icon of providerResults.flatMap((result) => result.icons)) {
+    const key = slugifyGroupName(icon.groupName);
+    uniqueIcons.set(key, icon);
+  }
+
   const avatars = [...uniqueAvatars.values()];
-  console.log(`[download] Downloading ${avatars.length} unique avatars`);
+  const icons = [...uniqueIcons.values()];
+
+  console.log(
+    `[download] Downloading ${avatars.length} unique avatars and ${icons.length} group icons`,
+  );
   for (const [index, avatar] of avatars.entries()) {
     console.log(
       `[download] ${index + 1}/${avatars.length} ${avatar.groupName} / ${avatar.memberName} -> ${avatar.outputPath}`,
     );
   }
-  await createAria2Input(avatars);
+  await createAria2Input([...avatars, ...icons]);
   await runAria2Batch();
 
-  return avatars;
+  return { avatars, icons };
 };
 
 const main = async () => {
-  const avatars = await downloadAllMemberAvatars([
+  const { avatars, icons } = await downloadAllMemberAvatars([
     weverseProvider,
     berrizProvider,
     fansProvider,
   ]);
-  const groups = buildCatalog(avatars);
+  const groups = buildCatalog(avatars, icons);
 
   await updateReadme(groups);
   await updateJsonCatalogs(groups);
