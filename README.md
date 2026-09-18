@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 273
-- Total members: 1106
+- Total groups: 274
+- Total members: 1109
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -951,6 +951,12 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | JVKE | <img src="https://members-avatar.jacob.com.hk/jvke/jvke.jpeg" alt="JVKE" loading="lazy" width="100"> | `jvke/jvke.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/k-pop-square-with-berriz/icon.jpeg" alt="K-Pop Square with Berriz" loading="lazy" width="60"> K-Pop Square with Berriz
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| Berriz | <img src="https://members-avatar.jacob.com.hk/k-pop-square-with-berriz/berriz.jpeg" alt="Berriz" loading="lazy" width="100"> | `k-pop-square-with-berriz/berriz.jpeg` |
+| Melon | <img src="https://members-avatar.jacob.com.hk/k-pop-square-with-berriz/melon.jpeg" alt="Melon" loading="lazy" width="100"> | `k-pop-square-with-berriz/melon.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/kangta/icon.jpeg" alt="KANGTA" loading="lazy" width="60"> KANGTA
 
 | Member | Avatar | Path |
@@ -1041,6 +1047,7 @@ The generated catalog appears below.
 | --- | --- | --- |
 | HAUM | <img src="https://members-avatar.jacob.com.hk/kiiikiii/haum.jpeg" alt="HAUM" loading="lazy" width="100"> | `kiiikiii/haum.jpeg` |
 | JIYU | <img src="https://members-avatar.jacob.com.hk/kiiikiii/jiyu.jpeg" alt="JIYU" loading="lazy" width="100"> | `kiiikiii/jiyu.jpeg` |
+| KiiiKiii JAPAN STAFF | <img src="https://members-avatar.jacob.com.hk/kiiikiii/kiiikiii-japan-staff.jpeg" alt="KiiiKiii JAPAN STAFF" loading="lazy" width="100"> | `kiiikiii/kiiikiii-japan-staff.jpeg` |
 | KYA | <img src="https://members-avatar.jacob.com.hk/kiiikiii/kya.jpeg" alt="KYA" loading="lazy" width="100"> | `kiiikiii/kya.jpeg` |
 | LEESOL | <img src="https://members-avatar.jacob.com.hk/kiiikiii/leesol.jpeg" alt="LEESOL" loading="lazy" width="100"> | `kiiikiii/leesol.jpeg` |
 | SUI | <img src="https://members-avatar.jacob.com.hk/kiiikiii/sui.jpeg" alt="SUI" loading="lazy" width="100"> | `kiiikiii/sui.jpeg` |
