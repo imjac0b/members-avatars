@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 274
-- Total members: 1109
+- Total groups: 276
+- Total members: 1117
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -906,6 +906,11 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | JD1 | <img src="https://members-avatar.jacob.com.hk/jd1/jd1.jpeg" alt="JD1" loading="lazy" width="100"> | `jd1/jd1.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/jea/icon.jpeg" alt="JeA" loading="lazy" width="60"> JeA
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| JeA | <img src="https://members-avatar.jacob.com.hk/jea/jea.jpeg" alt="JeA" loading="lazy" width="100"> | `jea/jea.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/jennie/icon.jpeg" alt="JENNIE" loading="lazy" width="60"> JENNIE
 
 | Member | Avatar | Path |
@@ -1782,6 +1787,17 @@ The generated catalog appears below.
 | I.N | <img src="https://members-avatar.jacob.com.hk/stray-kids/i-n.jpeg" alt="I.N" loading="lazy" width="100"> | `stray-kids/i-n.jpeg` |
 | LEE KNOW | <img src="https://members-avatar.jacob.com.hk/stray-kids/lee-know.jpeg" alt="LEE KNOW" loading="lazy" width="100"> | `stray-kids/lee-know.jpeg` |
 | SEUNGMIN | <img src="https://members-avatar.jacob.com.hk/stray-kids/seungmin.jpeg" alt="SEUNGMIN" loading="lazy" width="100"> | `stray-kids/seungmin.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/stun-x/icon.jpeg" alt="STUN-X" loading="lazy" width="60"> STUN-X
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| AKHAN | <img src="https://members-avatar.jacob.com.hk/stun-x/akhan.jpeg" alt="AKHAN" loading="lazy" width="100"> | `stun-x/akhan.jpeg` |
+| CLAUDE | <img src="https://members-avatar.jacob.com.hk/stun-x/claude.jpeg" alt="CLAUDE" loading="lazy" width="100"> | `stun-x/claude.jpeg` |
+| LEILA | <img src="https://members-avatar.jacob.com.hk/stun-x/leila.jpeg" alt="LEILA" loading="lazy" width="100"> | `stun-x/leila.jpeg` |
+| LEZEF | <img src="https://members-avatar.jacob.com.hk/stun-x/lezef.jpeg" alt="LEZEF" loading="lazy" width="100"> | `stun-x/lezef.jpeg` |
+| TAM INA | <img src="https://members-avatar.jacob.com.hk/stun-x/tam-ina.jpeg" alt="TAM INA" loading="lazy" width="100"> | `stun-x/tam-ina.jpeg` |
+| TITAN | <img src="https://members-avatar.jacob.com.hk/stun-x/titan.jpeg" alt="TITAN" loading="lazy" width="100"> | `stun-x/titan.jpeg` |
+| YUTH | <img src="https://members-avatar.jacob.com.hk/stun-x/yuth.jpeg" alt="YUTH" loading="lazy" width="100"> | `stun-x/yuth.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/sunmi/icon.jpeg" alt="SUNMI" loading="lazy" width="60"> SUNMI
 
 | Member | Avatar | Path |
