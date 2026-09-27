@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 276
-- Total members: 1117
+- Total groups: 275
+- Total members: 1115
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -956,12 +956,6 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | JVKE | <img src="https://members-avatar.jacob.com.hk/jvke/jvke.jpeg" alt="JVKE" loading="lazy" width="100"> | `jvke/jvke.jpeg` |
-## <img src="https://members-avatar.jacob.com.hk/k-pop-square-with-berriz/icon.jpeg" alt="K-Pop Square with Berriz" loading="lazy" width="60"> K-Pop Square with Berriz
-
-| Member | Avatar | Path |
-| --- | --- | --- |
-| Berriz | <img src="https://members-avatar.jacob.com.hk/k-pop-square-with-berriz/berriz.jpeg" alt="Berriz" loading="lazy" width="100"> | `k-pop-square-with-berriz/berriz.jpeg` |
-| Melon | <img src="https://members-avatar.jacob.com.hk/k-pop-square-with-berriz/melon.jpeg" alt="Melon" loading="lazy" width="100"> | `k-pop-square-with-berriz/melon.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/kangta/icon.jpeg" alt="KANGTA" loading="lazy" width="60"> KANGTA
 
 | Member | Avatar | Path |
