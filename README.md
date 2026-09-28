@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 275
-- Total members: 1115
+- Total groups: 276
+- Total members: 1116
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -549,6 +549,11 @@ The generated catalog appears below.
 | SUNGJIN | <img src="https://members-avatar.jacob.com.hk/day6/sungjin.jpeg" alt="SUNGJIN" loading="lazy" width="100"> | `day6/sungjin.jpeg` |
 | WONPIL | <img src="https://members-avatar.jacob.com.hk/day6/wonpil.jpeg" alt="WONPIL" loading="lazy" width="100"> | `day6/wonpil.jpeg` |
 | Young K | <img src="https://members-avatar.jacob.com.hk/day6/young-k.jpeg" alt="Young K" loading="lazy" width="100"> | `day6/young-k.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/dayoung/icon.jpeg" alt="DAYOUNG" loading="lazy" width="60"> DAYOUNG
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| DAYOUNG | <img src="https://members-avatar.jacob.com.hk/dayoung/dayoung.jpeg" alt="DAYOUNG" loading="lazy" width="100"> | `dayoung/dayoung.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/dazbee/icon.jpeg" alt="DAZBEE" loading="lazy" width="60"> DAZBEE
 
 | Member | Avatar | Path |
@@ -1395,11 +1400,11 @@ The generated catalog appears below.
 | KYUJIN | <img src="https://members-avatar.jacob.com.hk/nmixx/kyujin.jpeg" alt="KYUJIN" loading="lazy" width="100"> | `nmixx/kyujin.jpeg` |
 | Lily | <img src="https://members-avatar.jacob.com.hk/nmixx/lily.jpeg" alt="Lily" loading="lazy" width="100"> | `nmixx/lily.jpeg` |
 | sullyoon | <img src="https://members-avatar.jacob.com.hk/nmixx/sullyoon.jpeg" alt="sullyoon" loading="lazy" width="100"> | `nmixx/sullyoon.jpeg` |
-## <img src="https://members-avatar.jacob.com.hk/noa/icon.jpeg" alt="NOA" loading="lazy" width="60"> NOA
+## <img src="https://members-avatar.jacob.com.hk/noa/icon.jpeg" alt="noa" loading="lazy" width="60"> noa
 
 | Member | Avatar | Path |
 | --- | --- | --- |
-| NOA | <img src="https://members-avatar.jacob.com.hk/noa/noa.jpeg" alt="NOA" loading="lazy" width="100"> | `noa/noa.jpeg` |
+| noa | <img src="https://members-avatar.jacob.com.hk/noa/noa.jpeg" alt="noa" loading="lazy" width="100"> | `noa/noa.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/nowz/icon.jpeg" alt="NOWZ" loading="lazy" width="60"> NOWZ
 
 | Member | Avatar | Path |
