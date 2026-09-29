@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 276
-- Total members: 1116
+- Total members: 1113
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -161,8 +161,6 @@ The generated catalog appears below.
 | Kubo Hinano | <img src="https://members-avatar.jacob.com.hk/akb48/kubo-hinano.jpeg" alt="Kubo Hinano" loading="lazy" width="100"> | `akb48/kubo-hinano.jpeg` |
 | Kudo Kasumi | <img src="https://members-avatar.jacob.com.hk/akb48/kudo-kasumi.jpeg" alt="Kudo Kasumi" loading="lazy" width="100"> | `akb48/kudo-kasumi.jpeg` |
 | Kurosu Haruka | <img src="https://members-avatar.jacob.com.hk/akb48/kurosu-haruka.jpeg" alt="Kurosu Haruka" loading="lazy" width="100"> | `akb48/kurosu-haruka.jpeg` |
-| Maho Omori | <img src="https://members-avatar.jacob.com.hk/akb48/maho-omori.jpeg" alt="Maho Omori" loading="lazy" width="100"> | `akb48/maho-omori.jpeg` |
-| Manaka Taguchi | <img src="https://members-avatar.jacob.com.hk/akb48/manaka-taguchi.jpeg" alt="Manaka Taguchi" loading="lazy" width="100"> | `akb48/manaka-taguchi.jpeg` |
 | Masai Mayuu | <img src="https://members-avatar.jacob.com.hk/akb48/masai-mayuu.jpeg" alt="Masai Mayuu" loading="lazy" width="100"> | `akb48/masai-mayuu.jpeg` |
 | Mion Mukaichi | <img src="https://members-avatar.jacob.com.hk/akb48/mion-mukaichi.jpeg" alt="Mion Mukaichi" loading="lazy" width="100"> | `akb48/mion-mukaichi.jpeg` |
 | Mizuki Yamauchi | <img src="https://members-avatar.jacob.com.hk/akb48/mizuki-yamauchi.jpeg" alt="Mizuki Yamauchi" loading="lazy" width="100"> | `akb48/mizuki-yamauchi.jpeg` |
@@ -183,7 +181,6 @@ The generated catalog appears below.
 | Shiratori Sari | <img src="https://members-avatar.jacob.com.hk/akb48/shiratori-sari.jpeg" alt="Shiratori Sari" loading="lazy" width="100"> | `akb48/shiratori-sari.jpeg` |
 | Shitao Miu | <img src="https://members-avatar.jacob.com.hk/akb48/shitao-miu.jpeg" alt="Shitao Miu" loading="lazy" width="100"> | `akb48/shitao-miu.jpeg` |
 | Sora Yamazaki | <img src="https://members-avatar.jacob.com.hk/akb48/sora-yamazaki.jpeg" alt="Sora Yamazaki" loading="lazy" width="100"> | `akb48/sora-yamazaki.jpeg` |
-| Suzuki Kurumi | <img src="https://members-avatar.jacob.com.hk/akb48/suzuki-kurumi.jpeg" alt="Suzuki Kurumi" loading="lazy" width="100"> | `akb48/suzuki-kurumi.jpeg` |
 | Tokunaga Remi | <img src="https://members-avatar.jacob.com.hk/akb48/tokunaga-remi.jpeg" alt="Tokunaga Remi" loading="lazy" width="100"> | `akb48/tokunaga-remi.jpeg` |
 | Yagi Azuki | <img src="https://members-avatar.jacob.com.hk/akb48/yagi-azuki.jpeg" alt="Yagi Azuki" loading="lazy" width="100"> | `akb48/yagi-azuki.jpeg` |
 | Yamaguchi Yui | <img src="https://members-avatar.jacob.com.hk/akb48/yamaguchi-yui.jpeg" alt="Yamaguchi Yui" loading="lazy" width="100"> | `akb48/yamaguchi-yui.jpeg` |
