@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 275
-- Total members: 1110
+- Total groups: 276
+- Total members: 1111
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -630,6 +630,11 @@ The generated catalog appears below.
 | NI-KI | <img src="https://members-avatar.jacob.com.hk/enhypen/ni-ki.jpeg" alt="NI-KI" loading="lazy" width="100"> | `enhypen/ni-ki.jpeg` |
 | SUNGHOON | <img src="https://members-avatar.jacob.com.hk/enhypen/sunghoon.jpeg" alt="SUNGHOON" loading="lazy" width="100"> | `enhypen/sunghoon.jpeg` |
 | SUNOO | <img src="https://members-avatar.jacob.com.hk/enhypen/sunoo.jpeg" alt="SUNOO" loading="lazy" width="100"> | `enhypen/sunoo.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/eric/icon.jpeg" alt="ERIC" loading="lazy" width="60"> ERIC
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| ERIC | <img src="https://members-avatar.jacob.com.hk/eric/eric.jpeg" alt="ERIC" loading="lazy" width="100"> | `eric/eric.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/evan/icon.jpeg" alt="EVAN" loading="lazy" width="60"> EVAN
 
 | Member | Avatar | Path |
