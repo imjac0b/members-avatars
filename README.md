@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 276
-- Total members: 1111
+- Total members: 1112
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -2072,6 +2072,7 @@ The generated catalog appears below.
 | TODO EN EL VERSO | <img src="https://members-avatar.jacob.com.hk/weverse-zone/todo-en-el-verso.jpeg" alt="TODO EN EL VERSO" loading="lazy" width="100"> | `weverse-zone/todo-en-el-verso.jpeg` |
 | Weverse | <img src="https://members-avatar.jacob.com.hk/weverse-zone/weverse.jpeg" alt="Weverse" loading="lazy" width="100"> | `weverse-zone/weverse.jpeg` |
 | Weverse Con Festival | <img src="https://members-avatar.jacob.com.hk/weverse-zone/weverse-con-festival.jpeg" alt="Weverse Con Festival" loading="lazy" width="100"> | `weverse-zone/weverse-con-festival.jpeg` |
+| Weverse Con India | <img src="https://members-avatar.jacob.com.hk/weverse-zone/weverse-con-india.jpeg" alt="Weverse Con India" loading="lazy" width="100"> | `weverse-zone/weverse-con-india.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/whee-in/icon.jpeg" alt="Whee In" loading="lazy" width="60"> Whee In
 
 | Member | Avatar | Path |
