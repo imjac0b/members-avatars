@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 276
-- Total members: 1112
+- Total groups: 277
+- Total members: 1118
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -91,6 +91,16 @@ The generated catalog appears below.
 | SEUNGHEON | <img src="https://members-avatar.jacob.com.hk/8turn/seungheon.jpeg" alt="SEUNGHEON" loading="lazy" width="100"> | `8turn/seungheon.jpeg` |
 | YOONSUNG | <img src="https://members-avatar.jacob.com.hk/8turn/yoonsung.jpeg" alt="YOONSUNG" loading="lazy" width="100"> | `8turn/yoonsung.jpeg` |
 | YUNGYU | <img src="https://members-avatar.jacob.com.hk/8turn/yungyu.jpeg" alt="YUNGYU" loading="lazy" width="100"> | `8turn/yungyu.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/adap/icon.jpeg" alt="ADAP" loading="lazy" width="60"> ADAP
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| DOWON | <img src="https://members-avatar.jacob.com.hk/adap/dowon.jpeg" alt="DOWON" loading="lazy" width="100"> | `adap/dowon.jpeg` |
+| HYOTAE | <img src="https://members-avatar.jacob.com.hk/adap/hyotae.jpeg" alt="HYOTAE" loading="lazy" width="100"> | `adap/hyotae.jpeg` |
+| HYUNSUNG | <img src="https://members-avatar.jacob.com.hk/adap/hyunsung.jpeg" alt="HYUNSUNG" loading="lazy" width="100"> | `adap/hyunsung.jpeg` |
+| JAEYOUNG | <img src="https://members-avatar.jacob.com.hk/adap/jaeyoung.jpeg" alt="JAEYOUNG" loading="lazy" width="100"> | `adap/jaeyoung.jpeg` |
+| JONGHO | <img src="https://members-avatar.jacob.com.hk/adap/jongho.jpeg" alt="JONGHO" loading="lazy" width="100"> | `adap/jongho.jpeg` |
+| JUNSEOK | <img src="https://members-avatar.jacob.com.hk/adap/junseok.jpeg" alt="JUNSEOK" loading="lazy" width="100"> | `adap/junseok.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/aen/icon.jpeg" alt="AEN" loading="lazy" width="60"> AEN
 
 | Member | Avatar | Path |
