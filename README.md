@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 277
-- Total members: 1118
+- Total groups: 278
+- Total members: 1123
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -277,6 +277,15 @@ The generated catalog appears below.
 | OhJunseok | <img src="https://members-avatar.jacob.com.hk/atbo/ohjunseok.jpeg" alt="OhJunseok" loading="lazy" width="100"> | `atbo/ohjunseok.jpeg` |
 | RyuJunmin | <img src="https://members-avatar.jacob.com.hk/atbo/ryujunmin.jpeg" alt="RyuJunmin" loading="lazy" width="100"> | `atbo/ryujunmin.jpeg` |
 | WonBin | <img src="https://members-avatar.jacob.com.hk/atbo/wonbin.jpeg" alt="WonBin" loading="lazy" width="100"> | `atbo/wonbin.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/b-the-hood/icon.jpeg" alt="B THE HOOD (비더후드)" loading="lazy" width="60"> B THE HOOD (비더후드)
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| Eon | <img src="https://members-avatar.jacob.com.hk/b-the-hood/eon.jpeg" alt="Eon" loading="lazy" width="100"> | `b-the-hood/eon.jpeg` |
+| Jace | <img src="https://members-avatar.jacob.com.hk/b-the-hood/jace.jpeg" alt="Jace" loading="lazy" width="100"> | `b-the-hood/jace.jpeg` |
+| Kyryu | <img src="https://members-avatar.jacob.com.hk/b-the-hood/kyryu.jpeg" alt="Kyryu" loading="lazy" width="100"> | `b-the-hood/kyryu.jpeg` |
+| Luan | <img src="https://members-avatar.jacob.com.hk/b-the-hood/luan.jpeg" alt="Luan" loading="lazy" width="100"> | `b-the-hood/luan.jpeg` |
+| PER B | <img src="https://members-avatar.jacob.com.hk/b-the-hood/per-b.jpeg" alt="PER B" loading="lazy" width="100"> | `b-the-hood/per-b.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/b-dawn/icon.jpeg" alt="B:DAWN" loading="lazy" width="60"> B:DAWN
 
 | Member | Avatar | Path |
