@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 278
-- Total members: 1123
+- Total members: 1121
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -1023,11 +1023,9 @@ The generated catalog appears below.
 | MORE STAR | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/more-star.jpeg" alt="MORE STAR" loading="lazy" width="100"> | `kawaii-lab/more-star.jpeg` |
 | MS Ami Morita | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ms-ami-morita.jpeg" alt="MS Ami Morita" loading="lazy" width="100"> | `kawaii-lab/ms-ami-morita.jpeg` |
 | MS Cocona Arai | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ms-cocona-arai.jpeg" alt="MS Cocona Arai" loading="lazy" width="100"> | `kawaii-lab/ms-cocona-arai.jpeg` |
-| MS Karin Suzuki | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ms-karin-suzuki.jpeg" alt="MS Karin Suzuki" loading="lazy" width="100"> | `kawaii-lab/ms-karin-suzuki.jpeg` |
 | MS Kohaku Nakayama | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ms-kohaku-nakayama.jpeg" alt="MS Kohaku Nakayama" loading="lazy" width="100"> | `kawaii-lab/ms-kohaku-nakayama.jpeg` |
 | MS Marin Endo | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ms-marin-endo.jpeg" alt="MS Marin Endo" loading="lazy" width="100"> | `kawaii-lab/ms-marin-endo.jpeg` |
 | MS Nanaka Sasahara | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ms-nanaka-sasahara.jpeg" alt="MS Nanaka Sasahara" loading="lazy" width="100"> | `kawaii-lab/ms-nanaka-sasahara.jpeg` |
-| MS Rushia Yamamoto | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ms-rushia-yamamoto.jpeg" alt="MS Rushia Yamamoto" loading="lazy" width="100"> | `kawaii-lab/ms-rushia-yamamoto.jpeg` |
 | MS Sora Hagita | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ms-sora-hagita.jpeg" alt="MS Sora Hagita" loading="lazy" width="100"> | `kawaii-lab/ms-sora-hagita.jpeg` |
 | MS Yuna Takanashi | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ms-yuna-takanashi.jpeg" alt="MS Yuna Takanashi" loading="lazy" width="100"> | `kawaii-lab/ms-yuna-takanashi.jpeg` |
 | SS Ayu Okuda | <img src="https://members-avatar.jacob.com.hk/kawaii-lab/ss-ayu-okuda.jpeg" alt="SS Ayu Okuda" loading="lazy" width="100"> | `kawaii-lab/ss-ayu-okuda.jpeg` |
