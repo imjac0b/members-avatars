@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 278
-- Total members: 1121
+- Total groups: 280
+- Total members: 1133
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -881,6 +881,16 @@ The generated catalog appears below.
 | --- | --- | --- |
 | KIIRI | <img src="https://members-avatar.jacob.com.hk/irise/kiiri.jpeg" alt="KIIRI" loading="lazy" width="100"> | `irise/kiiri.jpeg` |
 | TIZ | <img src="https://members-avatar.jacob.com.hk/irise/tiz.jpeg" alt="TIZ" loading="lazy" width="100"> | `irise/tiz.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/isegye-idol/icon.jpeg" alt="ISEGYE IDOL" loading="lazy" width="60"> ISEGYE IDOL
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| GOSEGU | <img src="https://members-avatar.jacob.com.hk/isegye-idol/gosegu.jpeg" alt="GOSEGU" loading="lazy" width="100"> | `isegye-idol/gosegu.jpeg` |
+| INE | <img src="https://members-avatar.jacob.com.hk/isegye-idol/ine.jpeg" alt="INE" loading="lazy" width="100"> | `isegye-idol/ine.jpeg` |
+| JINGBURGER | <img src="https://members-avatar.jacob.com.hk/isegye-idol/jingburger.jpeg" alt="JINGBURGER" loading="lazy" width="100"> | `isegye-idol/jingburger.jpeg` |
+| JURURU | <img src="https://members-avatar.jacob.com.hk/isegye-idol/jururu.jpeg" alt="JURURU" loading="lazy" width="100"> | `isegye-idol/jururu.jpeg` |
+| LILPA | <img src="https://members-avatar.jacob.com.hk/isegye-idol/lilpa.jpeg" alt="LILPA" loading="lazy" width="100"> | `isegye-idol/lilpa.jpeg` |
+| VIICHAN | <img src="https://members-avatar.jacob.com.hk/isegye-idol/viichan.jpeg" alt="VIICHAN" loading="lazy" width="100"> | `isegye-idol/viichan.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/itzy/icon.jpeg" alt="ITZY" loading="lazy" width="60"> ITZY
 
 | Member | Avatar | Path |
@@ -1945,6 +1955,16 @@ The generated catalog appears below.
 | MiRe | <img src="https://members-avatar.jacob.com.hk/tri-be/mire.jpeg" alt="MiRe" loading="lazy" width="100"> | `tri-be/mire.jpeg` |
 | SoEun | <img src="https://members-avatar.jacob.com.hk/tri-be/soeun.jpeg" alt="SoEun" loading="lazy" width="100"> | `tri-be/soeun.jpeg` |
 | SongSun | <img src="https://members-avatar.jacob.com.hk/tri-be/songsun.jpeg" alt="SongSun" loading="lazy" width="100"> | `tri-be/songsun.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/trythat/icon.jpeg" alt="TRYTHAT" loading="lazy" width="60"> TRYTHAT
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| ATOM | <img src="https://members-avatar.jacob.com.hk/trythat/atom.jpeg" alt="ATOM" loading="lazy" width="100"> | `trythat/atom.jpeg` |
+| HANSEO | <img src="https://members-avatar.jacob.com.hk/trythat/hanseo.jpeg" alt="HANSEO" loading="lazy" width="100"> | `trythat/hanseo.jpeg` |
+| HYUKJIN | <img src="https://members-avatar.jacob.com.hk/trythat/hyukjin.jpeg" alt="HYUKJIN" loading="lazy" width="100"> | `trythat/hyukjin.jpeg` |
+| Kion | <img src="https://members-avatar.jacob.com.hk/trythat/kion.jpeg" alt="Kion" loading="lazy" width="100"> | `trythat/kion.jpeg` |
+| MINHA | <img src="https://members-avatar.jacob.com.hk/trythat/minha.jpeg" alt="MINHA" loading="lazy" width="100"> | `trythat/minha.jpeg` |
+| PIL | <img src="https://members-avatar.jacob.com.hk/trythat/pil.jpeg" alt="PIL" loading="lazy" width="100"> | `trythat/pil.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/tuide/icon.jpeg" alt="TUIDE" loading="lazy" width="60"> TUIDE
 
 | Member | Avatar | Path |
