@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 280
-- Total members: 1133
+- Total members: 1135
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -165,7 +165,6 @@ The generated catalog appears below.
 | Kudo Kasumi | <img src="https://members-avatar.jacob.com.hk/akb48/kudo-kasumi.jpeg" alt="Kudo Kasumi" loading="lazy" width="100"> | `akb48/kudo-kasumi.jpeg` |
 | Kurosu Haruka | <img src="https://members-avatar.jacob.com.hk/akb48/kurosu-haruka.jpeg" alt="Kurosu Haruka" loading="lazy" width="100"> | `akb48/kurosu-haruka.jpeg` |
 | Masai Mayuu | <img src="https://members-avatar.jacob.com.hk/akb48/masai-mayuu.jpeg" alt="Masai Mayuu" loading="lazy" width="100"> | `akb48/masai-mayuu.jpeg` |
-| Mion Mukaichi | <img src="https://members-avatar.jacob.com.hk/akb48/mion-mukaichi.jpeg" alt="Mion Mukaichi" loading="lazy" width="100"> | `akb48/mion-mukaichi.jpeg` |
 | Mizuki Yamauchi | <img src="https://members-avatar.jacob.com.hk/akb48/mizuki-yamauchi.jpeg" alt="Mizuki Yamauchi" loading="lazy" width="100"> | `akb48/mizuki-yamauchi.jpeg` |
 | Mizushima Miyuu | <img src="https://members-avatar.jacob.com.hk/akb48/mizushima-miyuu.jpeg" alt="Mizushima Miyuu" loading="lazy" width="100"> | `akb48/mizushima-miyuu.jpeg` |
 | Nagatomo Ayami | <img src="https://members-avatar.jacob.com.hk/akb48/nagatomo-ayami.jpeg" alt="Nagatomo Ayami" loading="lazy" width="100"> | `akb48/nagatomo-ayami.jpeg` |
@@ -1145,6 +1144,9 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | HEEYEON | <img src="https://members-avatar.jacob.com.hk/latency/heeyeon.jpeg" alt="HEEYEON" loading="lazy" width="100"> | `latency/heeyeon.jpeg` |
+| SEORYHN | <img src="https://members-avatar.jacob.com.hk/latency/seoryhn.jpeg" alt="SEORYHN" loading="lazy" width="100"> | `latency/seoryhn.jpeg` |
+| SOOBIN | <img src="https://members-avatar.jacob.com.hk/latency/soobin.jpeg" alt="SOOBIN" loading="lazy" width="100"> | `latency/soobin.jpeg` |
+| YUJIN | <img src="https://members-avatar.jacob.com.hk/latency/yujin.jpeg" alt="YUJIN" loading="lazy" width="100"> | `latency/yujin.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/lauv/icon.jpeg" alt="Lauv" loading="lazy" width="60"> Lauv
 
 | Member | Avatar | Path |
