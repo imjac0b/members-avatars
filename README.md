@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 280
-- Total members: 1135
+- Total groups: 281
+- Total members: 1140
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -261,6 +261,15 @@ The generated catalog appears below.
 | JIBEEN | <img src="https://members-avatar.jacob.com.hk/arrc/jibeen.jpeg" alt="JIBEEN" loading="lazy" width="100"> | `arrc/jibeen.jpeg` |
 | KIEN | <img src="https://members-avatar.jacob.com.hk/arrc/kien.jpeg" alt="KIEN" loading="lazy" width="100"> | `arrc/kien.jpeg` |
 | RIOTO | <img src="https://members-avatar.jacob.com.hk/arrc/rioto.jpeg" alt="RIOTO" loading="lazy" width="100"> | `arrc/rioto.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/asc2nt/icon.jpeg" alt="ASC2NT" loading="lazy" width="60"> ASC2NT
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| HYOWON | <img src="https://members-avatar.jacob.com.hk/asc2nt/hyowon.jpeg" alt="HYOWON" loading="lazy" width="100"> | `asc2nt/hyowon.jpeg` |
+| JAY | <img src="https://members-avatar.jacob.com.hk/asc2nt/jay.jpeg" alt="JAY" loading="lazy" width="100"> | `asc2nt/jay.jpeg` |
+| KARAM | <img src="https://members-avatar.jacob.com.hk/asc2nt/karam.jpeg" alt="KARAM" loading="lazy" width="100"> | `asc2nt/karam.jpeg` |
+| KYLE | <img src="https://members-avatar.jacob.com.hk/asc2nt/kyle.jpeg" alt="KYLE" loading="lazy" width="100"> | `asc2nt/kyle.jpeg` |
+| REON | <img src="https://members-avatar.jacob.com.hk/asc2nt/reon.jpeg" alt="REON" loading="lazy" width="100"> | `asc2nt/reon.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/ash-island/icon.jpeg" alt="ASH ISLAND" loading="lazy" width="60"> ASH ISLAND
 
 | Member | Avatar | Path |
