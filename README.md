@@ -2108,7 +2108,7 @@ The generated catalog appears below.
 | 이재희 | <img src="https://members-avatar.jacob.com.hk/weeekly/이재희.jpeg" alt="이재희" loading="lazy" width="100"> | `weeekly/이재희.jpeg` |
 | 조아 | <img src="https://members-avatar.jacob.com.hk/weeekly/조아.jpeg" alt="조아" loading="lazy" width="100"> | `weeekly/조아.jpeg` |
 | 지한 | <img src="https://members-avatar.jacob.com.hk/weeekly/지한.jpeg" alt="지한" loading="lazy" width="100"> | `weeekly/지한.jpeg` |
-## <img src="https://members-avatar.jacob.com.hk/weverse-zone/icon.jpeg" alt="Weverse zone" loading="lazy" width="60"> Weverse zone
+## <img src="https://members-avatar.jacob.com.hk/weverse-zone/icon.jpeg" alt="Weverse Zone" loading="lazy" width="60"> Weverse Zone
 
 | Member | Avatar | Path |
 | --- | --- | --- |
