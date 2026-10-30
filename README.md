@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 281
-- Total members: 1140
+- Total groups: 282
+- Total members: 1141
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -2257,6 +2257,11 @@ The generated catalog appears below.
 | SION | <img src="https://members-avatar.jacob.com.hk/younite/sion.jpeg" alt="SION" loading="lazy" width="100"> | `younite/sion.jpeg` |
 | STEVE | <img src="https://members-avatar.jacob.com.hk/younite/steve.jpeg" alt="STEVE" loading="lazy" width="100"> | `younite/steve.jpeg` |
 | WOONO | <img src="https://members-avatar.jacob.com.hk/younite/woono.jpeg" alt="WOONO" loading="lazy" width="100"> | `younite/woono.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/yu-jeongyeon/icon.jpeg" alt="YU JEONGYEON" loading="lazy" width="60"> YU JEONGYEON
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| YU JEONGYEON | <img src="https://members-avatar.jacob.com.hk/yu-jeongyeon/yu-jeongyeon.jpeg" alt="YU JEONGYEON" loading="lazy" width="100"> | `yu-jeongyeon/yu-jeongyeon.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/yuhz/icon.jpeg" alt="YUHZ" loading="lazy" width="60"> YUHZ
 
 | Member | Avatar | Path |
