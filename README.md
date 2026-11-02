@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 282
-- Total members: 1141
+- Total groups: 283
+- Total members: 1142
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -1185,6 +1185,11 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | LEE JUNHO | <img src="https://members-avatar.jacob.com.hk/lee-junho/lee-junho.jpeg" alt="LEE JUNHO" loading="lazy" width="100"> | `lee-junho/lee-junho.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/lee-mu-jin/icon.jpeg" alt="LEE MU JIN" loading="lazy" width="60"> LEE MU JIN
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| LEE MU JIN | <img src="https://members-avatar.jacob.com.hk/lee-mu-jin/lee-mu-jin.jpeg" alt="LEE MU JIN" loading="lazy" width="100"> | `lee-mu-jin/lee-mu-jin.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/lee-seyoung/icon.jpeg" alt="LEE SEYOUNG" loading="lazy" width="60"> LEE SEYOUNG
 
 | Member | Avatar | Path |
