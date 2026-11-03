@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 283
-- Total members: 1142
+- Total groups: 284
+- Total members: 1147
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -356,6 +356,15 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | BANG YEDAM | <img src="https://members-avatar.jacob.com.hk/bang-yedam/bang-yedam.jpeg" alt="BANG YEDAM" loading="lazy" width="100"> | `bang-yedam/bang-yedam.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/begritz/icon.jpeg" alt="BEGRITZ" loading="lazy" width="60"> BEGRITZ
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| BAEKDOHA | <img src="https://members-avatar.jacob.com.hk/begritz/baekdoha.jpeg" alt="BAEKDOHA" loading="lazy" width="100"> | `begritz/baekdoha.jpeg` |
+| LEELUBIN | <img src="https://members-avatar.jacob.com.hk/begritz/leelubin.jpeg" alt="LEELUBIN" loading="lazy" width="100"> | `begritz/leelubin.jpeg` |
+| MOONCHAN | <img src="https://members-avatar.jacob.com.hk/begritz/moonchan.jpeg" alt="MOONCHAN" loading="lazy" width="100"> | `begritz/moonchan.jpeg` |
+| YOONTAEBUM | <img src="https://members-avatar.jacob.com.hk/begritz/yoontaebum.jpeg" alt="YOONTAEBUM" loading="lazy" width="100"> | `begritz/yoontaebum.jpeg` |
+| YOOSINI | <img src="https://members-avatar.jacob.com.hk/begritz/yoosini.jpeg" alt="YOOSINI" loading="lazy" width="100"> | `begritz/yoosini.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/bibi/icon.jpeg" alt="BIBI" loading="lazy" width="60"> BIBI
 
 | Member | Avatar | Path |
