@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 284
-- Total members: 1147
+- Total groups: 285
+- Total members: 1150
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -671,6 +671,13 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | ERIC | <img src="https://members-avatar.jacob.com.hk/eric/eric.jpeg" alt="ERIC" loading="lazy" width="100"> | `eric/eric.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/eunha-sinb-umji/icon.jpeg" alt="EUNHA SINB UMJI" loading="lazy" width="60"> EUNHA SINB UMJI
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| EUNHA | <img src="https://members-avatar.jacob.com.hk/eunha-sinb-umji/eunha.jpeg" alt="EUNHA" loading="lazy" width="100"> | `eunha-sinb-umji/eunha.jpeg` |
+| SINB | <img src="https://members-avatar.jacob.com.hk/eunha-sinb-umji/sinb.jpeg" alt="SINB" loading="lazy" width="100"> | `eunha-sinb-umji/sinb.jpeg` |
+| UMJI | <img src="https://members-avatar.jacob.com.hk/eunha-sinb-umji/umji.jpeg" alt="UMJI" loading="lazy" width="100"> | `eunha-sinb-umji/umji.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/evan/icon.jpeg" alt="EVAN" loading="lazy" width="60"> EVAN
 
 | Member | Avatar | Path |
