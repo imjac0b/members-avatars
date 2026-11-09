@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 285
-- Total members: 1150
+- Total groups: 286
+- Total members: 1158
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -2197,6 +2197,18 @@ The generated catalog appears below.
 | HALO | <img src="https://members-avatar.jacob.com.hk/wolflo/halo.jpeg" alt="HALO" loading="lazy" width="100"> | `wolflo/halo.jpeg` |
 | MINI | <img src="https://members-avatar.jacob.com.hk/wolflo/mini.jpeg" alt="MINI" loading="lazy" width="100"> | `wolflo/mini.jpeg` |
 | Yeni Cho | <img src="https://members-avatar.jacob.com.hk/wolflo/yeni-cho.jpeg" alt="Yeni Cho" loading="lazy" width="100"> | `wolflo/yeni-cho.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/wonder-attack/icon.jpeg" alt="WONDER ATTACK" loading="lazy" width="60"> WONDER ATTACK
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| GANGSAN | <img src="https://members-avatar.jacob.com.hk/wonder-attack/gangsan.jpeg" alt="GANGSAN" loading="lazy" width="100"> | `wonder-attack/gangsan.jpeg` |
+| JAEHYUN | <img src="https://members-avatar.jacob.com.hk/wonder-attack/jaehyun.jpeg" alt="JAEHYUN" loading="lazy" width="100"> | `wonder-attack/jaehyun.jpeg` |
+| JEHA | <img src="https://members-avatar.jacob.com.hk/wonder-attack/jeha.jpeg" alt="JEHA" loading="lazy" width="100"> | `wonder-attack/jeha.jpeg` |
+| JUNIL | <img src="https://members-avatar.jacob.com.hk/wonder-attack/junil.jpeg" alt="JUNIL" loading="lazy" width="100"> | `wonder-attack/junil.jpeg` |
+| ROIC | <img src="https://members-avatar.jacob.com.hk/wonder-attack/roic.jpeg" alt="ROIC" loading="lazy" width="100"> | `wonder-attack/roic.jpeg` |
+| XIDO | <img src="https://members-avatar.jacob.com.hk/wonder-attack/xido.jpeg" alt="XIDO" loading="lazy" width="100"> | `wonder-attack/xido.jpeg` |
+| YEONJUN | <img src="https://members-avatar.jacob.com.hk/wonder-attack/yeonjun.jpeg" alt="YEONJUN" loading="lazy" width="100"> | `wonder-attack/yeonjun.jpeg` |
+| YOHAN | <img src="https://members-avatar.jacob.com.hk/wonder-attack/yohan.jpeg" alt="YOHAN" loading="lazy" width="100"> | `wonder-attack/yohan.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/wonho/icon.jpeg" alt="WONHO" loading="lazy" width="60"> WONHO
 
 | Member | Avatar | Path |
