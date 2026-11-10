@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 286
-- Total members: 1158
+- Total groups: 288
+- Total members: 1160
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -1255,6 +1255,11 @@ The generated catalog appears below.
 | --- | --- | --- |
 | Lilas | <img src="https://members-avatar.jacob.com.hk/lilas/lilas.jpeg" alt="Lilas" loading="lazy" width="100"> | `lilas/lilas.jpeg` |
 | Lilas official | <img src="https://members-avatar.jacob.com.hk/lilas/lilas-official.jpeg" alt="Lilas official" loading="lazy" width="100"> | `lilas/lilas-official.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/liza-soberano/icon.jpeg" alt="Liza Soberano" loading="lazy" width="60"> Liza Soberano
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| Liza Soberano | <img src="https://members-avatar.jacob.com.hk/liza-soberano/liza-soberano.jpeg" alt="Liza Soberano" loading="lazy" width="100"> | `liza-soberano/liza-soberano.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/lngshot/icon.jpeg" alt="LNGSHOT" loading="lazy" width="60"> LNGSHOT
 
 | Member | Avatar | Path |
@@ -1284,6 +1289,11 @@ The generated catalog appears below.
 | JunWoo | <img src="https://members-avatar.jacob.com.hk/lun8/junwoo.jpeg" alt="JunWoo" loading="lazy" width="100"> | `lun8/junwoo.jpeg` |
 | Takuma | <img src="https://members-avatar.jacob.com.hk/lun8/takuma.jpeg" alt="Takuma" loading="lazy" width="100"> | `lun8/takuma.jpeg` |
 | Yuma | <img src="https://members-avatar.jacob.com.hk/lun8/yuma.jpeg" alt="Yuma" loading="lazy" width="100"> | `lun8/yuma.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/manaka-taguchi/icon.jpeg" alt="Manaka Taguchi" loading="lazy" width="60"> Manaka Taguchi
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| Manaka Taguchi | <img src="https://members-avatar.jacob.com.hk/manaka-taguchi/manaka-taguchi.jpeg" alt="Manaka Taguchi" loading="lazy" width="100"> | `manaka-taguchi/manaka-taguchi.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/mark-lee/icon.jpeg" alt="Mark Lee" loading="lazy" width="60"> Mark Lee
 
 | Member | Avatar | Path |
