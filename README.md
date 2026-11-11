@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 288
-- Total members: 1160
+- Total groups: 289
+- Total members: 1161
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -1897,6 +1897,11 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | syudou | <img src="https://members-avatar.jacob.com.hk/syudou/syudou.jpeg" alt="syudou" loading="lazy" width="100"> | `syudou/syudou.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/taeyeon/icon.jpeg" alt="TAEYEON" loading="lazy" width="60"> TAEYEON
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| TAEYEON | <img src="https://members-avatar.jacob.com.hk/taeyeon/taeyeon.jpeg" alt="TAEYEON" loading="lazy" width="100"> | `taeyeon/taeyeon.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/tempest/icon.jpeg" alt="TEMPEST" loading="lazy" width="60"> TEMPEST
 
 | Member | Avatar | Path |
