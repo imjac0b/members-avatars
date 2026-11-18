@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 290
-- Total members: 1162
+- Total members: 1161
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -1949,7 +1949,6 @@ The generated catalog appears below.
 | DANN | <img src="https://members-avatar.jacob.com.hk/the-kingdom/dann.jpeg" alt="DANN" loading="lazy" width="100"> | `the-kingdom/dann.jpeg` |
 | IVAN | <img src="https://members-avatar.jacob.com.hk/the-kingdom/ivan.jpeg" alt="IVAN" loading="lazy" width="100"> | `the-kingdom/ivan.jpeg` |
 | JAHAN | <img src="https://members-avatar.jacob.com.hk/the-kingdom/jahan.jpeg" alt="JAHAN" loading="lazy" width="100"> | `the-kingdom/jahan.jpeg` |
-| LOUIS | <img src="https://members-avatar.jacob.com.hk/the-kingdom/louis.jpeg" alt="LOUIS" loading="lazy" width="100"> | `the-kingdom/louis.jpeg` |
 | MUJIN | <img src="https://members-avatar.jacob.com.hk/the-kingdom/mujin.jpeg" alt="MUJIN" loading="lazy" width="100"> | `the-kingdom/mujin.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/thuy/icon.jpeg" alt="thuy" loading="lazy" width="60"> thuy
 
