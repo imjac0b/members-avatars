@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 290
-- Total members: 1161
+- Total groups: 291
+- Total members: 1164
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -1631,6 +1631,13 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | Pingdak | <img src="https://members-avatar.jacob.com.hk/pinggyego/pingdak.jpeg" alt="Pingdak" loading="lazy" width="100"> | `pinggyego/pingdak.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/pixxie/icon.jpeg" alt="PiXXiE" loading="lazy" width="60"> PiXXiE
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| INGKHO | <img src="https://members-avatar.jacob.com.hk/pixxie/ingkho.jpeg" alt="INGKHO" loading="lazy" width="100"> | `pixxie/ingkho.jpeg` |
+| MABELZ | <img src="https://members-avatar.jacob.com.hk/pixxie/mabelz.jpeg" alt="MABELZ" loading="lazy" width="100"> | `pixxie/mabelz.jpeg` |
+| PIMMA | <img src="https://members-avatar.jacob.com.hk/pixxie/pimma.jpeg" alt="PIMMA" loading="lazy" width="100"> | `pixxie/pimma.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/plave/icon.jpeg" alt="PLAVE" loading="lazy" width="60"> PLAVE
 
 | Member | Avatar | Path |
