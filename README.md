@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 291
-- Total members: 1164
+- Total groups: 292
+- Total members: 1165
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -1014,6 +1014,11 @@ The generated catalog appears below.
 | Member | Avatar | Path |
 | --- | --- | --- |
 | JVKE | <img src="https://members-avatar.jacob.com.hk/jvke/jvke.jpeg" alt="JVKE" loading="lazy" width="100"> | `jvke/jvke.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/k-pop-the-debut/icon.jpeg" alt="K-Pop: The Debut" loading="lazy" width="60"> K-Pop: The Debut
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| K-Pop: The Debut | <img src="https://members-avatar.jacob.com.hk/k-pop-the-debut/k-pop-the-debut.jpeg" alt="K-Pop: The Debut" loading="lazy" width="100"> | `k-pop-the-debut/k-pop-the-debut.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/kangta/icon.jpeg" alt="KANGTA" loading="lazy" width="60"> KANGTA
 
 | Member | Avatar | Path |
