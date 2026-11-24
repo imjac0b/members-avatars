@@ -23,7 +23,7 @@ Current providers:
 The generated catalog appears below.
 
 - Total groups: 292
-- Total members: 1165
+- Total members: 1166
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -59,6 +59,7 @@ The generated catalog appears below.
 
 | Member | Avatar | Path |
 | --- | --- | --- |
+| 3SKM_official | <img src="https://members-avatar.jacob.com.hk/3skm/3skm-official.jpeg" alt="3SKM_official" loading="lazy" width="100"> | `3skm/3skm-official.jpeg` |
 | Kaisei | <img src="https://members-avatar.jacob.com.hk/3skm/kaisei.jpeg" alt="Kaisei" loading="lazy" width="100"> | `3skm/kaisei.jpeg` |
 | Kitami Yusei | <img src="https://members-avatar.jacob.com.hk/3skm/kitami-yusei.jpeg" alt="Kitami Yusei" loading="lazy" width="100"> | `3skm/kitami-yusei.jpeg` |
 | Sakaki Ness | <img src="https://members-avatar.jacob.com.hk/3skm/sakaki-ness.jpeg" alt="Sakaki Ness" loading="lazy" width="100"> | `3skm/sakaki-ness.jpeg` |
