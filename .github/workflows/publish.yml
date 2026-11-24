@@ -33,10 +33,47 @@ jobs:
       - name: Install aria2
         run: sudo apt-get update && sudo apt-get install -y aria2
 
+      # The last run's images, so only avatars whose URL changed are downloaded.
+      - name: Restore avatars cache
+        uses: actions/cache/restore@v4
+        with:
+          path: avatars
+          key: avatars-${{ github.run_id }}
+          restore-keys: avatars-
+
+      # The last run's posts, so only posts newer than those are fetched.
+      - name: Restore posts cache
+        uses: actions/cache/restore@v4
+        with:
+          path: posts
+          key: posts-${{ github.run_id }}
+          restore-keys: posts-
+
       - name: Sync avatars and README
         env:
           PUBLIC_BASE_URL: https://members-avatar.jacob.com.hk
         run: bun run sync
+
+      # Keyed on the list of image URLs, so a new cache is only saved when an image changed.
+      - name: Save avatars cache
+        uses: actions/cache/save@v4
+        with:
+          path: avatars
+          key: avatars-${{ hashFiles('avatars/.sources.json') }}
+
+      - name: Fetch new Weverse posts
+        env:
+          PUBLIC_BASE_URL: https://members-avatar.jacob.com.hk
+        run: bun run posts
+
+      - name: Save posts cache
+        uses: actions/cache/save@v4
+        with:
+          path: posts
+          key: posts-${{ hashFiles('posts/**') }}
+
+      - name: Add posts to the site
+        run: cp -R posts avatars/posts
 
       - name: Commit README updates
         uses: stefanzweifel/git-auto-commit-action@v7

@@ -4,12 +4,16 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "sync": "bun index.ts"
+    "sync": "bun index.ts",
+    "posts": "bun posts.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5"
   }
 }

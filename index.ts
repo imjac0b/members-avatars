@@ -1,3 +1,6 @@
+import { readdir, rm, unlink } from "node:fs/promises";
+import { WEVERSE_COMMON_QUERY, weverseFetch } from "./weverse";
+
 type Community = {
   communityId: number;
   communityName: string;
@@ -115,8 +118,6 @@ type GroupCatalog = {
   }>;
 };
 
-const WEVERSE_APP_ID = "be4d79eb8fc7bd008ee82c8ec4ff6fd4";
-const WEVERSE_BASE_URL = "https://global.apis.naver.com/weverse/wevweb";
 const BERRIZ_BASE_URL = "https://svc-api.berriz.in/service/v1";
 const FANS_GRAPHQL_URL = "https://api.app.fans/graphql";
 const README_PLACEHOLDER = "<!-- GENERATED_MEMBERS_AVATARS -->";
@@ -125,18 +126,16 @@ const README_OUTPUT_PATH = "README.md";
 const GROUPS_JSON_PATH = "avatars/groups.json";
 const MEMBERS_JSON_PATH = "avatars/members.json";
 const ARIA2_INPUT_PATH = "avatars.aria2c.txt";
+// Which image URL each saved file came from. The workflow keeps avatars/ in the
+// GitHub Actions cache, so a file whose URL hasn't changed is not downloaded again.
+const SOURCES_PATH = "avatars/.sources.json";
+// Folders inside avatars/ that other steps write (left alone when pruning).
+const KEEP_DIRS = ["posts"];
 const PUBLIC_BASE_URL = (
   process.env.PUBLIC_BASE_URL ?? "https://members-avatar.jacob.com.hk"
 ).replace(/\/+$/, "");
 const REQUEST_TIMEOUT_MS = 20_000;
 const BERRIZ_LANGUAGE_CODE = "en";
-const WEVERSE_COMMON_QUERY = {
-  appId: WEVERSE_APP_ID,
-  language: "en",
-  os: "WEB",
-  platform: "WEB",
-  wpf: "pc",
-};
 
 const slugifyMemberName = (value: string) => {
   const slug = value
@@ -204,67 +203,6 @@ const removeWeverseTypeParam = (url: string) => {
   const parsedUrl = new URL(url);
   parsedUrl.searchParams.delete("type");
   return parsedUrl.toString();
-};
-
-const createWeverseHash = async (pathname: string) => {
-  const timestamp = Date.now();
-  const salt = pathname.substring(0, Math.min(255, pathname.length)) + timestamp;
-  const hmacSalt = new TextEncoder().encode(salt);
-
-  const key = await crypto.subtle.importKey(
-    "raw",
-    new TextEncoder().encode("1b9cb6378d959b45714bec49971ade22e6e24e42"),
-    { name: "HMAC", hash: { name: "SHA-1" } },
-    false,
-    ["sign", "verify"],
-  );
-
-  const hash = btoa(
-    String.fromCharCode(
-      ...new Uint8Array(await crypto.subtle.sign("HMAC", key, hmacSalt)),
-    ),
-  );
-
-  return {
-    wmsgpad: timestamp.toString(),
-    wmd: hash,
-  };
-};
-
-const createWeverseUrl = async (
-  pathname: string,
-  query: Record<string, string>,
-) => {
-  const searchParams = new URLSearchParams(query);
-  const unsignedPath = `${pathname}?${searchParams.toString()}`;
-  const signedParams = new URLSearchParams(
-    await createWeverseHash(unsignedPath),
-  );
-
-  return `${WEVERSE_BASE_URL}${unsignedPath}&${signedParams.toString()}`;
-};
-
-const weverseFetch = async <T>(
-  pathname: string,
-  query: Record<string, string>,
-) => {
-  const response = await fetch(await createWeverseUrl(pathname, query), {
-    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
-    headers: {
-      Origin: "https://weverse.io",
-      Referer: "https://weverse.io/",
-      "User-Agent":
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
-    },
-  });
-
-  if (!response.ok) {
-    throw new Error(
-      `Weverse request failed: ${response.status} ${response.statusText}`,
-    );
-  }
-
-  return (await response.json()) as T;
 };
 
 const getWeverseCommunities = async () => {
@@ -845,6 +783,15 @@ const updateJsonCatalogs = async (groups: GroupCatalog[]) => {
 
     await Bun.write(membersPath, `${JSON.stringify(membersCatalog, null, 2)}\n`);
   }
+
+  // Group folders restored from the cache for groups that no longer exist.
+  const current = new Set([...groups.map((group) => group.groupSlug), ...KEEP_DIRS]);
+  for (const entry of await readdir("avatars", { withFileTypes: true })) {
+    if (entry.isDirectory() && !current.has(entry.name)) {
+      await rm(`avatars/${entry.name}`, { recursive: true, force: true });
+      console.log(`[catalog] Removed stale group folder ${entry.name}`);
+    }
+  }
 };
 
 const createAria2Input = async (
@@ -894,6 +841,35 @@ const runAria2Batch = async () => {
   console.log("[download] aria2c batch finished");
 };
 
+const loadSources = async (): Promise<Record<string, string>> => {
+  const file = Bun.file(SOURCES_PATH);
+  if (!(await file.exists())) {
+    return {};
+  }
+  try {
+    return (await file.json()) as Record<string, string>;
+  } catch {
+    return {};
+  }
+};
+
+// Removes images left in the cache for members or groups that are gone.
+const pruneStaleFiles = async (current: Set<string>) => {
+  let removed = 0;
+  for await (const path of new Bun.Glob("avatars/**/*.jpeg").scan(".")) {
+    if (KEEP_DIRS.some((dir) => path.startsWith(`avatars/${dir}/`))) {
+      continue;
+    }
+    if (!current.has(path)) {
+      await unlink(path);
+      removed++;
+    }
+  }
+  if (removed > 0) {
+    console.log(`[download] Removed ${removed} stale images`);
+  }
+};
+
 const downloadAllMemberAvatars = async (
   providers: AvatarProvider[],
 ): Promise<ProviderResult> => {
@@ -926,15 +902,50 @@ const downloadAllMemberAvatars = async (
   const icons = [...uniqueIcons.values()];
 
   console.log(
-    `[download] Downloading ${avatars.length} unique avatars and ${icons.length} group icons`,
+    `[download] Found ${avatars.length} unique avatars and ${icons.length} group icons`,
   );
   for (const [index, avatar] of avatars.entries()) {
     console.log(
       `[download] ${index + 1}/${avatars.length} ${avatar.groupName} / ${avatar.memberName} -> ${avatar.outputPath}`,
     );
   }
-  await createAria2Input([...avatars, ...icons]);
-  await runAria2Batch();
+  const wanted = [...avatars, ...icons];
+  const previous = await loadSources();
+  const changed: typeof wanted = [];
+  for (const download of wanted) {
+    const exists = await Bun.file(download.outputPath).exists();
+    if (exists && previous[download.outputPath] === download.imageUrl) {
+      continue;
+    }
+    if (exists) {
+      // So aria2c's --continue doesn't resume onto the old image.
+      await unlink(download.outputPath);
+    }
+    changed.push(download);
+  }
+
+  console.log(
+    `[download] ${wanted.length - changed.length} unchanged (kept from cache), ${changed.length} to download`,
+  );
+
+  if (changed.length > 0) {
+    await createAria2Input(changed);
+    await runAria2Batch();
+  }
+
+  await pruneStaleFiles(new Set(wanted.map((download) => download.outputPath)));
+  await Bun.write(
+    SOURCES_PATH,
+    `${JSON.stringify(
+      Object.fromEntries(
+        wanted
+          .map((download) => [download.outputPath, download.imageUrl])
+          .sort(([a], [b]) => a!.localeCompare(b!)),
+      ),
+      null,
+      2,
+    )}\n`,
+  );
 
   return { avatars, icons };
 };
