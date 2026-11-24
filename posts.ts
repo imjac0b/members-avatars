@@ -1,6 +1,7 @@
-// Saves each listed member's public Weverse posts (photos, video covers and
-// text) to 080204/<member>.json, with a background colour for every image,
-// plus 080204/index.json. The workflow publishes the folder at
+// Saves each listed member's public Weverse posts (photos, videos and text) to
+// 080204/<member>.json, with a background colour for every image, plus
+// 080204/index.json. Videos are copied to 080204/videos/<videoId>.mp4, because
+// Weverse's own video links only work for half an hour. The workflow publishes the folder at
 // https://members-avatar.jacob.com.hk/080204/.
 //
 //   bun posts.ts
@@ -38,8 +39,14 @@ const PUBLIC_BASE_URL = (
 ).replace(/\/+$/, "");
 const PAGE_SIZE = 50;
 const COLOUR_CONCURRENCY = 8;
+const VIDEO_DIR = "videos"; // inside OUT_DIR
+const VIDEO_QUALITY = 720; // the largest rendition kept, by its short side
+const VIDEO_MAX_BYTES = 90 * 1024 * 1024; // GitHub Pages refuses files over 100 MB
+const VIDEO_CONCURRENCY = 3;
 
-type Media = { src: string; color?: string; video?: true };
+// A video keeps its cover as src, its Weverse id as vid, and once copied, its
+// file as mp4 (relative to 080204/).
+type Media = { src: string; color?: string; video?: true; vid?: string; mp4?: string };
 type SavedPost = { id: string; at: number; date: string; text?: string; media: Media[] };
 type SavedMember = {
   group: string;
@@ -53,7 +60,7 @@ type SavedMember = {
 
 type WeverseAttachment = {
   type?: string;
-  data?: { url?: string; uploadInfo?: { imageUrl?: string } };
+  data?: { url?: string; videoId?: string; uploadInfo?: { imageUrl?: string } };
 };
 type WeversePost = {
   postId: string;
@@ -155,7 +162,8 @@ const toSavedPost = (post: WeversePost): SavedPost => {
           ? attachment.data?.uploadInfo?.imageUrl
           : undefined;
     if (!src || !src.startsWith("https://") || media.some((m) => m.src === src)) continue;
-    media.push(attachment.type === "video" ? { src, video: true } : { src });
+    const vid = attachment.data?.videoId;
+    media.push(attachment.type === "video" ? { src, video: true, ...(vid ? { vid } : {}) } : { src });
   }
   const text = post.plainBody?.trim();
   return {
@@ -221,6 +229,104 @@ const fillColours = async (posts: SavedPost[]) => {
   return { total, failed };
 };
 
+// ---------- videos ----------
+type PostDetail = {
+  attachment?: { video?: Record<string, { videoId?: string; uploadInfo?: { imageUrl?: string } }> };
+};
+type PlayInfo = {
+  playInfo?: {
+    videos?: { list?: { source?: string; size?: number; encodingOption?: { name?: string } }[] };
+  };
+};
+
+// Posts saved before videos were kept have no vid yet; one post lookup finds it.
+const fillVideoIds = async (post: SavedPost) => {
+  const missing = post.media.filter((m) => m.video && !m.vid);
+  if (!missing.length) return;
+  const detail = await weverseFetch<PostDetail>(`/post/v1.0/post-${post.id}`, {
+    ...WEVERSE_COMMON_QUERY,
+    fieldSet: "postV1",
+  });
+  const found = Object.values(detail.attachment?.video ?? {}).filter((v) => v.videoId);
+  missing.forEach((media, i) => {
+    const match = found.find((v) => v.uploadInfo?.imageUrl === media.src) ?? (found.length === missing.length ? found[i] : undefined);
+    if (match?.videoId) media.vid = match.videoId;
+  });
+};
+
+// The largest rendition up to VIDEO_QUALITY, or the smallest if all are larger.
+const pickRendition = (list: NonNullable<NonNullable<PlayInfo["playInfo"]>["videos"]>["list"]) => {
+  const ok = (list ?? [])
+    .map((v) => ({ ...v, q: parseInt(v.encodingOption?.name ?? "", 10) || 0 }))
+    .filter((v) => v.source?.startsWith("https://") && (v.size ?? 0) <= VIDEO_MAX_BYTES)
+    .sort((a, b) => a.q - b.q);
+  return ok.filter((v) => v.q <= VIDEO_QUALITY).at(-1) ?? ok[0];
+};
+
+const downloadVideo = async (vid: string, path: string) => {
+  const info = await weverseFetch<PlayInfo>(`/cvideo/v1.0/cvideo-${vid}/playInfo`, {
+    ...WEVERSE_COMMON_QUERY,
+    videoId: vid,
+  });
+  const pick = pickRendition(info.playInfo?.videos?.list);
+  if (!pick?.source) throw new Error("no playable rendition");
+  const response = await fetch(pick.source, {
+    headers: { Referer: "https://weverse.io/" },
+    signal: AbortSignal.timeout(180_000),
+  });
+  const type = response.headers.get("content-type") ?? "";
+  if (!response.ok || !(type.startsWith("video/") || type === "application/octet-stream")) {
+    throw new Error(`HTTP ${response.status} ${type}`);
+  }
+  const body = await response.arrayBuffer();
+  if (body.byteLength < 1024) throw new Error("file too small");
+  await Bun.write(path, body);
+};
+
+// A copy that is already published, for runs that start with an empty cache.
+const restoreVideo = async (mp4: string, path: string) => {
+  try {
+    const response = await fetch(`${PUBLIC_BASE_URL}/${OUT_DIR}/${mp4}`, { signal: AbortSignal.timeout(120_000) });
+    if (!response.ok) return false;
+    await Bun.write(path, await response.arrayBuffer());
+    return true;
+  } catch {
+    return false;
+  }
+};
+
+const fillVideos = async (posts: SavedPost[]) => {
+  const withVideo = posts.filter((p) => p.media.some((m) => m.video && !m.mp4));
+  for (const post of withVideo) {
+    try {
+      await fillVideoIds(post);
+    } catch {}
+  }
+
+  const queue = posts.flatMap((p) => p.media.filter((m) => m.video && m.vid));
+  let copied = 0, failed = 0;
+  await Promise.all(
+    Array.from({ length: VIDEO_CONCURRENCY }, async () => {
+      for (let media; (media = queue.shift()); ) {
+        const mp4 = `${VIDEO_DIR}/${media.vid}.mp4`;
+        const path = `${OUT_DIR}/${mp4}`;
+        if (await Bun.file(path).exists()) { media.mp4 = mp4; continue; }
+        if (media.mp4 && (await restoreVideo(media.mp4, path))) continue;
+        try {
+          await downloadVideo(media.vid!, path);
+          media.mp4 = mp4;
+          copied++;
+        } catch (error) {
+          delete media.mp4;
+          failed++;
+          console.warn(`[posts] video ${media.vid}: ${(error as Error).message}`);
+        }
+      }
+    }),
+  );
+  return { copied, failed };
+};
+
 const syncMember = async (group: GroupConfig, member: MemberConfig) => {
   const { saved, from } = await loadSaved(group, member);
   const posts = saved?.posts ?? [];
@@ -237,6 +343,7 @@ const syncMember = async (group: GroupConfig, member: MemberConfig) => {
   const added = fresh.filter((post) => !post.membershipOnly).map(toSavedPost);
   const all = [...posts, ...added].sort((a, b) => a.at - b.at);
   const { total, failed } = await fillColours(all);
+  const videos = await fillVideos(all);
 
   const profile = author?.artistOfficialProfile;
   const result: SavedMember = {
@@ -252,12 +359,13 @@ const syncMember = async (group: GroupConfig, member: MemberConfig) => {
 
   console.log(
     `[posts] ${group.slug}/${member.slug}: started from ${from} (${posts.length} posts), ${added.length} new, ${all.length} in all` +
-      (total ? `; ${total - failed} colours worked out${failed ? `, ${failed} failed (tried again next run)` : ""}` : ""),
+      (total ? `; ${total - failed} colours worked out${failed ? `, ${failed} failed (tried again next run)` : ""}` : "") +
+      (videos.copied || videos.failed ? `; ${videos.copied} videos copied${videos.failed ? `, ${videos.failed} failed (tried again next run)` : ""}` : ""),
   );
   return result;
 };
 
-await mkdir(OUT_DIR, { recursive: true });
+await mkdir(`${OUT_DIR}/${VIDEO_DIR}`, { recursive: true });
 for (const group of GROUPS) {
   const members: SavedMember[] = [];
   for (const member of group.members) {
