@@ -35,7 +35,7 @@ jobs:
 
       # The last run's images, so only avatars whose URL changed are downloaded.
       - name: Restore avatars cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: avatars
           key: avatars-${{ github.run_id }}
@@ -43,7 +43,7 @@ jobs:
 
       # The last run's posts, so only posts newer than those are fetched.
       - name: Restore posts cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: posts
           key: posts-${{ github.run_id }}
@@ -56,7 +56,7 @@ jobs:
 
       # Keyed on the list of image URLs, so a new cache is only saved when an image changed.
       - name: Save avatars cache
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: avatars
           key: avatars-${{ hashFiles('avatars/.sources.json') }}
@@ -67,7 +67,7 @@ jobs:
         run: bun run posts
 
       - name: Save posts cache
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: posts
           key: posts-${{ hashFiles('posts/**') }}
