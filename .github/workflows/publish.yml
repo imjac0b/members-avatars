@@ -6,6 +6,7 @@ on:
     - cron: "0 */12 * * *"
 
 permissions:
+  actions: read
   contents: write
   pages: write
   id-token: write
@@ -88,6 +89,19 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: avatars
+
+      # deploy-pages sometimes looks for the artifact before GitHub lists it
+      # and fails with "No artifacts named github-pages", so wait until it shows.
+      - name: Wait for the Pages artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 30); do
+            n=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" --jq '[.artifacts[] | select(.name == "github-pages")] | length')
+            [ "$n" -gt 0 ] && exit 0
+            sleep 2
+          done
+          echo "github-pages artifact not listed yet; trying the deploy anyway"
 
       - name: Deploy to GitHub Pages
         id: deployment
