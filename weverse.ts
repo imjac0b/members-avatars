@@ -48,24 +48,40 @@ const createWeverseUrl = async (
   return `${WEVERSE_BASE_URL}${unsignedPath}&${signedParams.toString()}`;
 };
 
+// Retries a few times, because Weverse now and then answers 500 when many
+// requests arrive together.
 export const weverseFetch = async <T>(
   pathname: string,
   query: Record<string, string>,
-) => {
-  const response = await fetch(await createWeverseUrl(pathname, query), {
-    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
-    headers: {
-      Origin: "https://weverse.io",
-      Referer: "https://weverse.io/",
-      "User-Agent": USER_AGENT,
-    },
-  });
+  tries = 4,
+): Promise<T> => {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const response = await fetch(await createWeverseUrl(pathname, query), {
+        signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+        headers: {
+          Origin: "https://weverse.io",
+          Referer: "https://weverse.io/",
+          "User-Agent": USER_AGENT,
+        },
+      });
 
-  if (!response.ok) {
-    throw new Error(
-      `Weverse request failed: ${response.status} ${response.statusText}`,
-    );
+      if (response.ok) {
+        return (await response.json()) as T;
+      }
+
+      const error = new Error(
+        `Weverse request failed: ${response.status} ${response.statusText}`,
+      );
+      if (response.status < 500 && response.status !== 429) {
+        throw Object.assign(error, { final: true });
+      }
+      throw error;
+    } catch (error) {
+      if ((error as { final?: boolean }).final || attempt >= tries) {
+        throw error;
+      }
+      await Bun.sleep(1000 * 2 ** (attempt - 1));
+    }
   }
-
-  return (await response.json()) as T;
 };
