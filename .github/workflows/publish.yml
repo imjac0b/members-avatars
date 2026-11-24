@@ -91,18 +91,29 @@ jobs:
           path: avatars
 
       # deploy-pages sometimes looks for the artifact before GitHub lists it
-      # and fails with "No artifacts named github-pages", so wait until it shows.
+      # and fails with "No artifacts named github-pages", so wait until it shows,
+      # then a little longer, since the listing it reads can lag behind.
       - name: Wait for the Pages artifact
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           for i in $(seq 1 30); do
             n=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" --jq '[.artifacts[] | select(.name == "github-pages")] | length')
-            [ "$n" -gt 0 ] && exit 0
+            [ "$n" -gt 0 ] && sleep 15 && exit 0
             sleep 2
           done
           echo "github-pages artifact not listed yet; trying the deploy anyway"
 
       - name: Deploy to GitHub Pages
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      # One more try if the deploy still didn't find the artifact.
+      - name: Wait before trying the deploy again
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 45
+
+      - name: Deploy to GitHub Pages (second try)
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v5
