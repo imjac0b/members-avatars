@@ -45,7 +45,7 @@ jobs:
       - name: Restore posts cache
         uses: actions/cache/restore@v5
         with:
-          path: posts
+          path: "080204"
           key: posts-${{ github.run_id }}
           restore-keys: posts-
 
@@ -69,11 +69,11 @@ jobs:
       - name: Save posts cache
         uses: actions/cache/save@v5
         with:
-          path: posts
-          key: posts-${{ hashFiles('posts/**') }}
+          path: "080204"
+          key: posts-${{ hashFiles('080204/**') }}
 
       - name: Add posts to the site
-        run: cp -R posts avatars/posts
+        run: cp -R 080204 avatars/080204
 
       - name: Commit README updates
         uses: stefanzweifel/git-auto-commit-action@v7

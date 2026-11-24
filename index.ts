@@ -130,7 +130,7 @@ const ARIA2_INPUT_PATH = "avatars.aria2c.txt";
 // GitHub Actions cache, so a file whose URL hasn't changed is not downloaded again.
 const SOURCES_PATH = "avatars/.sources.json";
 // Folders inside avatars/ that other steps write (left alone when pruning).
-const KEEP_DIRS = ["posts"];
+const KEEP_DIRS = ["080204"];
 const PUBLIC_BASE_URL = (
   process.env.PUBLIC_BASE_URL ?? "https://members-avatar.jacob.com.hk"
 ).replace(/\/+$/, "");

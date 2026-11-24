@@ -1,12 +1,12 @@
 // Saves each listed member's public Weverse posts (photos, video covers and
-// text) to posts/<group>/<member>.json, with a background colour for every
-// image, plus a small avatar and an index per group. The workflow publishes
-// the folder at https://members-avatar.jacob.com.hk/posts/.
+// text) to 080204/<member>.json, with a background colour for every image,
+// plus 080204/index.json. The workflow publishes the folder at
+// https://members-avatar.jacob.com.hk/080204/.
 //
 //   bun posts.ts
 //
 // Only new posts are fetched. The last result is kept in the GitHub Actions
-// cache (posts/); if the cache is empty, the copy that is already published is
+// cache (080204/); if the cache is empty, the copy that is already published is
 // used instead, and only if that is missing too is everything since debut
 // fetched again. Membership-only posts are skipped. Dates are in Korea time.
 import { mkdir } from "node:fs/promises";
@@ -32,12 +32,11 @@ const GROUPS: GroupConfig[] = [
   },
 ];
 
-const OUT_DIR = "posts";
+const OUT_DIR = "080204";
 const PUBLIC_BASE_URL = (
   process.env.PUBLIC_BASE_URL ?? "https://members-avatar.jacob.com.hk"
 ).replace(/\/+$/, "");
 const PAGE_SIZE = 50;
-const AVATAR_SIZE = 160;
 const COLOUR_CONCURRENCY = 8;
 
 type Media = { src: string; color?: string; video?: true };
@@ -48,8 +47,6 @@ type SavedMember = {
   name: string;
   memberId: string;
   birthday?: string;
-  avatar?: string;
-  avatarSource?: string;
   checkedAt: string;
   posts: SavedPost[];
 };
@@ -87,7 +84,7 @@ const isoBirthday = (value?: string) => {
 };
 
 const loadSaved = async (group: GroupConfig, member: MemberConfig) => {
-  const path = `${OUT_DIR}/${group.slug}/${member.slug}.json`;
+  const path = `${OUT_DIR}/${member.slug}.json`;
   const file = Bun.file(path);
   if (await file.exists()) {
     try {
@@ -224,16 +221,6 @@ const fillColours = async (posts: SavedPost[]) => {
   return { total, failed };
 };
 
-const writeAvatar = async (group: GroupConfig, member: MemberConfig, source: string) => {
-  const image = await fetchImage(source, ["s640", ""]);
-  const path = `${group.slug}/${member.slug}.webp`;
-  await Bun.write(
-    `${OUT_DIR}/${path}`,
-    await sharp(image).resize(AVATAR_SIZE, AVATAR_SIZE, { fit: "cover" }).webp({ quality: 82 }).toBuffer(),
-  );
-  return path;
-};
-
 const syncMember = async (group: GroupConfig, member: MemberConfig) => {
   const { saved, from } = await loadSaved(group, member);
   const posts = saved?.posts ?? [];
@@ -252,29 +239,16 @@ const syncMember = async (group: GroupConfig, member: MemberConfig) => {
   const { total, failed } = await fillColours(all);
 
   const profile = author?.artistOfficialProfile;
-  const avatarSource = profile?.officialImageUrl ?? saved?.avatarSource;
-  let avatar = saved?.avatar;
-  const avatarFile = `${OUT_DIR}/${group.slug}/${member.slug}.webp`;
-  if (avatarSource && (avatarSource !== saved?.avatarSource || !(await Bun.file(avatarFile).exists()))) {
-    try {
-      avatar = await writeAvatar(group, member, avatarSource);
-    } catch (error) {
-      console.warn(`[posts] ${group.slug}/${member.slug}: couldn't make the avatar (${(error as Error).message})`);
-    }
-  }
-
   const result: SavedMember = {
     group: group.slug,
     member: member.slug,
     name: profile?.officialName ?? saved?.name ?? member.slug.toUpperCase(),
     memberId: member.memberId,
     birthday: isoBirthday(profile?.birthday?.dateString) ?? saved?.birthday,
-    avatar,
-    avatarSource,
     checkedAt: new Date().toISOString(),
     posts: all,
   };
-  await Bun.write(`${OUT_DIR}/${group.slug}/${member.slug}.json`, `${JSON.stringify(result)}\n`);
+  await Bun.write(`${OUT_DIR}/${member.slug}.json`, `${JSON.stringify(result)}\n`);
 
   console.log(
     `[posts] ${group.slug}/${member.slug}: started from ${from} (${posts.length} posts), ${added.length} new, ${all.length} in all` +
@@ -283,8 +257,8 @@ const syncMember = async (group: GroupConfig, member: MemberConfig) => {
   return result;
 };
 
+await mkdir(OUT_DIR, { recursive: true });
 for (const group of GROUPS) {
-  await mkdir(`${OUT_DIR}/${group.slug}`, { recursive: true });
   const members: SavedMember[] = [];
   for (const member of group.members) {
     members.push(await syncMember(group, member));
@@ -299,11 +273,11 @@ for (const group of GROUPS) {
       slug: m.member,
       name: m.name,
       birthday: m.birthday,
-      avatar: m.avatar,
-      posts: `${group.slug}/${m.member}.json`,
+      avatar: `${group.slug}/${m.member}.jpeg`,
+      posts: `080204/${m.member}.json`,
       count: m.posts.length,
       latest: m.posts.at(-1)?.date,
     })),
   };
-  await Bun.write(`${OUT_DIR}/${group.slug}/index.json`, `${JSON.stringify(index, null, 2)}\n`);
+  await Bun.write(`${OUT_DIR}/index.json`, `${JSON.stringify(index, null, 2)}\n`);
 }
