@@ -22,8 +22,8 @@ Current providers:
 
 The generated catalog appears below.
 
-- Total groups: 292
-- Total members: 1166
+- Total groups: 293
+- Total members: 1167
 
 ## <img src="https://members-avatar.jacob.com.hk/team/icon.jpeg" alt="&TEAM" loading="lazy" width="60"> &TEAM
 
@@ -753,6 +753,11 @@ The generated catalog appears below.
 | UMJI | <img src="https://members-avatar.jacob.com.hk/gfriend/umji.jpeg" alt="UMJI" loading="lazy" width="100"> | `gfriend/umji.jpeg` |
 | YERIN | <img src="https://members-avatar.jacob.com.hk/gfriend/yerin.jpeg" alt="YERIN" loading="lazy" width="100"> | `gfriend/yerin.jpeg` |
 | YUJU | <img src="https://members-avatar.jacob.com.hk/gfriend/yuju.jpeg" alt="YUJU" loading="lazy" width="100"> | `gfriend/yuju.jpeg` |
+## <img src="https://members-avatar.jacob.com.hk/gini/icon.jpeg" alt="gini" loading="lazy" width="60"> gini
+
+| Member | Avatar | Path |
+| --- | --- | --- |
+| gini | <img src="https://members-avatar.jacob.com.hk/gini/gini.jpeg" alt="gini" loading="lazy" width="100"> | `gini/gini.jpeg` |
 ## <img src="https://members-avatar.jacob.com.hk/girls-archives/icon.jpeg" alt="Girls Archives." loading="lazy" width="60"> Girls Archives.
 
 | Member | Avatar | Path |
